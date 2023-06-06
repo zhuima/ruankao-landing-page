@@ -141,6 +141,7 @@ const HeroSection = () => {
                 className="relative w-full"
                 alt="wath illustration"
                 loading="lazy"
+                fill
                 width={320}
                 height={690}
               />
