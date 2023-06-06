@@ -9,7 +9,7 @@ const Header = () => {
     <header
       className={`sticky top-0 z-50 transition-shadow ${
         scrollPosition > 0
-          ? "shadow-2xl bg-opacity-70 backdrop-blur-lg backdrop-filter border-b "
+          ? "shadow bg-opacity-70 backdrop-blur-lg backdrop-filter"
           : "shadow-none"
       }`}
     >
