@@ -333,6 +333,13 @@
   dependencies:
     tslib "^2.4.0"
 
+"@types/aws-sdk2-types@*":
+  version "0.0.0"
+  resolved "https://registry.npmjs.org/@types/aws-sdk2-types/-/aws-sdk2-types-0.0.0.tgz"
+  integrity sha512-GnEDlad7O4gu140g8Y0r5clvav/uoSOksxToXANj0UmqMfVcS2hIcJ6RryWvBrwXXPyyPa7xTW9otdiDSkH0DQ==
+  dependencies:
+    "@types/node" "*"
+
 "@types/json5@^0.0.29":
   version "0.0.29"
   resolved "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
@@ -342,6 +349,39 @@
   version "20.2.5"
   resolved "https://registry.npmjs.org/@types/node/-/node-20.2.5.tgz"
   integrity sha512-JJulVEQXmiY9Px5axXHeYGLSjhkZEnD+MDPDGbCbIAbMslkKwmygtZFy1X6s/075Yo94sf8GuSlFfPzysQrWZQ==
+
+"@types/nodemailer-direct-transport@*":
+  version "1.0.32"
+  resolved "https://registry.npmjs.org/@types/nodemailer-direct-transport/-/nodemailer-direct-transport-1.0.32.tgz"
+  integrity sha512-1S0E405ghuApKUSH3x1dJpu/4Y8cQP4kQZ6BSLsfrM5uJB+IKKJuxCUVCDJoe3OTydPtzAoKFGggseXY97jlDw==
+  dependencies:
+    "@types/nodemailer" "^3"
+
+"@types/nodemailer-ses-transport@*":
+  version "1.5.3"
+  resolved "https://registry.npmjs.org/@types/nodemailer-ses-transport/-/nodemailer-ses-transport-1.5.3.tgz"
+  integrity sha512-GZIItR7UtcXYgqQ4BO9/UVEe9uOeRt6u4YgTNVcjzowTuQCAHuueCMfXHjgYr9IiewDI87JE4xM/pNU38ip0zQ==
+  dependencies:
+    "@types/aws-sdk2-types" "*"
+    "@types/nodemailer" "^3"
+
+"@types/nodemailer-smtp-transport@*", "@types/nodemailer-smtp-transport@^2.7.5":
+  version "2.7.5"
+  resolved "https://registry.npmjs.org/@types/nodemailer-smtp-transport/-/nodemailer-smtp-transport-2.7.5.tgz"
+  integrity sha512-TziFYmQgyO9QuKvD3j7GcC6rnbp/Js9CEROm5h3u50AAeD8d8LcwoOlhosaEeMyPmy7fVXN63ZC1/MtjvzQViQ==
+  dependencies:
+    "@types/node" "*"
+    "@types/nodemailer" "^3"
+
+"@types/nodemailer@^3":
+  version "3.1.11"
+  resolved "https://registry.npmjs.org/@types/nodemailer/-/nodemailer-3.1.11.tgz"
+  integrity sha512-d9juwXW8pkT+GnwCUgpRv+E3i4sigwuASNUEKQYNryI6jd+yPs33MaG5MfZnsDtJItxINmcih01FzFfSYnpfeg==
+  dependencies:
+    "@types/node" "*"
+    "@types/nodemailer-direct-transport" "*"
+    "@types/nodemailer-ses-transport" "*"
+    "@types/nodemailer-smtp-transport" "*"
 
 "@types/nodemailer@^6.4.8":
   version "6.4.8"

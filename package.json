@@ -30,6 +30,7 @@
     "zod-formik-adapter": "^1.2.0"
   },
   "devDependencies": {
-    "@types/nodemailer": "^6.4.8"
+    "@types/nodemailer": "^6.4.8",
+    "@types/nodemailer-smtp-transport": "^2.7.5"
   }
 }
