@@ -71,7 +71,7 @@ const ContactForm = () => {
                     htmlFor="name"
                     className="leading-7 text-sm text-gray-600"
                   >
-                    Name
+                    姓名
                   </label>
                   <Field
                     type="text"
@@ -92,7 +92,7 @@ const ContactForm = () => {
                     htmlFor="email"
                     className="leading-7 text-sm text-gray-600"
                   >
-                    Email
+                    邮箱
                   </label>
                   <Field
                     type="email"
@@ -113,7 +113,7 @@ const ContactForm = () => {
                     htmlFor="message"
                     className="leading-7 text-sm text-gray-600"
                   >
-                    Message
+                    内容
                   </label>
                   <Field
                     id="message"
@@ -132,7 +132,7 @@ const ContactForm = () => {
                   disabled={isLoading}
                   className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
                 >
-                  Button
+                  提交
                 </button>
               </div>
             </div>

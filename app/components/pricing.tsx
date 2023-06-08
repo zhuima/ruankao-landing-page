@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
-
+import { useAos } from "../hooks/useAos";
 const Pricing = () => {
+  useAos();
   return (
     <section className="text-gray-600 body-font overflow-hidden">
       <div className="container px-5 py-24 mx-auto">
@@ -19,7 +21,11 @@ const Pricing = () => {
           </div>
         </div>
         <div className="flex flex-wrap -m-4">
-          <div className="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            className="p-4 xl:w-1/4 md:w-1/2 w-full"
+          >
             <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
               <h2 className="text-sm tracking-widest title-font mb-1 font-medium">
                 START
@@ -94,7 +100,11 @@ const Pricing = () => {
               </p>
             </div>
           </div>
-          <div className="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            className="p-4 xl:w-1/4 md:w-1/2 w-full"
+          >
             <div className="h-full p-6 rounded-lg border-2 border-indigo-500 flex flex-col relative overflow-hidden">
               <span className="bg-indigo-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
                 POPULAR
@@ -191,7 +201,11 @@ const Pricing = () => {
               </p>
             </div>
           </div>
-          <div className="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            className="p-4 xl:w-1/4 md:w-1/2 w-full"
+          >
             <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
               <h2 className="text-sm tracking-widest title-font mb-1 font-medium">
                 BUSINESS
@@ -301,7 +315,11 @@ const Pricing = () => {
               </p>
             </div>
           </div>
-          <div className="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            className="p-4 xl:w-1/4 md:w-1/2 w-full"
+          >
             <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
               <h2 className="text-sm tracking-widest title-font mb-1 font-medium">
                 SPECIAL
