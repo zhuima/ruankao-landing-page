@@ -1,12 +1,23 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { useAos } from "../hooks/useAos";
 const HeroSection = () => {
+  useAos();
   return (
     <div className="bg-white relative pt-40 pb-20 lg:pt-44 dark:bg-gray-900">
       <div className="relative xl:container m-auto px-6 md:px-12 lg:px-6">
-        <h1 className="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-blue-900 text-4xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl dark:text-white">
-          专业人士带你 <br className="lg:block hidden" />
-          <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-300">
+        <h1
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          className="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-blue-900 text-4xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl dark:text-white"
+        >
+          专业人士带你 <br className="block" />
+          <span
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="relative text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-300"
+          >
             成功上岸
           </span>
           .

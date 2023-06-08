@@ -8,15 +8,15 @@ const Feature = () => {
       <div className="container px-5 py-24 mx-auto">
         <div className="text-center mb-20">
           <h1
-            data-aos="fade-up"
+            data-aos="fade-down"
             data-aos-duration="1000"
             className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4"
           >
             Raw Denim Heirloom Man Braid
           </h1>
           <p
-            data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos="fade-down"
+            data-aos-duration="1000"
             className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"
           >
             Blue bottle crucifix vinyl post-ironic four dollar toast vegan
@@ -163,9 +163,8 @@ const Feature = () => {
           </div>
         </div>
         <button
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-aos-anchor-placement="center-bottom"
+          data-aos="zoom-in-up"
+          data-aos-duration="3000"
           className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
         >
           Button
