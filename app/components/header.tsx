@@ -33,7 +33,7 @@ const Header = () => {
               >
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
               </svg>
-              <span className="ml-3 text-xl">Tailblocks</span>
+              <span className="ml-3 text-xl">软考通关宝典</span>
             </a>
             <label
               htmlFor="hbr"
@@ -57,7 +57,7 @@ const Header = () => {
                     href="#"
                     className="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
                   >
-                    <span>Home</span>
+                    <span>知识库</span>
                   </a>
                 </li>
                 <li>
@@ -65,7 +65,7 @@ const Header = () => {
                     href="#"
                     className="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
                   >
-                    <span>Portfolio</span>
+                    <span>在线教程</span>
                   </a>
                 </li>
                 <li>
@@ -73,7 +73,7 @@ const Header = () => {
                     href="#"
                     className="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
                   >
-                    <span>Services</span>
+                    <span>教材</span>
                   </a>
                 </li>
               </ul>
@@ -85,7 +85,7 @@ const Header = () => {
                 className="relative flex h-9 ml-auto items-center justify-center sm:px-6 before:absolute before:inset-0 before:rounded-full focus:before:bg-sky-600/10 dark:focus:before:bg-sky-400/10 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
               >
                 <span className="relative text-sm font-semibold text-primary dark:text-primaryLight">
-                  Sign Up
+                  注册
                 </span>
               </a>
               <a
@@ -93,7 +93,7 @@ const Header = () => {
                 className="relative flex h-9 ml-auto items-center justify-center sm:px-6 before:absolute before:inset-0 before:rounded-full before:bg-sky-600 dark:before:bg-sky-400 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
               >
                 <span className="relative text-sm font-semibold text-white dark:text-gray-900">
-                  Login
+                  登陆
                 </span>
               </a>
             </div>
