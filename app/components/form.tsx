@@ -49,7 +49,7 @@ const ContactForm = () => {
       console.error("Failed to send email:", error);
     } finally {
       setSubmitting(false);
-      toast.success("Form submitted successfully!");
+      // toast.success("Form submitted successfully!");
       setShowConfetti(true);
       setIsLoading(false);
     }
