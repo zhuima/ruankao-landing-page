@@ -1,10 +1,11 @@
 "use client";
-import React from "react";
+import { useState } from "react";
 import { useScrollPosition } from "../hooks/useScrollPosition";
 import Link from "next/link";
 
 const Header = () => {
   const scrollPosition = useScrollPosition();
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
     <header
@@ -26,9 +27,9 @@ const Header = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
                 viewBox="0 0 24 24"
               >

@@ -63,12 +63,21 @@ export const Counter = ({ days, hours, minutes, seconds }: timeProps) => {
     seconds = "0" + seconds;
   }
   return (
-    <div>
-      <div className="max-w-327 desktop:min-w-[668px] flex justify-center text-white">
-        <DigitBox num={days} unit={"DAYS"} flip={daysFlip} />
-        <DigitBox num={hours} unit={"HOURS"} flip={hoursFlip} />
-        <DigitBox num={minutes} unit={"MINUTES"} flip={minutesFlip} />
-        <DigitBox num={seconds} unit={"SECONDS"} flip={secondsFlip} />
+    <div className=" mt-2 md:mt-20  rounded-xl">
+      <div className="grid grid-cols-2 gap-4 py-6 px-10 md:flex md:items-center md:justify-between md:mt-2  rounded-xl md:px-6 md:py-8 ">
+        <DigitBox num={days} unit="Days" flip={daysFlip} />
+        <span className=" hidden text-5xl -mt-8 md:inline-block md:text-7xl font-normal text-gray-50 ">
+          :
+        </span>
+        <DigitBox num={hours} unit="Hours" flip={hoursFlip} />
+        <span className="hidden text-5xl -mt-8 md:inline-block md:text-7xl font-normal text-gray-50 ">
+          :
+        </span>
+        <DigitBox num={minutes} unit="Minutes" flip={minutesFlip} />
+        <span className="hidden text-5xl -mt-8 md:inline-block md:text-7xl font-normal text-gray-50 ">
+          :
+        </span>
+        <DigitBox num={seconds} unit="Seconds" flip={secondsFlip} />
       </div>
     </div>
   );

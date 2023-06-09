@@ -1,11 +1,11 @@
-/* html {
+.my-backgroud {
   background: linear-gradient(#1d1e28 0%, #261c2d 97%, #261a2d 100%);
   z-index: -20;
-} */
-
-button {
-  padding: 5px;
 }
+
+/* button {
+  padding: 5px;
+} */
 
 h1.side-animated-heading {
   color: #333;
