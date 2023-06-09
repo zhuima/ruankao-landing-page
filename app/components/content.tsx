@@ -1,209 +1,727 @@
 "use client";
 import React from "react";
 import { useAos } from "../hooks/useAos";
-
+import Image from "next/image";
 const Content = () => {
   useAos();
   return (
-    <section className="mt-20 text-gray-600 body-font">
+    <section className="lg:mt-80 text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+        <div className="flex flex-wrap w-full mb-5 flex-col items-center text-center">
           <h1
             data-aos="fade-down"
             data-aos-duration="1000"
             className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
           >
-            Pitchfork Kickstarter Taxidermy
+            软考通关六大法宝
           </h1>
           <p
             data-aos="fade-down"
             data-aos-duration="1000"
             className="lg:w-1/2 w-full leading-relaxed text-gray-500"
           >
-            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-            gentrify, subway tile poke farm-to-table.
+            学艺须刻苦, 三日不练手生. 勤学方可成，勿使两日空.
           </p>
         </div>
-        <div className="flex flex-wrap -m-4">
-          <div
-            data-aos="zoom-in-up"
-            data-aos-duration="3000"
-            className="xl:w-1/3 md:w-1/2 p-4"
-          >
-            <div className="border border-gray-200 p-6 rounded-lg">
-              <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  className="w-6 h-6"
-                  viewBox="0 0 24 24"
+        <div className="px-6 xl:px-0">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 pb-6 gap-8 ">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              role="cell"
+              className="bg-gray-100 transform transition duration-500  hover:scale-110"
+            >
+              <div className="bg-white p-5 rounded-md relative h-full w-full">
+                <span>
+                  <Image
+                    className="bg-gray-200 p-2 mb-5 rounded-full"
+                    src="https://i.ibb.co/27R6nk5/home-1.png"
+                    alt="home-1"
+                    width={50}
+                    height={50}
+                  />
+                </span>
+                <h1 className="pb-4 text-2xl font-semibold">每日打卡</h1>
+                <div className="my-5">
+                  <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12.5"
+                      height="16"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                    <h4 className="text-md text-gray-900 dark:text-gray-100">
+                      每日打卡（信管网或其它app），目的是每天背10道选择真题答案.
+                    </h4>
+                  </div>
+                  <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full space-x-3">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12.5"
+                        height="16"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <h4 className="text-md text-gray-900 dark:text-gray-100">
+                      不要为了打卡而打卡，要积累知识点
+                    </h4>
+                  </div>
+                  <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12.5"
+                        height="16"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">
+                      通过每日打卡，熟悉出题的套路，比如易混淆的概念和知识点
+                    </h4>
+                  </div>
+                  <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12.5"
+                        height="16"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">
+                      善于总结归纳，不要死记硬背
+                    </h4>
+                  </div>
+                </div>
+                <a
+                  className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center"
+                  href="javascript:void(0)"
                 >
-                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                </svg>
+                  <p>详情</p>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="icon icon-tabler icon-tabler-arrow-narrow-right"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="#4338CA"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <line x1="5" y1="12" x2="19" y2="12" />
+                      <line x1="15" y1="16" x2="19" y2="12" />
+                      <line x1="15" y1="8" x2="19" y2="12" />
+                    </svg>
+                  </div>
+                </a>
               </div>
-              <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-                Shooting Stars
-              </h2>
-              <p className="leading-relaxed text-base">
-                Fingerstache flexitarian street art 8-bit waist co, subway tile
-                poke farm.
-              </p>
             </div>
-          </div>
-          <div
-            data-aos="zoom-in-up"
-            data-aos-duration="3000"
-            className="xl:w-1/3 md:w-1/2 p-4"
-          >
-            <div className="border border-gray-200 p-6 rounded-lg">
-              <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  className="w-6 h-6"
-                  viewBox="0 0 24 24"
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              role="cell"
+              className="bg-gray-100 transform transition duration-500  hover:scale-110"
+            >
+              <div className="bg-white p-5 rounded-md relative h-full w-full">
+                <span>
+                  <Image
+                    className="bg-gray-200 p-2 mb-5 rounded-full"
+                    src="https://i.ibb.co/bdGyLYk/pricetags-1.png"
+                    alt="pricetags-1"
+                    width={50}
+                    height={50}
+                  />
+                </span>
+                <h1 className="pb-4 text-2xl font-semibold">每周一文</h1>
+                <div className="my-5">
+                  <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12.5"
+                        height="16"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">
+                      拿出90分钟，手机收起来，用400格原稿纸，真的动笔从头抄到尾，一气呵成.
+                    </h4>
+                  </div>
+                  <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12.5"
+                        height="16"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">
+                      形成自己的论文骨架，把自己的思路写出来，不要拘泥于格式
+                    </h4>
+                  </div>
+                  <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12.5"
+                        height="16"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">
+                      骨架一定要会背(这个在任何时候都是通用的)
+                    </h4>
+                  </div>
+                  <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12.5"
+                        height="16"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">
+                      PIOIS每个都要准备一篇论文模版，并且会背
+                    </h4>
+                  </div>
+                </div>
+                <a
+                  className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center"
+                  href="javascript:void(0)"
                 >
-                  <circle cx="6" cy="6" r="3"></circle>
-                  <circle cx="6" cy="18" r="3"></circle>
-                  <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                </svg>
+                  <p>详情</p>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="icon icon-tabler icon-tabler-arrow-narrow-right"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="#4338CA"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <line x1="5" y1="12" x2="19" y2="12" />
+                      <line x1="15" y1="16" x2="19" y2="12" />
+                      <line x1="15" y1="8" x2="19" y2="12" />
+                    </svg>
+                  </div>
+                </a>
               </div>
-              <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-                The Catalyzer
-              </h2>
-              <p className="leading-relaxed text-base">
-                Fingerstache flexitarian street art 8-bit waist co, subway tile
-                poke farm.
-              </p>
             </div>
-          </div>
-          <div
-            data-aos="zoom-in-up"
-            data-aos-duration="3000"
-            className="xl:w-1/3 md:w-1/2 p-4"
-          >
-            <div className="border border-gray-200 p-6 rounded-lg">
-              <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  className="w-6 h-6"
-                  viewBox="0 0 24 24"
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              role="cell"
+              className="bg-gray-100 transform transition duration-500  hover:scale-110"
+            >
+              <div className="bg-white p-5 rounded-md relative h-full w-full">
+                <span>
+                  <Image
+                    className="bg-gray-200 p-2 mb-5 rounded-full"
+                    src="https://i.ibb.co/GT4KHvJ/card-1.png"
+                    alt="home-1"
+                    width={50}
+                    height={50}
+                  />
+                </span>
+                <h1 className="pb-4 text-2xl font-semibold">随堂考试</h1>
+                <div className="my-5">
+                  <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12.5"
+                        height="16"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">
+                      随堂考试（分数不重要，目的就是认识到自己的差距，一看全会，一落笔很多写不出来）.
+                    </h4>
+                  </div>
+                  <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12.5"
+                        height="16"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">
+                      记得做适合自己的知识总结，不要盲目的做练习
+                    </h4>
+                  </div>
+                </div>
+
+                <a
+                  className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center"
+                  href="javascript:void(0)"
                 >
-                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
+                  <p>详情</p>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="icon icon-tabler icon-tabler-arrow-narrow-right"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="#4338CA"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <line x1="5" y1="12" x2="19" y2="12" />
+                      <line x1="15" y1="16" x2="19" y2="12" />
+                      <line x1="15" y1="8" x2="19" y2="12" />
+                    </svg>
+                  </div>
+                </a>
               </div>
-              <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-                Neptune
-              </h2>
-              <p className="leading-relaxed text-base">
-                Fingerstache flexitarian street art 8-bit waist co, subway tile
-                poke farm.
-              </p>
             </div>
-          </div>
-          <div
-            data-aos="zoom-in-up"
-            data-aos-duration="3000"
-            className="xl:w-1/3 md:w-1/2 p-4"
-          >
-            <div className="border border-gray-200 p-6 rounded-lg">
-              <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  className="w-6 h-6"
-                  viewBox="0 0 24 24"
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              role="cell"
+              className="bg-gray-100 transform transition duration-500  hover:scale-110"
+            >
+              <div className="bg-white p-5 rounded-md h-full relative w-full">
+                <span>
+                  <Image
+                    className="bg-gray-200 p-2 mb-5 rounded-full"
+                    src="https://i.ibb.co/rG4r6NJ/notifications-1.png"
+                    alt="home-1"
+                    width={50}
+                    height={50}
+                  />
+                </span>
+                <h1 className="pb-4 text-2xl font-semibold">
+                  反复抄教材上提炼的重点
+                </h1>
+                <div className="my-5">
+                  <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12.5"
+                        height="16"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">
+                      动手才是王道
+                    </h4>
+                  </div>
+                  <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12.5"
+                        height="16"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">
+                      抄写的过程中记得总结，不要单纯的为了抄书而抄书
+                    </h4>
+                  </div>
+                  <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12.5"
+                        height="16"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">
+                      配合思维导图和助记词来优化抄书的复杂度
+                    </h4>
+                  </div>
+                </div>
+                <a
+                  className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center"
+                  href="javascript:void(0)"
                 >
-                  <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
-                </svg>
+                  <p>详情</p>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="icon icon-tabler icon-tabler-arrow-narrow-right"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="#4338CA"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <line x1="5" y1="12" x2="19" y2="12" />
+                      <line x1="15" y1="16" x2="19" y2="12" />
+                      <line x1="15" y1="8" x2="19" y2="12" />
+                    </svg>
+                  </div>
+                </a>
               </div>
-              <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-                Melanchole
-              </h2>
-              <p className="leading-relaxed text-base">
-                Fingerstache flexitarian street art 8-bit waist co, subway tile
-                poke farm.
-              </p>
             </div>
-          </div>
-          <div
-            data-aos="zoom-in-up"
-            data-aos-duration="3000"
-            className="xl:w-1/3 md:w-1/2 p-4"
-          >
-            <div className="border border-gray-200 p-6 rounded-lg">
-              <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  className="w-6 h-6"
-                  viewBox="0 0 24 24"
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              role="cell"
+              className="bg-gray-100 transform transition duration-500  hover:scale-110"
+            >
+              <div className="relative bg-white p-5 rounded-md relative h-full w-full">
+                <span>
+                  <Image
+                    className="bg-gray-200 p-2 mb-5 rounded-full"
+                    src="https://i.ibb.co/HFC1hqn/people-1.png"
+                    alt="home-1"
+                    width={50}
+                    height={50}
+                  />
+                </span>
+                <h1 className="pb-4 text-2xl font-semibold">反复做真题</h1>
+                <div className="my-5">
+                  <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12.5"
+                        height="16"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">
+                      反复做真题，从头到尾，3遍打底儿，最好5遍.
+                    </h4>
+                  </div>
+                  <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12.5"
+                        height="16"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">
+                      做题过程中不要记答案的位置，要记录答案的内容，动笔写起来
+                    </h4>
+                  </div>
+                  <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12.5"
+                        height="16"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">
+                      一定要动手写
+                    </h4>
+                  </div>
+                </div>
+                <a
+                  className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center"
+                  href="javascript:void(0)"
                 >
-                  <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
-                </svg>
+                  <p>详情</p>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="icon icon-tabler icon-tabler-arrow-narrow-right"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="#4338CA"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <line x1="5" y1="12" x2="19" y2="12" />
+                      <line x1="15" y1="16" x2="19" y2="12" />
+                      <line x1="15" y1="8" x2="19" y2="12" />
+                    </svg>
+                  </div>
+                </a>
               </div>
-              <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-                Bunker
-              </h2>
-              <p className="leading-relaxed text-base">
-                Fingerstache flexitarian street art 8-bit waist co, subway tile
-                poke farm.
-              </p>
             </div>
-          </div>
-          <div
-            data-aos="zoom-in-up"
-            data-aos-duration="3000"
-            className="xl:w-1/3 md:w-1/2 p-4"
-          >
-            <div className="border border-gray-200 p-6 rounded-lg">
-              <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  className="w-6 h-6"
-                  viewBox="0 0 24 24"
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              role="cell"
+              className="bg-gray-100 transform transition duration-500  hover:scale-110"
+            >
+              <div className="relative bg-white p-5 rounded-md relative h-full w-full">
+                <span>
+                  <Image
+                    className="bg-gray-200 p-2 mb-5 rounded-full"
+                    src="https://i.ibb.co/QX80fYm/lock-closed-1.png"
+                    alt="home-1"
+                    width={50}
+                    height={50}
+                  />
+                </span>
+                <h1 className="pb-4 text-2xl font-semibold">提前结课</h1>
+                <div className="my-5">
+                  <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12.5"
+                        height="16"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">
+                      提前结课，目的是留出时间，自己还得从头到尾复习（自学、做题、动笔）至少2遍.
+                    </h4>
+                  </div>
+                  <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12.5"
+                        height="16"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">
+                      做到温故知新
+                    </h4>
+                  </div>
+                  <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12.5"
+                        height="16"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">
+                      坚持回顾
+                    </h4>
+                  </div>
+                </div>
+                <a
+                  className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center"
+                  href="javascript:void(0)"
                 >
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                </svg>
+                  <p>详情</p>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="icon icon-tabler icon-tabler-arrow-narrow-right"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="#4338CA"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <line x1="5" y1="12" x2="19" y2="12" />
+                      <line x1="15" y1="16" x2="19" y2="12" />
+                      <line x1="15" y1="8" x2="19" y2="12" />
+                    </svg>
+                  </div>
+                </a>
               </div>
-              <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-                Ramona Falls
-              </h2>
-              <p className="leading-relaxed text-base">
-                Fingerstache flexitarian street art 8-bit waist co, subway tile
-                poke farm.
-              </p>
             </div>
           </div>
         </div>
-        <button
-          data-aos="zoom-in-up"
-          data-aos-duration="3000"
-          className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-        >
-          Button
-        </button>
       </div>
     </section>
   );

@@ -12,16 +12,14 @@ const Feature = () => {
             data-aos-duration="1000"
             className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4"
           >
-            Raw Denim Heirloom Man Braid
+            我们的优势
           </h1>
           <p
             data-aos="fade-down"
             data-aos-duration="1000"
             className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"
           >
-            Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-            taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi
-            pug.
+            精品小班教学，确保针对每一位学员全方位的知识覆盖.
           </p>
           <div className="flex mt-6 justify-center">
             <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
@@ -48,15 +46,13 @@ const Feature = () => {
             </div>
             <div className="flex-grow">
               <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                Shooting Stars
+                课后作业
               </h2>
               <p className="leading-relaxed text-base">
-                Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                banh mi pug VHS try-hard.
+                阶段性的课后作业考试，针对学习掌握情况进行一针见血的点评.
               </p>
               <a className="mt-3 text-indigo-500 inline-flex items-center">
-                Learn More
+                详情
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -93,15 +89,13 @@ const Feature = () => {
             </div>
             <div className="flex-grow">
               <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                The Catalyzer
+                课后答疑
               </h2>
               <p className="leading-relaxed text-base">
-                Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                banh mi pug VHS try-hard.
+                针对性的课后答疑，确保用专业的知识、通俗的话语为你学习路上扫清障碍.
               </p>
               <a className="mt-3 text-indigo-500 inline-flex items-center">
-                Learn More
+                详情
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -138,15 +132,13 @@ const Feature = () => {
             </div>
             <div className="flex-grow">
               <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                Neptune
+                论文指导
               </h2>
               <p className="leading-relaxed text-base">
-                Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                banh mi pug VHS try-hard.
+                周期性论文写作和指导点评，确保考前实现知识点内的论文覆盖.
               </p>
               <a className="mt-3 text-indigo-500 inline-flex items-center">
-                Learn More
+                详情
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -162,13 +154,13 @@ const Feature = () => {
             </div>
           </div>
         </div>
-        <button
+        {/* <button
           data-aos="zoom-in-up"
           data-aos-duration="3000"
           className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
         >
           Button
-        </button>
+        </button> */}
       </div>
     </section>
   );

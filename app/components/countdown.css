@@ -1,0 +1,115 @@
+/* html {
+  background: linear-gradient(#1d1e28 0%, #261c2d 97%, #261a2d 100%);
+  z-index: -20;
+} */
+
+button {
+  padding: 5px;
+}
+
+h1.side-animated-heading {
+  color: #333;
+  font-family: tahoma;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 610px;
+}
+
+h1.side-animated-heading span {
+  font-size: 2rem;
+  margin-left: 2px;
+}
+
+.nav-side-message-box {
+  color: #fc46aa;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  position: absolute;
+  padding-left: 0.5rem;
+  top: 0.2rem;
+  left: 130px;
+  animation: openclose 5s ease-in-out infinite;
+}
+@keyframes openclose {
+  0% {
+    top: 0.2rem;
+    width: 0;
+  }
+
+  5% {
+    width: 0;
+  }
+
+  15% {
+    width: 150px;
+  }
+
+  30% {
+    top: 0.2rem;
+    width: 152px;
+  }
+
+  33% {
+    top: 0.2rem;
+    width: 0;
+  }
+
+  35% {
+    top: 0.2rem;
+    width: 0;
+  }
+
+  38% {
+    top: -4.5rem;
+  }
+
+  48% {
+    top: -4.5rem;
+    width: 250px;
+  }
+
+  62% {
+    top: -4.5rem;
+    width: 250px;
+  }
+
+  66% {
+    top: -4.5rem;
+    width: 0;
+    text-indent: 0;
+  }
+
+  71% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+
+  86% {
+    top: -9rem;
+    width: 450px;
+  }
+
+  95% {
+    top: -9rem;
+    width: 450px;
+  }
+
+  98% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+
+  100% {
+    top: 0;
+    width: 0;
+    text-indent: 0;
+  }
+}

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useScrollPosition } from "../hooks/useScrollPosition";
+import Link from "next/link";
 
 const Header = () => {
   const scrollPosition = useScrollPosition();
@@ -16,9 +17,9 @@ const Header = () => {
       <div className="xl:container m-auto px-6 md:px-12 lg:px-6">
         <div className="flex flex-wrap items-center justify-between gap-6 md:py-3 md:gap-0 lg:py-5">
           <div className="w-full items-center flex justify-between lg:w-auto">
-            <a
+            <Link
               className="flex items-center relative z-10"
-              href="#"
+              href="/"
               aria-label="logo"
             >
               <svg
@@ -34,7 +35,7 @@ const Header = () => {
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
               </svg>
               <span className="ml-3 text-xl">软考通关宝典</span>
-            </a>
+            </Link>
             <label
               htmlFor="hbr"
               className="peer-checked:hamburger block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden"
@@ -52,6 +53,14 @@ const Header = () => {
           <div className="navmenu hidden w-full flex-wrap justify-end items-center mb-16 space-y-8 p-6 border border-gray-100 rounded-3xl shadow-2xl shadow-gray-300/20 bg-white dark:bg-gray-800 lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent lg:w-7/12 lg:shadow-none dark:shadow-none dark:border-gray-700 lg:border-0">
             <div className="text-gray-600 dark:text-gray-300 lg:pr-4">
               <ul className="space-y-6 tracking-wide font-medium text-base lg:text-sm lg:flex lg:space-y-0">
+                <li>
+                  <Link
+                    href="/countdown"
+                    className="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
+                  >
+                    <span>倒计时工具</span>
+                  </Link>
+                </li>
                 <li>
                   <a
                     href="#"

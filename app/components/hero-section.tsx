@@ -5,7 +5,7 @@ import { useAos } from "../hooks/useAos";
 const HeroSection = () => {
   useAos();
   return (
-    <div className="bg-white relative pt-40 pb-20 lg:pt-44 dark:bg-gray-900">
+    <div className="bg-white relative pt-40 pb-20 lg:pt-34 dark:bg-gray-900">
       <div className="relative xl:container m-auto px-6 md:px-12 lg:px-6">
         <h1 className="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-blue-900 text-4xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl dark:text-white">
           专业人士带你 <br className="block" />
@@ -21,7 +21,7 @@ const HeroSection = () => {
               步学习法，历经数年围绕教程大纲精心打磨制作的教程，一对一辅导论文.
             </p>
             <span className="block font-semibold text-gray-500 dark:text-gray-400">
-              授人以鱼，不如授人以渔.
+              我们坚信: 授人以鱼，不如授人以渔.
             </span>
             <div className="grid grid-cols-3 space-x-4 md:space-x-6 md:flex md:justify-center lg:justify-start">
               <a
@@ -39,7 +39,7 @@ const HeroSection = () => {
                     height="128"
                   />
                   <span className="hidden font-medium md:block dark:text-white">
-                    Slack
+                    Bilibili
                   </span>
                 </div>
               </a>
@@ -58,7 +58,7 @@ const HeroSection = () => {
                     height="128"
                   />
                   <span className="hidden font-medium md:block dark:text-white">
-                    Google Chat
+                    微信群
                   </span>
                 </div>
               </a>
@@ -77,13 +77,13 @@ const HeroSection = () => {
                     height="128"
                   />
                   <span className="hidden font-medium md:block dark:text-white">
-                    Zoom
+                    腾讯会议
                   </span>
                 </div>
               </a>
             </div>
 
-            <div className="dark:text-gray-300">
+            {/* <div className="dark:text-gray-300">
               🔥🌟
               <span>Other integrations :</span>
               <a
@@ -98,9 +98,9 @@ const HeroSection = () => {
               >
                 Telegram
               </a>
-            </div>
+            </div> */}
 
-            <div className="pt-12 flex gap-6 lg:gap-12 justify-between grayscale lg:w-2/3">
+            {/* <div className="pt-12 flex gap-6 lg:gap-12 justify-between grayscale lg:w-2/3">
               <Image
                 src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/airbnb.svg"
                 className="h-8 sm:h-10 w-auto lg:h-12"
@@ -129,9 +129,9 @@ const HeroSection = () => {
                 width="128"
                 height="128"
               />
-            </div>
+            </div> */}
           </div>
-          <div className="mt-12 md:mt-0 lg:absolute -right-10 lg:w-7/12">
+          <div className="mt-2 md:mt-0 lg:absolute -right-10 lg:w-7/12">
             <div className="relative w-full">
               <div
                 aria-hidden="true"
@@ -143,8 +143,8 @@ const HeroSection = () => {
                 alt="wath illustration"
                 loading="lazy"
                 width={320}
-                height={690}
-                style={{ height: "690px", width: "100%" }}
+                height={480}
+                style={{ height: "480px", width: "100%" }}
               />
             </div>
           </div>
