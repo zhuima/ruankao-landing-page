@@ -72,8 +72,9 @@ const Header = () => {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://www.bilibili.com/video/BV1Ce411N7pV/"
                     className="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
+                    target="_blank"
                   >
                     <span>在线教程</span>
                   </a>

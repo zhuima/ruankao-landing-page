@@ -94,6 +94,7 @@ const Pricing = () => {
               <Link
                 href="https://www.bilibili.com/video/BV1Ce411N7pV/"
                 className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded"
+                target="_blank"
               >
                 前往
                 <svg
