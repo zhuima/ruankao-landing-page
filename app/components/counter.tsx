@@ -3,10 +3,10 @@ import "./countdown.css";
 import DigitBox from "./digitbox";
 
 interface timeProps {
-  days: number;
-  hours: number;
-  minutes: number;
-  seconds: number;
+  days: string | number;
+  hours: string | number;
+  minutes: string | number;
+  seconds: string | number;
 }
 
 export const Counter = ({ days, hours, minutes, seconds }: timeProps) => {
@@ -15,6 +15,7 @@ export const Counter = ({ days, hours, minutes, seconds }: timeProps) => {
   let minutesFlip = false;
   let secondsFlip = true;
 
+  // @ts-ignore
   if (seconds <= 0 && minutes <= 0 && hours <= 0 && days <= 0) {
     daysFlip = false;
     hoursFlip = false;
@@ -45,19 +46,19 @@ export const Counter = ({ days, hours, minutes, seconds }: timeProps) => {
       daysFlip = true;
     }
   }
-
+  // @ts-ignore
   if (days < 10) {
     days = "0" + days;
   }
-
+  // @ts-ignore
   if (hours < 10) {
     hours = "0" + hours;
   }
-
+  // @ts-ignore
   if (minutes < 10) {
     minutes = "0" + minutes;
   }
-
+  // @ts-ignore
   if (seconds < 10) {
     seconds = "0" + seconds;
   }
