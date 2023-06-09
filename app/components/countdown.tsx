@@ -13,6 +13,7 @@ const CountDown = () => {
   // let countDownDate = new Date().getTime() + timeToDays;
 
   let countDownDate = new Date("2023/11/04").getTime();
+  
   useEffect(() => {
     let updateTime = setInterval(() => {
       let now = new Date().getTime();

@@ -3,10 +3,10 @@ import "./countdown.css";
 import DigitBox from "./digitbox";
 
 interface timeProps {
-  days: number | string;
-  hours: number | string;
-  minutes: number | string;
-  seconds: number | string;
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
 }
 
 export const Counter = ({ days, hours, minutes, seconds }: timeProps) => {
