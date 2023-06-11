@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { useScrollPosition } from "../hooks/useScrollPosition";
 import Link from "next/link";
+import MobileMenu from "./mobile-menu";
 
 const Header = () => {
   const scrollPosition = useScrollPosition();
@@ -15,7 +16,7 @@ const Header = () => {
           : "shadow-none"
       }`}
     >
-      <div className="xl:container m-auto px-6 md:px-12 lg:px-6">
+      <div className="xl:container m-auto px-6 md:px-12 lg:px-6 flex justify-between mt-5">
         <div className="flex flex-wrap items-center justify-between gap-6 md:py-3 md:gap-0 lg:py-5">
           <div className="w-full items-center flex justify-between lg:w-auto">
             <Link
@@ -37,7 +38,7 @@ const Header = () => {
               </svg>
               <span className="ml-3 text-xl">软考通关宝典</span>
             </Link>
-            <label
+            {/* <label
               htmlFor="hbr"
               className="peer-checked:hamburger block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden"
             >
@@ -49,7 +50,8 @@ const Header = () => {
                 aria-hidden="true"
                 className="m-auto mt-2 h-0.5 w-5 rounded bg-gray-900 dark:bg-gray-300 transition duration-300"
               ></div>
-            </label>
+              <MobileMenu />
+            </label> */}
           </div>
           <div className="navmenu hidden w-full flex-wrap justify-end items-center mb-16 space-y-8 p-6 border border-gray-100 rounded-3xl shadow-2xl shadow-gray-300/20 bg-white dark:bg-gray-800 lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent lg:w-7/12 lg:shadow-none dark:shadow-none dark:border-gray-700 lg:border-0">
             <div className="text-gray-600 dark:text-gray-300 lg:pr-4">
@@ -110,6 +112,7 @@ const Header = () => {
             </div>
           </div>
         </div>
+        <MobileMenu />
       </div>
     </header>
   );
