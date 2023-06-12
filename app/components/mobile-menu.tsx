@@ -36,7 +36,7 @@ export default function MobileMenu() {
   });
 
   return (
-    <div className="top-0 transition-shadow md:hidden">
+    <div className="md:hidden">
       {/* Hamburger button */}
       <button
         ref={trigger}
@@ -61,7 +61,7 @@ export default function MobileMenu() {
       <nav
         id="mobile-nav"
         ref={mobileNav}
-        className="absolute top-full z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out mt-3"
+        className="absolute top-full z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out"
         style={
           mobileNavOpen
             ? { maxHeight: mobileNav.current?.scrollHeight, opacity: 1 }
@@ -71,20 +71,38 @@ export default function MobileMenu() {
         <ul className="bg-gray-800 px-4 py-2">
           <li>
             <Link
-              href="/"
-              className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center"
-              onClick={() => setMobileNavOpen(false)}
-            >
-              首页
-            </Link>
-          </li>
-          <li>
-            <Link
               href="/countdown"
               className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out"
               onClick={() => setMobileNavOpen(false)}
             >
-              倒计时页面
+              <span>倒计时工具</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#"
+              className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out"
+              onClick={() => setMobileNavOpen(false)}
+            >
+              <span>知识库</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.bilibili.com/video/BV1Ce411N7pV/"
+              className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out"
+              onClick={() => setMobileNavOpen(false)}
+            >
+              <span>在线教程</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#"
+              className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out"
+              onClick={() => setMobileNavOpen(false)}
+            >
+              <span>教材</span>
             </Link>
           </li>
         </ul>
