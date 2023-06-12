@@ -5,8 +5,8 @@ import Image from "next/image";
 const Content = () => {
   useAos();
   return (
-    <section className="lg:mt-80 text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto">
+    <section className="md:mt-80 text-gray-600 body-font">
+      <div className="container px-5 lg:py-24 mx-auto">
         <div className="flex flex-wrap w-full mb-5 flex-col items-center text-center">
           <h1
             data-aos="fade-down"
@@ -31,7 +31,7 @@ const Content = () => {
               role="cell"
               className="bg-gray-100 transform transition duration-500  hover:scale-110"
             >
-              <div className="bg-white p-5 rounded-md relative h-full w-full">
+              <div className="p-5 rounded-md relative h-full w-full border-2 border-gray-500 hover:border-blue-500 transition-all p-8 flex flex-col">
                 <span>
                   <Image
                     className="bg-gray-200 p-2 mb-5 rounded-full"
@@ -163,7 +163,7 @@ const Content = () => {
               role="cell"
               className="bg-gray-100 transform transition duration-500  hover:scale-110"
             >
-              <div className="bg-white p-5 rounded-md relative h-full w-full">
+              <div className="p-5 rounded-md relative h-full w-full border-2 border-gray-500 hover:border-blue-500 transition-all p-8 flex flex-col">
                 <span>
                   <Image
                     className="bg-gray-200 p-2 mb-5 rounded-full"
@@ -297,7 +297,7 @@ const Content = () => {
               role="cell"
               className="bg-gray-100 transform transition duration-500  hover:scale-110"
             >
-              <div className="bg-white p-5 rounded-md relative h-full w-full">
+              <div className="p-5 rounded-md relative h-full w-full border-2 border-gray-500 hover:border-blue-500 transition-all p-8 flex flex-col">
                 <span>
                   <Image
                     className="bg-gray-200 p-2 mb-5 rounded-full"
@@ -388,7 +388,7 @@ const Content = () => {
               role="cell"
               className="bg-gray-100 transform transition duration-500  hover:scale-110"
             >
-              <div className="bg-white p-5 rounded-md h-full relative w-full">
+              <div className="p-5 rounded-md relative h-full w-full border-2 border-gray-500 hover:border-blue-500 transition-all p-8 flex flex-col">
                 <span>
                   <Image
                     className="bg-gray-200 p-2 mb-5 rounded-full"
@@ -502,7 +502,7 @@ const Content = () => {
               role="cell"
               className="bg-gray-100 transform transition duration-500  hover:scale-110"
             >
-              <div className="relative bg-white p-5 rounded-md relative h-full w-full">
+              <div className="p-5 rounded-md relative h-full w-full border-2 border-gray-500 hover:border-blue-500 transition-all p-8 flex flex-col">
                 <span>
                   <Image
                     className="bg-gray-200 p-2 mb-5 rounded-full"
@@ -614,7 +614,7 @@ const Content = () => {
               role="cell"
               className="bg-gray-100 transform transition duration-500  hover:scale-110"
             >
-              <div className="relative bg-white p-5 rounded-md relative h-full w-full">
+              <div className="p-5 rounded-md relative h-full w-full border-2 border-gray-500 hover:border-blue-500 transition-all p-8 flex flex-col">
                 <span>
                   <Image
                     className="bg-gray-200 p-2 mb-5 rounded-full"
