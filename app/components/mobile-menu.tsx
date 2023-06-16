@@ -36,7 +36,7 @@ export default function MobileMenu() {
   });
 
   return (
-    <div className="md:hidden">
+    <div className="visible my-auto lg:invisible p-2 text-xl text-gray-800 rounded-sm hover:bg-gray-100 active:bg-turbo-gray-100 cursor-pointer">
       {/* Hamburger button */}
       <button
         ref={trigger}

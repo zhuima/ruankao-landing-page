@@ -8,14 +8,14 @@ const Header = () => {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-shadow ${
+      className={`sticky top-0 z-50 transition-shadow  ${
         scrollPosition > 0
-          ? "shadow bg-opacity-70 backdrop-blur-lg backdrop-filter"
+          ? "shadow-2xl shadow-cyan-200/50 bg-opacity-70 backdrop-blur-lg backdrop-filter"
           : "shadow-none"
       }`}
     >
       <div className="xl:container m-auto px-6 md:px-12 lg:px-6">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex flex-row items-center justify-between h-20 w-full">
           {/* Site branding */}
           <div className="shrink-0 mr-4">
             {/* Logo */}
@@ -40,8 +40,10 @@ const Header = () => {
             </Link>
           </div>
 
+          <MobileMenu />
+
           {/* Desktop navigation */}
-          <div className="navmenu hidden w-full flex-wrap justify-end items-center mb-16 space-y-8 p-6 border border-gray-100 rounded-3xl shadow-2xl shadow-gray-300/20 bg-white dark:bg-gray-800 lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent lg:w-7/12 lg:shadow-none dark:shadow-none dark:border-gray-700 lg:border-0">
+          <div className="navmenu hidden w-full flex-wrap justify-end items-center mb-16 space-y-8 p-6 border border-gray-100 rounded-3xl shadow-2xl shadow-gray-300/20 bg-white dark:bg-gray-800 lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent  lg:shadow-none dark:shadow-none dark:border-gray-700 lg:border-0">
             <div className="text-gray-600 dark:text-gray-300 lg:pr-4">
               <ul className="space-y-6 tracking-wide font-medium text-base lg:text-sm lg:flex lg:space-y-0">
                 <li>
@@ -99,8 +101,6 @@ const Header = () => {
               </a>
             </div>
           </div>
-
-          <MobileMenu />
         </div>
       </div>
     </header>
