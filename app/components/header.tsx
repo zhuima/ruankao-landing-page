@@ -46,38 +46,22 @@ const Header = () => {
           <div className="navmenu hidden w-full flex-wrap justify-end items-center mb-16 space-y-8 p-6 border border-gray-100 rounded-3xl shadow-2xl shadow-gray-300/20 bg-white dark:bg-gray-800 lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent  lg:shadow-none dark:shadow-none dark:border-gray-700 lg:border-0">
             <div className="lg:pr-4">
               <ul className="space-y-6 tracking-wide font-medium  lg:text-sm lg:flex lg:space-y-0 [&:not(:hover)>li]:opacity-100 [&>li]:transition-opacity">
-                <li>
-                  <Link
-                    href="/countdown"
-                    className="[&:not(:hover)]:opacity-50 block md:px-4 "
-                  >
-                    倒计时工具
-                  </Link>
+                <li className="[&:not(:hover)]:opacity-50 block md:px-4 ">
+                  <Link href="/countdown">倒计时工具</Link>
                 </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="[&:not(:hover)]:opacity-50  block md:px-4 "
-                  >
-                    知识库
-                  </Link>
+                <li className="[&:not(:hover)]:opacity-50  block md:px-4 ">
+                  <Link href="#">知识库</Link>
                 </li>
-                <li>
+                <li className="[&:not(:hover)]:opacity-50  block md:px-4 ">
                   <Link
                     href="https://www.bilibili.com/video/BV1Ce411N7pV/"
-                    className="[&:not(:hover)]:opacity-50  block md:px-4 "
                     target="_blank"
                   >
                     在线教程
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="[&:not(:hover)]:opacity-50  block md:px-4 "
-                  >
-                    教材
-                  </Link>
+                <li className="[&:not(:hover)]:opacity-50  block md:px-4 ">
+                  <Link href="#">教材</Link>
                 </li>
               </ul>
             </div>
