@@ -40,6 +40,7 @@ const Content = () => {
                     alt="home-1"
                     width={50}
                     height={50}
+                    priority={true}
                   />
                 </span>
                 <h1 className="pb-4 text-2xl font-semibold">每日打卡</h1>
@@ -172,6 +173,7 @@ const Content = () => {
                     alt="pricetags-1"
                     width={50}
                     height={50}
+                    priority={true}
                   />
                 </span>
                 <h1 className="pb-4 text-2xl font-semibold">每周一文</h1>
@@ -306,6 +308,7 @@ const Content = () => {
                     alt="home-1"
                     width={50}
                     height={50}
+                    priority={true}
                   />
                 </span>
                 <h1 className="pb-4 text-2xl font-semibold">随堂考试</h1>
@@ -397,6 +400,7 @@ const Content = () => {
                     alt="home-1"
                     width={50}
                     height={50}
+                    priority={true}
                   />
                 </span>
                 <h1 className="pb-4 text-2xl font-semibold">
@@ -511,6 +515,7 @@ const Content = () => {
                     alt="home-1"
                     width={50}
                     height={50}
+                    priority={true}
                   />
                 </span>
                 <h1 className="pb-4 text-2xl font-semibold">反复做真题</h1>
@@ -623,6 +628,7 @@ const Content = () => {
                     alt="home-1"
                     width={50}
                     height={50}
+                    priority={true}
                   />
                 </span>
                 <h1 className="pb-4 text-2xl font-semibold">提前结课</h1>

@@ -13,6 +13,7 @@ const Heading = () => {
         className="w-full h-full"
         width={480}
         height={480}
+        priority={true}
       />
       <p className="font-['Red Hat Text'] font-semi-bold text-[#8385A9] text-sm text-center">
         欢迎关注二维码

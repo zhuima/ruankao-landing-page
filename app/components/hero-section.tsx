@@ -38,6 +38,7 @@ const HeroSection = () => {
                     loading="lazy"
                     width="128"
                     height="128"
+                    priority={true}
                   />
                   <span className="hidden font-medium md:block dark:text-white">
                     Bilibili
@@ -57,6 +58,7 @@ const HeroSection = () => {
                     loading="lazy"
                     width="128"
                     height="128"
+                    priority={true}
                   />
                   <span className="hidden font-medium md:block dark:text-white">
                     微信群
@@ -76,6 +78,7 @@ const HeroSection = () => {
                     loading="lazy"
                     width="128"
                     height="128"
+                    priority={true}
                   />
                   <span className="hidden font-medium md:block dark:text-white">
                     腾讯会议
@@ -146,6 +149,7 @@ const HeroSection = () => {
                 width={320}
                 height={480}
                 style={{ height: "480px", width: "100%" }}
+                priority={true}
               />
             </div>
           </div>

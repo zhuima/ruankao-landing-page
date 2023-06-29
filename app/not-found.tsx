@@ -51,6 +51,7 @@ const NotFound = () => {
             alt=""
             width={500}
             height={500}
+            priority={true}
           />
         </div>
       </div>
