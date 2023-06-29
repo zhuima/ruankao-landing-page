@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { useAos } from "../hooks/useAos";
 import Image from "next/image";
 const Content = () => {
@@ -130,9 +131,9 @@ const Content = () => {
                     </h4>
                   </div>
                 </div>
-                <a
+                <Link
                   className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center"
-                  href="javascript:void(0)"
+                  href="#"
                 >
                   <p>详情</p>
                   <div>
@@ -154,7 +155,7 @@ const Content = () => {
                       <line x1="15" y1="8" x2="19" y2="12" />
                     </svg>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div
@@ -264,9 +265,9 @@ const Content = () => {
                     </h4>
                   </div>
                 </div>
-                <a
+                <Link
                   className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center"
-                  href="javascript:void(0)"
+                  href="#"
                 >
                   <p>详情</p>
                   <div>
@@ -288,7 +289,7 @@ const Content = () => {
                       <line x1="15" y1="8" x2="19" y2="12" />
                     </svg>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div
@@ -355,9 +356,9 @@ const Content = () => {
                   </div>
                 </div>
 
-                <a
+                <Link
                   className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center"
-                  href="javascript:void(0)"
+                  href="#"
                 >
                   <p>详情</p>
                   <div>
@@ -379,7 +380,7 @@ const Content = () => {
                       <line x1="15" y1="8" x2="19" y2="12" />
                     </svg>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div
@@ -469,9 +470,9 @@ const Content = () => {
                     </h4>
                   </div>
                 </div>
-                <a
+                <Link
                   className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center"
-                  href="javascript:void(0)"
+                  href="#"
                 >
                   <p>详情</p>
                   <div>
@@ -493,7 +494,7 @@ const Content = () => {
                       <line x1="15" y1="8" x2="19" y2="12" />
                     </svg>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div
@@ -581,9 +582,9 @@ const Content = () => {
                     </h4>
                   </div>
                 </div>
-                <a
+                <Link
                   className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center"
-                  href="javascript:void(0)"
+                  href="#"
                 >
                   <p>详情</p>
                   <div>
@@ -605,7 +606,7 @@ const Content = () => {
                       <line x1="15" y1="8" x2="19" y2="12" />
                     </svg>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div
@@ -693,9 +694,9 @@ const Content = () => {
                     </h4>
                   </div>
                 </div>
-                <a
+                <Link
                   className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center"
-                  href="javascript:void(0)"
+                  href="#"
                 >
                   <p>详情</p>
                   <div>
@@ -717,7 +718,7 @@ const Content = () => {
                       <line x1="15" y1="8" x2="19" y2="12" />
                     </svg>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

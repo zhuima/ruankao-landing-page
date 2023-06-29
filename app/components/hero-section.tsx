@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { useAos } from "../hooks/useAos";
 const HeroSection = () => {
@@ -24,7 +25,7 @@ const HeroSection = () => {
               我们坚信: 授人以鱼，不如授人以渔.
             </span>
             <div className="grid grid-cols-3 space-x-4 md:space-x-6 md:flex md:justify-center lg:justify-start">
-              <a
+              <Link
                 aria-label="add to slack"
                 href="#"
                 className="p-4 border border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-full duration-300 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-600/20 dark:hover:border-cyan-300/30"
@@ -42,8 +43,8 @@ const HeroSection = () => {
                     Bilibili
                   </span>
                 </div>
-              </a>
-              <a
+              </Link>
+              <Link
                 aria-label="add to chat"
                 href="#"
                 className="p-4 border border-gray-200 dark:bg-gray-800  dark:border-gray-700 rounded-full duration-300 hover:border-green-400 hover:shadow-lg hover:shadow-lime-600/20 dark:hover:border-green-300/30"
@@ -61,8 +62,8 @@ const HeroSection = () => {
                     微信群
                   </span>
                 </div>
-              </a>
-              <a
+              </Link>
+              <Link
                 aria-label="add to zoom"
                 href="#"
                 className="p-4 border border-gray-200 dark:bg-gray-800  dark:border-gray-700 rounded-full duration-300 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-600/20 dark:hover:border-blue-300/30"
@@ -80,7 +81,7 @@ const HeroSection = () => {
                     腾讯会议
                   </span>
                 </div>
-              </a>
+              </Link>
             </div>
 
             {/* <div className="dark:text-gray-300">

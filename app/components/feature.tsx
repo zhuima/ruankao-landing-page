@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useAos } from "../hooks/useAos";
+import Link from "next/link";
 const Feature = () => {
   useAos();
   return (
@@ -51,7 +52,10 @@ const Feature = () => {
               <p className="leading-relaxed text-base">
                 阶段性的课后作业考试，针对学习掌握情况进行一针见血的点评.
               </p>
-              <a className="mt-3 text-indigo-500 inline-flex items-center">
+              <Link
+                className="mt-3 text-indigo-500 inline-flex items-center"
+                href="#"
+              >
                 详情
                 <svg
                   fill="none"
@@ -64,7 +68,7 @@ const Feature = () => {
                 >
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
           <div
@@ -94,7 +98,10 @@ const Feature = () => {
               <p className="leading-relaxed text-base">
                 针对性的课后答疑，确保用专业的知识、通俗的话语为你学习路上扫清障碍.
               </p>
-              <a className="mt-3 text-indigo-500 inline-flex items-center">
+              <Link
+                className="mt-3 text-indigo-500 inline-flex items-center"
+                href="#"
+              >
                 详情
                 <svg
                   fill="none"
@@ -107,7 +114,7 @@ const Feature = () => {
                 >
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
           <div
@@ -137,7 +144,10 @@ const Feature = () => {
               <p className="leading-relaxed text-base">
                 周期性论文写作和指导点评，确保考前实现知识点内的论文覆盖.
               </p>
-              <a className="mt-3 text-indigo-500 inline-flex items-center">
+              <Link
+                className="mt-3 text-indigo-500 inline-flex items-center"
+                href="#"
+              >
                 详情
                 <svg
                   fill="none"
@@ -150,7 +160,7 @@ const Feature = () => {
                 >
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

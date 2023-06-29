@@ -44,61 +44,61 @@ const Header = () => {
 
           {/* Desktop navigation */}
           <div className="navmenu hidden w-full flex-wrap justify-end items-center mb-16 space-y-8 p-6 border border-gray-100 rounded-3xl shadow-2xl shadow-gray-300/20 bg-white dark:bg-gray-800 lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent  lg:shadow-none dark:shadow-none dark:border-gray-700 lg:border-0">
-            <div className="text-gray-600 dark:text-gray-300 lg:pr-4">
-              <ul className="space-y-6 tracking-wide font-medium text-base lg:text-sm lg:flex lg:space-y-0">
+            <div className="lg:pr-4">
+              <ul className="space-y-6 tracking-wide font-medium  lg:text-sm lg:flex lg:space-y-0 [&:not(:hover)>li]:opacity-100 [&>li]:transition-opacity">
                 <li>
                   <Link
                     href="/countdown"
-                    className="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
+                    className="[&:not(:hover)]:opacity-50 block md:px-4 "
                   >
-                    <span>倒计时工具</span>
+                    倒计时工具
                   </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="#"
-                    className="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
+                    className="[&:not(:hover)]:opacity-50  block md:px-4 "
                   >
-                    <span>知识库</span>
-                  </a>
+                    知识库
+                  </Link>
                 </li>
                 <li>
                   <Link
                     href="https://www.bilibili.com/video/BV1Ce411N7pV/"
-                    className="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
+                    className="[&:not(:hover)]:opacity-50  block md:px-4 "
                     target="_blank"
                   >
-                    <span>在线教程</span>
+                    在线教程
                   </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="#"
-                    className="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
+                    className="[&:not(:hover)]:opacity-50  block md:px-4 "
                   >
-                    <span>教材</span>
-                  </a>
+                    教材
+                  </Link>
                 </li>
               </ul>
             </div>
 
             <div className="w-full space-y-2 border-primary/10 dark:border-gray-700 flex flex-col -ml-1 sm:flex-row lg:space-y-0 md:w-max lg:border-l">
-              <a
+              <Link
                 href="#"
                 className="relative flex h-9 ml-auto items-center justify-center sm:px-6 before:absolute before:inset-0 before:rounded-full focus:before:bg-sky-600/10 dark:focus:before:bg-sky-400/10 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
               >
                 <span className="relative text-sm font-semibold text-primary dark:text-primaryLight">
                   注册
                 </span>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="relative flex h-9 ml-auto items-center justify-center sm:px-6 before:absolute before:inset-0 before:rounded-full before:bg-sky-600 dark:before:bg-sky-400 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
               >
                 <span className="relative text-sm font-semibold text-white dark:text-gray-900">
                   登陆
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
