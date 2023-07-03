@@ -38,7 +38,7 @@ export default function MobileMenu() {
   return (
     <div className="visible my-auto lg:invisible p-2 text-xl text-gray-800 rounded-sm hover:bg-gray-100 active:bg-turbo-gray-100 cursor-pointer">
       {/* Hamburger button */}
-      <button
+      {/* <button
         ref={trigger}
         className={`hamburger ${mobileNavOpen && "active"}`}
         aria-controls="mobile-nav"
@@ -55,6 +55,33 @@ export default function MobileMenu() {
           <rect y="11" width="24" height="2" rx="1" />
           <rect y="18" width="24" height="2" rx="1" />
         </svg>
+      </button> */}
+
+      <button
+        className="relative w-10 h-10 bg-white focus:outline-none"
+        onClick={() => setMobileNavOpen(!mobileNavOpen)}
+      >
+        <span className="sr-only">Open main menu</span>
+        <div className="absolute block w-5 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
+          <span
+            aria-hidden="true"
+            className={`block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out ${
+              mobileNavOpen ? "rotate-45" : "-translate-y-1.5"
+            }`}
+          ></span>
+          <span
+            aria-hidden="true"
+            className={`block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out ${
+              mobileNavOpen && "opacity-0"
+            }`}
+          ></span>
+          <span
+            aria-hidden="true"
+            className={`block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out ${
+              mobileNavOpen ? "-rotate-45" : "translate-y-1.5"
+            }`}
+          ></span>
+        </div>
       </button>
 
       {/*Mobile navigation */}

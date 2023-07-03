@@ -35,7 +35,6 @@ const HeroSection = () => {
                     className="w-6 h-6"
                     src="https://tailus.io/sources/blocks/tech-startup/preview/images/slack.png"
                     alt="slack logo"
-                    loading="lazy"
                     width="128"
                     height="128"
                     priority={true}
@@ -55,7 +54,6 @@ const HeroSection = () => {
                     className="w-6 h-6"
                     src="https://tailus.io/sources/blocks/tech-startup/preview/images/chat.png"
                     alt="chat logo"
-                    loading="lazy"
                     width="128"
                     height="128"
                     priority={true}
@@ -75,7 +73,6 @@ const HeroSection = () => {
                     className="w-6 h-6"
                     src="https://tailus.io/sources/blocks/tech-startup/preview/images/zoom.png"
                     alt="chat logo"
-                    loading="lazy"
                     width="128"
                     height="128"
                     priority={true}
@@ -145,7 +142,6 @@ const HeroSection = () => {
                 src="https://tailus.io/sources/blocks/tech-startup/preview/images/globalization-cuate.svg"
                 className="relative w-full"
                 alt="wath illustration"
-                loading="lazy"
                 width={320}
                 height={480}
                 style={{ height: "480px", width: "100%" }}
