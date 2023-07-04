@@ -77,9 +77,9 @@ const Header = () => {
               </Link>
               <Link
                 href="#"
-                className="relative flex h-9 ml-auto items-center justify-center sm:px-6 before:absolute before:inset-0 before:rounded-full before:bg-sky-600 dark:before:bg-sky-400 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
+                className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
               >
-                <span className="relative text-sm font-semibold text-white dark:text-gray-900">
+                <span className="relative text-sm font-semibold text-white dark:text-gray-900 ">
                   登陆
                 </span>
               </Link>
