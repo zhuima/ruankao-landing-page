@@ -20,6 +20,7 @@
     "eslint-config-next": "13.4.4",
     "formik": "^2.4.1",
     "next": "13.4.4",
+    "nextjs-toploader": "^1.4.2",
     "nodemailer": "^6.9.3",
     "nodemailer-smtp-transport": "^2.7.4",
     "postcss": "8.4.24",
