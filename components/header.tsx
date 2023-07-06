@@ -50,7 +50,7 @@ const Header = () => {
                   <Link href="/countdown">倒计时工具</Link>
                 </li>
                 <li className="[&:not(:hover)]:opacity-50  block md:px-4 ">
-                  <Link href="#">知识库</Link>
+                  <Link href="/docs">知识库</Link>
                 </li>
                 <li className="[&:not(:hover)]:opacity-50  block md:px-4 ">
                   <Link

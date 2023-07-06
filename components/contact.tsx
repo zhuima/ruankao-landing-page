@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import ContactForm from "../components/form";
+import ContactForm from "./form";
 import { useAos } from "../hooks/useAos";
 const Contact = () => {
   useAos();

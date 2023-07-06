@@ -1,5 +1,5 @@
-import CountDown from "../components/countdown";
-import "../components/countdown.css";
+import CountDown from "../../components/countdown";
+import "../../components/countdown.css";
 
 const page = () => {
   return (
