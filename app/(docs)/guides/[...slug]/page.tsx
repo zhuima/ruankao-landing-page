@@ -19,7 +19,7 @@ interface GuidePageProps {
   };
 }
 
-async function getGuideFromParams(params) {
+async function getGuideFromParams(params: any) {
   const slug = params?.slug?.join("/");
   const guide = allGuides.find((guide) => guide.slugAsParams === slug);
 
@@ -96,7 +96,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
         <Mdx code={guide.body.code} />
         <hr className="my-4" />
         <div className="flex justify-center py-6 lg:py-10">
-          <Link href="/guides" className={cn(button({ variant: "ghost" }))}>
+          <Link href="/guides">
             <Icons.chevronLeft className="mr-2 h-4 w-4" />
             See all guides
           </Link>
