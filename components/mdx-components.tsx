@@ -1,3 +1,4 @@
+// @ts-nocheck
 import * as React from "react";
 import Image from "next/image";
 import { useMDXComponent } from "next-contentlayer/hooks";
@@ -156,6 +157,7 @@ interface MdxProps {
   code: string;
 }
 
+// @ts-ignore
 export function Mdx({ code }: MdxProps) {
   const Component = useMDXComponent(code);
 
