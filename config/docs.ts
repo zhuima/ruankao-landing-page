@@ -22,7 +22,6 @@ export const docsConfig: DocsConfig = {
         {
           title: "关于软考",
           href: "/docs/about-ruankao",
-          disabled: true,
         },
                 {
           title: "关于证书",
