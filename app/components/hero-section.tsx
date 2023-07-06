@@ -12,7 +12,10 @@ const HeroSection = () => {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: ["成功上岸.", "一次通关.", "旗开得胜."],
-      typeSpeed: 50,
+      typeSpeed: 200,
+      backSpeed: 300,
+      backDelay: 500,
+      loop: true,
     });
 
     return () => {
