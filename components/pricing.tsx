@@ -241,7 +241,7 @@ const Pricing = () => {
                 企业版
               </h2>
               <h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-                <span>$ ?</span>
+                <span>¥ ?</span>
                 <span className="text-lg ml-1 font-normal text-gray-500">
                   /mo
                 </span>
@@ -353,7 +353,7 @@ const Pricing = () => {
                 定制版
               </h2>
               <h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-                <span>$ ?</span>
+                <span>¥ ?</span>
                 <span className="text-lg ml-1 font-normal text-gray-500">
                   /mo
                 </span>
