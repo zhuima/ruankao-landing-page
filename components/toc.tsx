@@ -31,7 +31,7 @@ export function DashboardTableOfContents({ toc }: TocProps) {
 
   return mounted ? (
     <div className="space-y-2">
-      <p className="font-medium">On This Page</p>
+      <p className="font-medium">页面内容</p>
       <Tree tree={toc} activeItem={activeHeading} />
     </div>
   ) : null;
