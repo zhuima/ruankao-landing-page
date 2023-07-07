@@ -26,7 +26,6 @@ export const docsConfig: DocsConfig = {
                 {
           title: "关于证书",
           href: "/docs/about-ruankao-certificates",
-          disabled: true,
         },
       ],
     },
@@ -166,12 +165,10 @@ export const docsConfig: DocsConfig = {
         {
           title: "关于软考高级",
           href: "/docs/high-level",
-          disabled: true,
         },
         {
           title: "信息系统项目管理师",
-          href: "/docs/high-level/in-progress",
-          disabled: true,
+          href: "/docs/high-level/xxxtxmgls",
         },
         {
           title: "系统分析师",
@@ -190,8 +187,7 @@ export const docsConfig: DocsConfig = {
         },
         {
           title: "系统规划与管理师",
-          href: "/docs/high-level/in-progress",
-          disabled: true,
+          href: "/docs/high-level/xtghygls",
         },
       ],
     },
