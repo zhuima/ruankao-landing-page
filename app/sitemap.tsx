@@ -15,7 +15,7 @@ const URL = "https://ruankao.eu.org";
 
 export default async function sitemap() {
   const routes = [
-    "/",
+    "",
     "/countdown",
     "/docs",
     "/docs/about-ruankao",
