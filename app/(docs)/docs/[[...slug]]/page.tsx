@@ -46,7 +46,7 @@ export async function generateMetadata({
   ogUrl.searchParams.set("mode", "dark");
 
   return {
-    title: doc.title,
+    title: `${doc.title} | 软考知识库 | 软考通关宝典`,
     description: doc.description,
     openGraph: {
       title: doc.title,

@@ -1,5 +1,25 @@
+/*
+ * @Author: zhuima zhuima314@gmail.com
+ * @Date: 2023-06-09 10:11:31
+ * @LastEditors: zhuima zhuima314@gmail.com
+ * @LastEditTime: 2023-07-10 10:23:02
+ * @FilePath: /ruankao-website/app/countdown/page.tsx
+ * @Description:
+ *
+ * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
+ */
+import { Metadata } from "next";
 import CountDown from "../../components/countdown";
 import "../../components/countdown.css";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title:
+      "软考倒计时工具 | 软考倒计时 | 软考通关必备工具 | 软考工具 | 软考知识库 | 软考通关宝典",
+    description:
+      "软考倒计时工具，软考倒计时，软考通关必备工具，软考工具，软考知识库，软考通关宝典",
+  };
+}
 
 const page = () => {
   return (
