@@ -23,6 +23,8 @@ export default async function sitemap() {
     "/docs/high-level",
     "/docs/high-level/xxxtxmgls",
     "/docs/high-level/xtghygls",
+    "/guides",
+    "/guides/tools-recommendation",
   ].map((route) => ({
     url: `${URL}${route}`,
     lastModified: new Date().toISOString(),

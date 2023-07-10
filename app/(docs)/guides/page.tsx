@@ -1,3 +1,13 @@
+/*
+ * @Author: zhuima zhuima314@gmail.com
+ * @Date: 2023-07-06 13:46:06
+ * @LastEditors: zhuima zhuima314@gmail.com
+ * @LastEditTime: 2023-07-10 14:03:38
+ * @FilePath: /ruankao-website/app/(docs)/guides/page.tsx
+ * @Description:
+ *
+ * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
+ */
 import Link from "next/link";
 import { allGuides } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
@@ -6,9 +16,10 @@ import { formatDate } from "../../../lib/utils";
 import { DocsPageHeader } from "../../../components/page-header";
 
 export const metadata = {
-  title: "Guides",
+  title:
+    "软考备考工具 | 软考刷题工具 | 软考刷题小程序 | 软考刷题APP | 软考真题 | 软考知识库 | 软考通关宝典",
   description:
-    "This section includes end-to-end guides for developing Next.js 13 apps.",
+    "软考备考工具，软考刷题工具，软考刷题小程序，软考通关必备工具，软考工具，软考知识库，软考通关宝典",
 };
 
 export default function GuidesPage() {
@@ -21,8 +32,8 @@ export default function GuidesPage() {
   return (
     <div className="py-6 lg:py-10">
       <DocsPageHeader
-        heading="Guides"
-        text="This section includes end-to-end guides for developing Next.js 13 apps."
+        heading="资源 && 工具"
+        text="软考备考试工具推荐、备考计划、备考案例."
       />
       {guides?.length ? (
         <div className="grid gap-4 md:grid-cols-2 md:gap-6">

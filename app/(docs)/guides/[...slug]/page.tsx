@@ -47,7 +47,7 @@ export async function generateMetadata({
   ogUrl.searchParams.set("mode", "dark");
 
   return {
-    title: guide.title,
+    title: `${guide.title} | 软考备考工具 | 软考刷题工具 | 软考刷题小程序 | 软考刷题APP | 软考真题 | 软考知识库 | 软考通关宝典`,
     description: guide.description,
     openGraph: {
       title: guide.title,
@@ -96,9 +96,12 @@ export default async function GuidePage({ params }: GuidePageProps) {
         <Mdx code={guide.body.code} />
         <hr className="my-4" />
         <div className="flex justify-center py-6 lg:py-10">
-          <Link href="/guides">
+          <Link
+            href="/guides"
+            className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background hover:bg-accent hover:text-accent-foreground h-10 py-2 px-4"
+          >
             <Icons.chevronLeft className="mr-2 h-4 w-4" />
-            See all guides
+            查看所有资源
           </Link>
         </div>
       </div>

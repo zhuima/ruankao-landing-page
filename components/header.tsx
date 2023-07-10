@@ -61,7 +61,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="[&:not(:hover)]:opacity-50  block md:px-4 ">
-                  <Link href="#">教材</Link>
+                  <Link href="/guides">资源</Link>
                 </li>
               </ul>
             </div>
