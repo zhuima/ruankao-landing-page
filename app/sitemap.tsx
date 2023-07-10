@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-07 16:33:57
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-07-07 16:35:25
+ * @LastEditTime: 2023-07-10 16:18:06
  * @FilePath: /ruankao-website/app/sitemap.tsx
  * @Description:
  *
@@ -27,7 +27,7 @@ export default async function sitemap() {
     "/guides/tools-recommendation",
   ].map((route) => ({
     url: `${URL}${route}`,
-    lastModified: new Date().toISOString(),
+    // lastModified: new Date().toISOString(),
   }));
 
   return [...routes];
