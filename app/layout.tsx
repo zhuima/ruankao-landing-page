@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-06 15:11:36
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-07-11 10:37:40
+ * @LastEditTime: 2023-07-11 14:26:05
  * @FilePath: /ruankao-website/app/layout.tsx
  * @Description:
  *
@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="zh-CN">
       <body className={inter.className}>
         <NextTopLoader />
         <Header />
