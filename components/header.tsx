@@ -56,6 +56,8 @@ const Header = () => {
                   <Link
                     href="https://www.bilibili.com/video/BV1Ce411N7pV/"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex place-items-baseline items-baseline gap-0.5 pr-0.5 text-[0.95em] leading-none font-semibold text-zinc-800 hover:underline dark:text-zinc-100"
                   >
                     在线教程
                   </Link>
