@@ -2,6 +2,7 @@
 import * as React from "react";
 import Image from "next/image";
 import { useMDXComponent } from "next-contentlayer/hooks";
+import "lightbox.js-react/dist/index.css";
 
 import { cn } from "../lib/utils";
 import { Callout } from "./callout";
