@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-07 16:33:57
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-07-11 13:45:55
+ * @LastEditTime: 2023-07-11 14:58:41
  * @FilePath: /ruankao-website/app/sitemap.ts
  * @Description:
  *
@@ -10,12 +10,10 @@
  */
 // app/sitemap.js
 // https://claritydev.net/blog/nextjs-dynamic-sitemap-pages-app-directory
-import { MetadataRoute } from 'next'
-
 
 const URL = "https://ruankao.eu.org";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap() {
   const routes = [
     "",
     "/countdown",
@@ -29,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/guides/tools-recommendation",
   ].map((route) => ({
     url: `${URL}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date().toISOString().split('T')[0],
   }));
 
   return [...routes];
