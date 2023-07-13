@@ -11,6 +11,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
+import { Analytics } from '@vercel/analytics/react';
 import Header from "../components/header";
 import Footer from "../components/footer";
 import ScrollToTop from "../components/ScrollToTopButton";
@@ -40,6 +41,7 @@ export default function RootLayout({
         <NextTopLoader />
         <Header />
         {children}
+        <Analytics />
         <Footer />
         <ScrollToTop />
       </body>
