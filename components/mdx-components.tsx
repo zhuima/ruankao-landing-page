@@ -64,7 +64,11 @@ const components = {
   ),
   a: ({ className, ...props }) => (
     <a
-      className={cn("font-medium underline underline-offset-4", className)}
+      className={cn(
+        "font-medium underline-offset-4 text-blue-700 dark:text-blue-400 hover:underline active:no-underline sm:hover:text-blue-700 active:text-blue-900 sm:active:text-blue-900",
+        className
+      )}
+      rel="noopener noreferrer"
       {...props}
     />
   ),
