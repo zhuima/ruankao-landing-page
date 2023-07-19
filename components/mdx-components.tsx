@@ -1,11 +1,20 @@
 // @ts-nocheck
+"use client";
 import * as React from "react";
 import Image from "next/image";
+import Zoom from "react-medium-image-zoom";
 import { useMDXComponent } from "next-contentlayer/hooks";
+import "react-medium-image-zoom/dist/styles.css";
 
 import { cn } from "../lib/utils";
 import { Callout } from "./callout";
 import { MdxCard } from "./mdx-card";
+
+const CustomImage = ({ ...props }) => (
+  <Zoom>
+    <Image {...props} />
+  </Zoom>
+);
 
 const components = {
   h1: ({ className, ...props }) => (
@@ -152,7 +161,7 @@ const components = {
       {...props}
     />
   ),
-  Image,
+  Image: CustomImage,
   Callout,
   Card: MdxCard,
 };
