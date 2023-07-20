@@ -24,7 +24,7 @@ const Content = () => {
             学艺须刻苦, 三日不练手生. 勤学方可成，勿使两日空.
           </p>
         </div>
-        <div className="px-6 xl:px-0">
+        <div className=" xl:px-0">
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 pb-6 gap-8 ">
             <div
               data-aos="fade-up"
@@ -32,7 +32,7 @@ const Content = () => {
               role="cell"
               className="bg-gray-100 transform transition duration-500  hover:scale-110"
             >
-              <div className="p-5 rounded-md relative h-full w-full border-2 border-gray-500 hover:border-blue-500 transition-all p-8 flex flex-col">
+              <div className="p-5 rounded-md relative h-full w-full border-2  hover:border-blue-500 transition-all p-8 flex flex-col">
                 <span>
                   <Image
                     className="bg-gray-200 p-2 mb-5 rounded-full"
@@ -46,21 +46,23 @@ const Content = () => {
                 <h1 className="pb-4 text-2xl font-semibold">每日打卡</h1>
                 <div className="my-5">
                   <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full space-x-3">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12.5"
-                      height="16"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12.5"
+                        height="16"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
                     <h4 className="text-md text-gray-900 dark:text-gray-100">
                       每日打卡（信管网或其它app），目的是每天背10道选择真题答案.
                     </h4>
@@ -165,7 +167,7 @@ const Content = () => {
               role="cell"
               className="bg-gray-100 transform transition duration-500  hover:scale-110"
             >
-              <div className="p-5 rounded-md relative h-full w-full border-2 border-gray-500 hover:border-blue-500 transition-all p-8 flex flex-col">
+              <div className="p-5 rounded-md relative h-full w-full border-2  hover:border-blue-500 transition-all p-8 flex flex-col">
                 <span>
                   <Image
                     className="bg-gray-200 p-2 mb-5 rounded-full"
@@ -300,7 +302,7 @@ const Content = () => {
               role="cell"
               className="bg-gray-100 transform transition duration-500  hover:scale-110"
             >
-              <div className="p-5 rounded-md relative h-full w-full border-2 border-gray-500 hover:border-blue-500 transition-all p-8 flex flex-col">
+              <div className="p-5 rounded-md relative h-full w-full border-2  hover:border-blue-500 transition-all p-8 flex flex-col">
                 <span>
                   <Image
                     className="bg-gray-200 p-2 mb-5 rounded-full"
@@ -392,7 +394,7 @@ const Content = () => {
               role="cell"
               className="bg-gray-100 transform transition duration-500  hover:scale-110"
             >
-              <div className="p-5 rounded-md relative h-full w-full border-2 border-gray-500 hover:border-blue-500 transition-all p-8 flex flex-col">
+              <div className="p-5 rounded-md relative h-full w-full border-2  hover:border-blue-500 transition-all p-8 flex flex-col">
                 <span>
                   <Image
                     className="bg-gray-200 p-2 mb-5 rounded-full"
@@ -507,7 +509,7 @@ const Content = () => {
               role="cell"
               className="bg-gray-100 transform transition duration-500  hover:scale-110"
             >
-              <div className="p-5 rounded-md relative h-full w-full border-2 border-gray-500 hover:border-blue-500 transition-all p-8 flex flex-col">
+              <div className="p-5 rounded-md relative h-full w-full border-2  hover:border-blue-500 transition-all p-8 flex flex-col">
                 <span>
                   <Image
                     className="bg-gray-200 p-2 mb-5 rounded-full"
@@ -620,7 +622,7 @@ const Content = () => {
               role="cell"
               className="bg-gray-100 transform transition duration-500  hover:scale-110"
             >
-              <div className="p-5 rounded-md relative h-full w-full border-2 border-gray-500 hover:border-blue-500 transition-all p-8 flex flex-col">
+              <div className="p-5 rounded-md relative h-full w-full border-2  hover:border-blue-500 transition-all p-8 flex flex-col">
                 <span>
                   <Image
                     className="bg-gray-200 p-2 mb-5 rounded-full"
