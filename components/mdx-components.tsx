@@ -3,6 +3,7 @@
 import * as React from "react";
 import Image from "next/image";
 import Zoom from "react-medium-image-zoom";
+import { Chrono } from "react-chrono";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import "react-medium-image-zoom/dist/styles.css";
 
@@ -163,6 +164,7 @@ const components = {
   ),
   Image: CustomImage,
   Callout,
+  Chrono,
   Card: MdxCard,
 };
 

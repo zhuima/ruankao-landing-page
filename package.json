@@ -33,6 +33,7 @@
     "nodemailer-smtp-transport": "^2.7.4",
     "postcss": "8.4.24",
     "react": "18.2.0",
+    "react-chrono": "^2.2.2",
     "react-confetti": "^6.1.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
