@@ -79,3 +79,41 @@
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
+
+@layer components {
+  /* 图片浅容器背景 */
+  .img-loading-bg {
+    @apply bg-neutral-100 dark:bg-neutral-900 transition-[background-color];
+  }
+
+  /* 图片加载中 Spin 效果 */
+  .img-loading-spin {
+    @apply bg-neutral-100 dark:bg-neutral-900 transition-[background-color] before:animate-spin before:absolute motion-reduce:before:relative;
+  }
+
+  /* 基本按钮 */
+  .btn-base {
+    @apply hover:ring-0 sm:hover:bg-neutral-200 dark:sm:hover:bg-neutral-800 active:ring-4 active:ring-offset-2 active:ring-offset-neutral-100 dark:active:ring-offset-black active:ring-blue-600 focus:outline-none focus-visible:ring-4 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-100 dark:focus-visible:ring-offset-black focus-visible:ring-blue-600 transition-[background-color] hover:transition-none dark:hover:transition-none select-none;
+  }
+
+  .btn-md {
+    @apply text-lg p-2 rounded leading-tight;
+  }
+
+  .btn-lg {
+    @apply px-6 py-3 rounded-lg font-medium;
+  }
+
+  .btn-icon {
+    @apply text-lg p-2 rounded;
+  }
+
+  .btn-bg {
+    @apply bg-neutral-100 dark:bg-neutral-900;
+  }
+
+  /* 给非按钮添加 Tab 键聚焦后的 Outline 效果 */
+  .ring-default {
+    @apply focus:outline-none focus-visible:ring-4 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:ring-offset-black focus:ring-blue-600 rounded-md;
+  }
+}

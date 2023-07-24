@@ -1,3 +1,13 @@
+/*
+ * @Author: zhuima zhuima314@gmail.com
+ * @Date: 2023-07-06 14:14:35
+ * @LastEditors: zhuima zhuima314@gmail.com
+ * @LastEditTime: 2023-07-24 11:40:35
+ * @FilePath: /ruankao-website/components/pager.tsx
+ * @Description:
+ *
+ * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
+ */
 import Link from "next/link";
 import { Doc } from "contentlayer/generated";
 
@@ -16,7 +26,7 @@ export function DocsPager({ doc }: DocsPagerProps) {
   }
 
   return (
-    <div className="flex flex-row items-center justify-between">
+    <div className="flex flex-row items-center justify-between mt-5">
       {pager?.prev && (
         <Link
           href={pager.prev.href}

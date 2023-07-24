@@ -2,15 +2,15 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-06-09 10:11:31
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-07-10 10:23:02
+ * @LastEditTime: 2023-07-24 11:31:30
  * @FilePath: /ruankao-website/app/countdown/page.tsx
  * @Description:
  *
  * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
  */
 import { Metadata } from "next";
-import CountDown from "../../components/countdown";
-import "../../components/countdown.css";
+import CountDown from "@/components/countdown";
+import "@/components/countdown.css";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {

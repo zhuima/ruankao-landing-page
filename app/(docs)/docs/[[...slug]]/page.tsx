@@ -1,16 +1,17 @@
 import { notFound } from "next/navigation";
 import { allDocs } from "contentlayer/generated";
 
-import { getTableOfContents } from "../../../../lib/toc";
-import { Mdx } from "../../../../components/mdx-components";
-import { DocsPageHeader } from "../../../../components/page-header";
-import { DocsPager } from "../../../../components/pager";
-import { DashboardTableOfContents } from "../../../../components/toc";
+import DocFooter from "@/components/doc-footer";
+import { getTableOfContents } from "@/lib/toc";
+import { Mdx } from "@/components/mdx-components";
+import { DocsPageHeader } from "@/components/page-header";
+import { DocsPager } from "@/components/pager";
+import { DashboardTableOfContents } from "@/components/toc";
 
 import "../../../mdx.css";
 import { Metadata } from "next";
 
-import { absoluteUrl } from "../../../../lib/utils";
+import { absoluteUrl } from "@/lib/utils";
 
 interface DocPageProps {
   params: {
@@ -98,7 +99,8 @@ export default async function DocPage({ params }: DocPageProps) {
         />
         <Mdx code={doc.body.code} />
         <hr className="my-4 md:my-6" />
-        <DocsPager doc={doc} />
+        <DocFooter pageTitle={doc.title} />
+        <DocsPager doc={doc}  />
       </div>
       <div className="hidden text-sm xl:block">
         <div className="sticky top-16 -mt-10 max-h-[calc(var(--vh)-4rem)] overflow-y-auto pt-10">

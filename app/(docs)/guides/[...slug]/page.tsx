@@ -1,17 +1,17 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { allGuides } from "contentlayer/generated";
-
-import { getTableOfContents } from "../../../../lib/toc";
-import { Icons } from "../../../../components/icons";
-import { Mdx } from "../../../../components/mdx-components";
-import { DocsPageHeader } from "../../../../components/page-header";
-import { DashboardTableOfContents } from "../../../../components/toc";
+import DocFooter from "@/components/doc-footer";
+import { getTableOfContents } from "@/lib/toc";
+import { Icons } from "@/components/icons";
+import { Mdx } from "@/components/mdx-components";
+import { DocsPageHeader } from "@/components/page-header";
+import { DashboardTableOfContents } from "@/components/toc";
 
 import "../../../mdx.css";
 import { Metadata } from "next";
 
-import { absoluteUrl, cn } from "../../../../lib/utils";
+import { absoluteUrl, cn } from "@/lib/utils";
 
 interface GuidePageProps {
   params: {
@@ -104,7 +104,9 @@ export default async function GuidePage({ params }: GuidePageProps) {
             查看所有资源
           </Link>
         </div>
+        <DocFooter pageTitle={guide.title} />
       </div>
+
       <div className="hidden text-sm lg:block">
         <div className="sticky top-16 -mt-10 max-h-[calc(var(--vh)-4rem)] overflow-y-auto pt-10">
           <DashboardTableOfContents toc={toc} />
