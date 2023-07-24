@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 
 export default function CopyPageLink({ pageTitle }) {
-  const copyButton = useRef(null);
+  const copyButton = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     copyButton.current?.addEventListener("click", () => {
