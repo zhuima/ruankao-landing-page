@@ -79,7 +79,6 @@ export const docsConfig: DocsConfig = {
         {
           title: "关于软考中级",
           href: "/docs/mid-level",
-          disabled: true,
         },
         {
           title: "软件评测师",
@@ -169,6 +168,18 @@ export const docsConfig: DocsConfig = {
         {
           title: "信息系统项目管理师",
           href: "/docs/high-level/xxxtxmgls",
+          items: [
+                  {
+          title: "图书推荐",
+          href: "/docs/high-level/documentation/gx/books",
+          disabled: true,
+        },
+                {
+          title: "教程推荐",
+          href: "/docs/high-level/documentation/gx/videos",
+          disabled: true,
+        },
+          ],
         },
         {
           title: "系统分析师",
