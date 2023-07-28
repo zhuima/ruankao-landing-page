@@ -39,7 +39,9 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    ".contentlayer/generated"
+    ".contentlayer/generated",
+    "app/(home)/layout.tsx.bak",
+    "app/layout.tsx.bak"
   ],
   "exclude": [
     "node_modules"

@@ -107,7 +107,7 @@ export default function MobileMenu() {
           </li>
           <li>
             <Link
-              href="#"
+              href="/docs"
               className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out"
               onClick={() => setMobileNavOpen(false)}
             >
@@ -116,7 +116,7 @@ export default function MobileMenu() {
           </li>
           <li>
             <Link
-              href="https://www.bilibili.com/video/BV1Ce411N7pV/"
+              href="/videos"
               className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out"
               onClick={() => setMobileNavOpen(false)}
             >
@@ -125,11 +125,11 @@ export default function MobileMenu() {
           </li>
           <li>
             <Link
-              href="#"
+              href="/guides"
               className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out"
               onClick={() => setMobileNavOpen(false)}
             >
-              <span>教材</span>
+              <span>资源</span>
             </Link>
           </li>
         </ul>

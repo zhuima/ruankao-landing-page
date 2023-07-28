@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-06 15:11:36
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-07-11 14:26:05
+ * @LastEditTime: 2023-07-28 14:05:20
  * @FilePath: /ruankao-website/app/layout.tsx
  * @Description:
  *
@@ -11,7 +11,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import ScrollToTop from "../components/ScrollToTopButton";

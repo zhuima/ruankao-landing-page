@@ -1,3 +1,13 @@
+/*
+ * @Author: zhuima zhuima314@gmail.com
+ * @Date: 2023-06-06 10:41:34
+ * @LastEditors: zhuima zhuima314@gmail.com
+ * @LastEditTime: 2023-07-28 13:53:17
+ * @FilePath: /ruankao-website/components/header.tsx
+ * @Description:
+ *
+ * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
+ */
 "use client";
 import Link from "next/link";
 import MobileMenu from "./mobile-menu";
@@ -53,14 +63,7 @@ const Header = () => {
                   <Link href="/docs">知识库</Link>
                 </li>
                 <li className="[&:not(:hover)]:opacity-50  block md:px-4 ">
-                  <Link
-                    href="https://www.bilibili.com/video/BV1Ce411N7pV/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex place-items-baseline items-baseline gap-0.5 pr-0.5 text-[0.95em] leading-none font-semibold text-zinc-800 hover:underline dark:text-zinc-100"
-                  >
-                    在线教程
-                  </Link>
+                  <Link href="/videos">视频教程</Link>
                 </li>
                 <li className="[&:not(:hover)]:opacity-50  block md:px-4 ">
                   <Link href="/guides">资源</Link>
