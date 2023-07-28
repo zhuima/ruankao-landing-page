@@ -1,3 +1,14 @@
+/*
+ * @Author: zhuima zhuima314@gmail.com
+ * @Date: 2023-07-06 13:45:48
+ * @LastEditors: zhuima zhuima314@gmail.com
+ * @LastEditTime: 2023-07-28 11:58:33
+ * @FilePath: /ruankao-website/app/(docs)/docs/layout.tsx
+ * @Description:
+ *
+ * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
+ */
+
 import { docsConfig } from "@/config/docs";
 import { DocsSidebarNav } from "@/components/sidebar-nav";
 

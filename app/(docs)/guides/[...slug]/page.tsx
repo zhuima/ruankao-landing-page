@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { allGuides } from "contentlayer/generated";
+import Comments from "@/components/comment";
 import DocFooter from "@/components/doc-footer";
 import { getTableOfContents } from "@/lib/toc";
 import { Icons } from "@/components/icons";
@@ -105,6 +106,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
           </Link>
         </div>
         <DocFooter pageTitle={guide.title} />
+        <Comments />
       </div>
 
       <div className="hidden text-sm lg:block">
