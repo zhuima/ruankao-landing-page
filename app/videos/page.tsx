@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-05-10 15:05:55
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-07-28 16:51:20
+ * @LastEditTime: 2023-07-28 16:58:25
  * @FilePath: /ruankao-website/app/videos/page.tsx
  * @Description:
  *
@@ -75,7 +75,7 @@ export default function Page() {
                         {v.author}
                       </p>
                       <div className="text-xs leading-5 text-gray-600">
-                        <time datetime={v.time}>{v.time}</time>
+                        {v.time}
                       </div>
                     </div>
                     <Link
