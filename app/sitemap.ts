@@ -20,11 +20,13 @@ export default async function sitemap() {
     "/docs",
     "/docs/about-ruankao",
     "/docs/about-ruankao-certificates",
+    "/docs/mid-level",
     "/docs/high-level",
     "/docs/high-level/xxxtxmgls",
     "/docs/high-level/xtghygls",
     "/guides",
     "/guides/tools-recommendation",
+    "/videos",
   ].map((route) => ({
     url: `${URL}${route}`,
     lastModified: new Date().toISOString().split('T')[0],
