@@ -99,7 +99,7 @@ export default function MobileMenu() {
           <li>
             <Link
               href="/countdown"
-              className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out"
+              className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-indigo-600 hover:bg-indigo-700 transition duration-150 ease-in-out"
               onClick={() => setMobileNavOpen(false)}
             >
               <span>倒计时工具</span>
@@ -108,7 +108,7 @@ export default function MobileMenu() {
           <li>
             <Link
               href="/docs"
-              className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out"
+              className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-indigo-600 hover:bg-indigo-700 transition duration-150 ease-in-out"
               onClick={() => setMobileNavOpen(false)}
             >
               <span>知识库</span>
@@ -117,16 +117,16 @@ export default function MobileMenu() {
           <li>
             <Link
               href="/videos"
-              className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out"
+              className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-indigo-600 hover:bg-indigo-700 transition duration-150 ease-in-out"
               onClick={() => setMobileNavOpen(false)}
             >
-              <span>在线教程</span>
+              <span>视频教程</span>
             </Link>
           </li>
           <li>
             <Link
               href="/guides"
-              className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out"
+              className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-indigo-600 hover:bg-indigo-700 transition duration-150 ease-in-out"
               onClick={() => setMobileNavOpen(false)}
             >
               <span>资源</span>
