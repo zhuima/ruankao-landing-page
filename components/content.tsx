@@ -136,7 +136,7 @@ const Content = () => {
                 </div>
                 <Link
                   className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center"
-                  href="#"
+                  href="/guides/daily-clock-in"
                 >
                   <p>详情</p>
                   <div>
