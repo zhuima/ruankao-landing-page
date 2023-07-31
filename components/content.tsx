@@ -265,13 +265,13 @@ const Content = () => {
                       </svg>
                     </div>
                     <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">
-                      PIOIS每个都要准备一篇论文模版，并且会背
+                      配套主题每个都要准备一篇论文模版，并且会背
                     </h4>
                   </div>
                 </div>
                 <Link
                   className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center"
-                  href="#"
+                  href="/guides/about-treatises"
                 >
                   <p>详情</p>
                   <div>
