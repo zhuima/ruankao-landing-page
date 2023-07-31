@@ -181,15 +181,15 @@ export const docsConfig: DocsConfig = {
         },
         {
           title: "系统分析师",
-          href: "/docs/high-level/documentation/components",
+          href: "/docs/high-level/xtfxs",
         },
         {
           title: "系统架构设计师",
-          href: "/docs/high-level/documentation/code-blocks",
+          href: "/docs/high-level/xtjgsjs",
         },
         {
           title: "网络规划设计师",
-          href: "/docs/high-level/documentation/style-guide",
+          href: "/docs/high-level/wlghsjs",
         },
         {
           title: "系统规划与管理师",
