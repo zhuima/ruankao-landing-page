@@ -172,29 +172,24 @@ export const docsConfig: DocsConfig = {
                   {
           title: "图书推荐",
           href: "/docs/high-level/documentation/gx/books",
-          disabled: true,
         },
                 {
           title: "教程推荐",
           href: "/docs/high-level/documentation/gx/videos",
-          disabled: true,
         },
           ],
         },
         {
           title: "系统分析师",
           href: "/docs/high-level/documentation/components",
-          disabled: true,
         },
         {
           title: "系统架构设计师",
           href: "/docs/high-level/documentation/code-blocks",
-          disabled: true,
         },
         {
           title: "网络规划设计师",
           href: "/docs/high-level/documentation/style-guide",
-          disabled: true,
         },
         {
           title: "系统规划与管理师",
