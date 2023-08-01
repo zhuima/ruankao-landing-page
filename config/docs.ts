@@ -96,7 +96,7 @@ export const docsConfig: DocsConfig = {
         },
         {
           title: "网络工程师",
-          href: "/docs/mid-level/documentation/style-guide",
+          href: "/docs/mid-level/wlgcs",
         },
         {
           title: "多媒体应用设计师",
@@ -120,7 +120,7 @@ export const docsConfig: DocsConfig = {
         },
                {
           title: "系统集成项目管理工程师",
-          href: "/docs/mid-level/in-progress",
+          href: "/docs/mid-level/xxxtxmgls",
         },
                {
           title: "信息系统监理师",
