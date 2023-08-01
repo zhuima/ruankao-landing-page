@@ -35,7 +35,6 @@ export const docsConfig: DocsConfig = {
         {
           title: "关于软考初级",
           href: "/docs/low-level",
-          disabled: true,
         },
         {
           title: "程序员",
@@ -98,7 +97,6 @@ export const docsConfig: DocsConfig = {
         {
           title: "网络工程师",
           href: "/docs/mid-level/documentation/style-guide",
-          disabled: true,
         },
         {
           title: "多媒体应用设计师",
@@ -123,7 +121,6 @@ export const docsConfig: DocsConfig = {
                {
           title: "系统集成项目管理工程师",
           href: "/docs/mid-level/in-progress",
-          disabled: true,
         },
                {
           title: "信息系统监理师",
