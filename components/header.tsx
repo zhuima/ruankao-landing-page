@@ -57,7 +57,7 @@ const Header = () => {
             <div className="lg:pr-4">
               <ul className="space-y-6 tracking-wide font-medium  lg:text-sm lg:flex lg:space-y-0 [&:not(:hover)>li]:opacity-100 [&>li]:transition-opacity">
                 <li className="[&:not(:hover)]:opacity-50 block md:px-4 ">
-                  <Link href="/countdown">倒计时工具</Link>
+                  <Link href="/countdown">软考倒计时</Link>
                 </li>
                 <li className="[&:not(:hover)]:opacity-50  block md:px-4 ">
                   <Link href="/docs">知识库</Link>
