@@ -12,8 +12,8 @@ import { Callout } from "./callout";
 import { MdxCard } from "./mdx-card";
 
 const CustomImage = ({ ...props }) => (
-  <Zoom>
-    <Image {...props} />
+  <Zoom {...props}>
+    <Image {...props} alt={props.description} />
   </Zoom>
 );
 
