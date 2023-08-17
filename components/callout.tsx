@@ -15,7 +15,7 @@ export function Callout({
   return (
     <div
       className={cn(
-        'flex w-full rounded-lg border-l-[6px] bg-opacity-[15%] px-3 py-8 shadow-md md:p-9',
+        'flex w-full rounded-lg border-l-[6px] bg-opacity-[15%] px-3 py-8 shadow-md',
         {
           'border-[#F87171] bg-[#f871715b]': type === 'danger',
           'border-l-[#F0A92D] bg-[#ddb26952]': type === 'warning',
