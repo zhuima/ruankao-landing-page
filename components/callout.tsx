@@ -25,7 +25,7 @@ export function Callout({
       )}
       {...props}
     >
-      <span class="pr-3">
+      <span className="pr-3">
         <svg
           width="20"
           height="20"
@@ -53,9 +53,9 @@ export function Callout({
         </svg>
       </span>
 
-      <div class="w-full">
+      <div className="w-full">
         <h5
-          class={cn('mb-3 text-base font-semibold', {
+          className={cn('mb-3 text-base font-semibold', {
             'text-[#F87171]': type === 'danger',
             'text-[#F0A92D]': type === 'warning',
             'text-[#00B078]': type === 'success',
