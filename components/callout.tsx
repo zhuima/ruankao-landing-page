@@ -17,10 +17,10 @@ export function Callout({
       className={cn(
         'flex w-full rounded-lg border-l-[6px] bg-opacity-[15%] px-7 py-8 shadow-md md:p-9',
         {
-          'border-[#F87171] bg-[#F87171]': type === 'danger',
-          'border-l-[#F0A92D] bg-[#F0A92D]': type === 'warning',
-          'border-[#009400] bg-[#009400]': type === 'success',
-          'border-l-[#007BC3] bg-[#007BC3]': type === 'info',
+          'border-[#F87171] bg-[#f871715b]': type === 'danger',
+          'border-l-[#F0A92D] bg-[#ddb26952]': type === 'warning',
+          'border-[#009400] bg-[#e6f6e6]': type === 'success',
+          'border-l-[#007BC3] bg-[#7cc3ec67]': type === 'info',
         }
       )}
       {...props}
@@ -40,7 +40,7 @@ export function Callout({
             fill={cn({
               '#F87171': type === 'danger',
               '#F0A92D': type === 'warning',
-              '#00B078': type === 'success',
+              '#009400': type === 'success',
               '#007BC3': type === 'info',
             })}
           ></circle>
@@ -58,7 +58,7 @@ export function Callout({
           className={cn('mb-3 text-base font-semibold', {
             'text-[#F87171]': type === 'danger',
             'text-[#F0A92D]': type === 'warning',
-            'text-[#00B078]': type === 'success',
+            'text-[#009400]': type === 'success',
             'text-[#007BC3]': type === 'info',
           })}
         >
