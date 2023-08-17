@@ -4,16 +4,21 @@
  * @LastEditors: zhuima zhuima314@gmail.com
  * @LastEditTime: 2023-07-11 10:36:18
  * @FilePath: /ruankao-website/next.config.js
- * @Description: 
- * 
- * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved. 
+ * @Description:
+ *
+ * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
  */
 /** @type {import('next').NextConfig} */
 const { withContentlayer } = require("next-contentlayer");
 
 const nextConfig = {
   images: {
-    domains: ["tailus.io", "api.themoviedb.org", "i.ibb.co"],
+    domains: [
+      "tailus.io",
+      "api.themoviedb.org",
+      "i.ibb.co",
+      "img.techrk1688.eu.org",
+    ],
   },
   async rewrites() {
     return [
