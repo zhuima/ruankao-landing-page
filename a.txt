@@ -1,19 +1,3 @@
----
-title: 网络规划设计师专业术语中英对照表
-description: 软考高级网络规划设计师专业术语中英对照表
-date: 2023-08-18 16:33:52
----
-
-<Callout type="success">
-
-莫道桑榆晚，为霞尚满天。
-
-</Callout>
-
-## 语音版
-
-<iframe height=498 width=510 src="https://www.bilibili.com/audio/au4034763?type=1">
-
 ## OSI 参考模型
 
 - 系统网络体系结构(System Network Architecture,SNA)
@@ -336,3 +320,4 @@ date: 2023-08-18 16:33:52
 - 基础设施即服务(Infrastructure as a Service,IaaS)
 - 平台即服务(Platform as a Service,PaaS)
 - 软件即服务(Software as a service,Saas)
+
