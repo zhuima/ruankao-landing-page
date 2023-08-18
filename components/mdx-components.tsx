@@ -13,7 +13,7 @@ import { MdxCard } from "./mdx-card";
 
 const CustomImage = ({ ...props }) => (
   <Zoom {...props}>
-    <Image {...props} alt={props.description} />
+    <Image {...props} alt={props.alt} />
   </Zoom>
 );
 
