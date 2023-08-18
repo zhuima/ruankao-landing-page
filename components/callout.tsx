@@ -1,26 +1,26 @@
-import { cn } from '../lib/utils'
+import { cn } from "../lib/utils";
 
 interface CalloutProps {
-  icon?: string
-  children?: React.ReactNode
-  type?: 'default' | 'warning' | 'danger' | 'success' | 'info'
+  icon?: string;
+  children?: React.ReactNode;
+  type?: "default" | "warning" | "danger" | "success" | "info";
 }
 
 export function Callout({
   children,
   icon,
-  type = 'default',
+  type = "default",
   ...props
 }: CalloutProps) {
   return (
     <div
       className={cn(
-        'flex w-full rounded-lg border-l-[6px] bg-opacity-[15%] px-3 py-8 shadow-md',
+        "my-6 flex w-full rounded-lg border-l-[6px] bg-opacity-[15%] p-4 shadow-md",
         {
-          'border-[#F87171] bg-[#f871715b]': type === 'danger',
-          'border-l-[#F0A92D] bg-[#ddb26952]': type === 'warning',
-          'border-[#009400] bg-[#e6f6e6]': type === 'success',
-          'border-l-[#007BC3] bg-[#7cc3ec67]': type === 'info',
+          "border-[#F87171] bg-[#f871715b]": type === "danger",
+          "border-l-[#F0A92D] bg-[#ddb26952]": type === "warning",
+          "border-[#009400] bg-[#e6f6e6]": type === "success",
+          "border-l-[#007BC3] bg-[#7cc3ec67]": type === "info",
         }
       )}
       {...props}
@@ -38,10 +38,10 @@ export function Callout({
             cy="10"
             r="10"
             fill={cn({
-              '#F87171': type === 'danger',
-              '#F0A92D': type === 'warning',
-              '#009400': type === 'success',
-              '#007BC3': type === 'info',
+              "#F87171": type === "danger",
+              "#F0A92D": type === "warning",
+              "#009400": type === "success",
+              "#007BC3": type === "info",
             })}
           ></circle>
           <path
@@ -55,11 +55,11 @@ export function Callout({
 
       <div className="w-full">
         <h5
-          className={cn('mb-3 text-base font-semibold', {
-            'text-[#F87171]': type === 'danger',
-            'text-[#F0A92D]': type === 'warning',
-            'text-[#009400]': type === 'success',
-            'text-[#007BC3]': type === 'info',
+          className={cn("mb-3 text-base font-semibold", {
+            "text-[#F87171]": type === "danger",
+            "text-[#F0A92D]": type === "warning",
+            "text-[#009400]": type === "success",
+            "text-[#007BC3]": type === "info",
           })}
         >
           TIP
@@ -67,5 +67,5 @@ export function Callout({
         <div>{children}</div>
       </div>
     </div>
-  )
+  );
 }
