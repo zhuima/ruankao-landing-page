@@ -105,7 +105,7 @@ const components = {
   ),
   strong: ({ className, ...props }) => (
     <strong
-      className={cn("text-red-600/100 hover:text-blue-600", className)}
+      className={cn("text-indigo-600/100 hover:text-blue-600", className)}
       {...props}
     />
   ),
