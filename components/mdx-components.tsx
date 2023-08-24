@@ -97,6 +97,12 @@ const components = {
   li: ({ className, ...props }) => (
     <li className={cn("mt-2", className)} {...props} />
   ),
+  strong: ({ className, ...props }) => (
+    <strong
+      className={cn("text-red-600/100 hover:text-blue-600", className)}
+      {...props}
+    />
+  ),
   blockquote: ({ className, ...props }) => (
     <blockquote
       className={cn(
