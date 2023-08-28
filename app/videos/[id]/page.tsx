@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-05-10 15:05:55
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-28 14:15:50
+ * @LastEditTime: 2023-08-28 14:22:54
  * @FilePath: /ruankao-website/app/videos/[id]/page.tsx
  * @Description: https://www.bilibili.com/video/BV1Ce411N7pV/
  *
@@ -30,7 +30,7 @@ export default function Page({ params }) {
   return (
     <div className="flex min-h-screen flex-col">
       <div className="container py-12">
-        <DocsPageHeader heading="视频详情" text="." />
+        <DocsPageHeader heading="视频详情" text=" " />
       </div>
 
       <div className="container">
@@ -99,10 +99,43 @@ export default function Page({ params }) {
             </div>
           </div>
 
+          <div className="pt-10 mt-10 border-t border-gray-200 ">
+            <div className="font-medium leading-6 tracking-wider text-left text-gray-500 uppercase text-md">
+              资源描述
+            </div>
+            <div className="mt-4 text-gray-800">
+              <div className="flex justify-between my-3">
+                <div className="w-full font-medium leading-8 text-gray-500 text-md max-w-xxxs">
+                  讲师
+                </div>
+                <div className="leading-8 text-right max-w-xxs">
+                  {video.author}
+                </div>
+              </div>
+
+              <div className="flex justify-between my-3">
+                <div className="w-full font-medium leading-8 text-gray-500 text-md max-w-xxxs">
+                  标签
+                </div>
+                <div className="leading-8 text-right max-w-xxs">
+                  {video.tag}
+                </div>
+              </div>
+              <div className="flex justify-between my-3">
+                <div className="w-full font-medium leading-8 text-gray-500 text-md max-w-xxxs">
+                  最后更新时间
+                </div>
+                <div className="leading-8 text-right max-w-xxs">
+                  {video.time}
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="w-full max-w-2xl mx-auto mt-16 lg:max-w-none lg:mt-0 lg:col-span-4">
             <div className="pb-5 border-b border-gray-200">
               <h3 className="text-lg font-medium leading-6 text-gray-900">
-                关于 {video.title}
+                关于 {video.title} 资源说明
               </h3>
             </div>
             <div className="py-3 prose text-gray-700 break-words xl:pt-6 xl:pb-0 prose-indigo max-w-none">

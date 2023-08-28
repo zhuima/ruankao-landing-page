@@ -18,6 +18,7 @@ const nextConfig = {
       "api.themoviedb.org",
       "i.ibb.co",
       "img.techrk1688.eu.org",
+      "d1w019qw3bn26k.cloudfront.net",
     ],
   },
   async rewrites() {
