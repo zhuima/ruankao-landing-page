@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-28 14:13:59
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-28 14:06:53
+ * @LastEditTime: 2023-08-28 14:28:40
  * @FilePath: /ruankao-website/config/videos.ts
  * @Description: 
  * 
@@ -16,7 +16,7 @@ const videosData = [
     tag: `系规`,
     author: `马军`,
     time: `2023-05`,
-    imgSrc: 'https://img.techrk1688.eu.org/file/8aa56223421fc5812a825.png',
+    imgSrc: 'https://img.techrk1688.eu.org/file/9b117bff8ddfebf0886c0.png',
     href: 'https://www.bilibili.com/video/BV1Ce411N7pV/',
   },
     {
