@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-05-10 15:05:55
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-28 14:35:35
+ * @LastEditTime: 2023-08-28 14:51:08
  * @FilePath: /ruankao-website/app/videos/[id]/page.tsx
  * @Description: https://www.bilibili.com/video/BV1Ce411N7pV/
  *
@@ -178,6 +178,19 @@ export default function Page({ params }) {
                     <span className="text-md font-medium text-indigo-600 hover:text-indigo-500">
                       {video.time}
                     </span>
+                  </div>
+                </div>
+                <div className="flex justify-between my-3">
+                  <div className="w-full font-medium leading-8 text-gray-500 text-md max-w-xxxs">
+                    Stack
+                  </div>
+                  <div className="leading-8 text-right max-w-xxs">
+                    <Link
+                      className="text-md font-medium text-indigo-600 hover:text-indigo-500"
+                      href="#"
+                    >
+                      Next.js
+                    </Link>
                   </div>
                 </div>
               </div>
