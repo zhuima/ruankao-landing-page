@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-05-10 15:05:55
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-07-28 16:58:25
+ * @LastEditTime: 2023-08-28 13:52:36
  * @FilePath: /ruankao-website/app/videos/page.tsx
  * @Description:
  *
@@ -79,7 +79,8 @@ export default function Page() {
                       </div>
                     </div>
                     <Link
-                      href={v.href}
+                      href={`/videos/${v.id}`}
+                      target="_blank"
                       className="absolute right-4 mx-auto text-white bg-indigo-500 border-0 py-1 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
                     >
                       <span className="relative text-sm font-semibold text-white dark:text-gray-900 ">
