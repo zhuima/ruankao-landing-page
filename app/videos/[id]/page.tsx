@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-05-10 15:05:55
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-28 14:26:40
+ * @LastEditTime: 2023-08-28 14:35:35
  * @FilePath: /ruankao-website/app/videos/[id]/page.tsx
  * @Description: https://www.bilibili.com/video/BV1Ce411N7pV/
  *
@@ -100,6 +100,52 @@ export default function Page({ params }) {
 
             <div className="pt-10 mt-10 border-t border-gray-200 ">
               <div className="font-medium leading-6 tracking-wider text-left text-gray-500 uppercase text-md">
+                资源热度评分
+              </div>
+              <div className="mt-4 space-y-5 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-5 ">
+                <div className="flex items-center font-medium leading-8 tracking-normal text-gray-700 lg:col-span-1 text-md">
+                  <div className="flex items-center justify-center w-8 h-8 mr-4 rounded-md shrink-0 bg-indigo-50">
+                    <svg
+                      className="w-5 h-5 text-indigo-500"
+                      x-description="Heroicon name: check-circle"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>资源热度: {video.new}</div>
+                </div>
+                <div className="flex items-center font-medium leading-8 tracking-normal text-gray-700 lg:col-span-1 text-md">
+                  <div className="flex items-center justify-center w-8 h-8 mr-4 rounded-md shrink-0 bg-indigo-50">
+                    <svg
+                      className="w-5 h-5 text-indigo-500"
+                      x-description="Heroicon name: check-circle"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>资源评分: {video.score}</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="pt-10 mt-10 border-t border-gray-200 ">
+              <div className="font-medium leading-6 tracking-wider text-left text-gray-500 uppercase text-md">
                 资源描述
               </div>
               <div className="mt-4 text-gray-800">
@@ -108,7 +154,9 @@ export default function Page({ params }) {
                     讲师
                   </div>
                   <div className="leading-8 text-right max-w-xxs">
-                    {video.author}
+                    <span className="text-md font-medium text-indigo-600 hover:text-indigo-500">
+                      {video.author}
+                    </span>
                   </div>
                 </div>
 
@@ -117,7 +165,9 @@ export default function Page({ params }) {
                     标签
                   </div>
                   <div className="leading-8 text-right max-w-xxs">
-                    {video.tag}
+                    <span className="text-md font-medium text-indigo-600 hover:text-indigo-500">
+                      {video.tag}
+                    </span>
                   </div>
                 </div>
                 <div className="flex justify-between my-3">
@@ -125,7 +175,9 @@ export default function Page({ params }) {
                     最后更新时间
                   </div>
                   <div className="leading-8 text-right max-w-xxs">
-                    {video.time}
+                    <span className="text-md font-medium text-indigo-600 hover:text-indigo-500">
+                      {video.time}
+                    </span>
                   </div>
                 </div>
               </div>

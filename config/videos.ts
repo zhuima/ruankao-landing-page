@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-28 14:13:59
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-28 14:28:40
+ * @LastEditTime: 2023-08-28 14:37:33
  * @FilePath: /ruankao-website/config/videos.ts
  * @Description: 
  * 
@@ -16,6 +16,8 @@ const videosData = [
     tag: `系规`,
     author: `马军`,
     time: `2023-05`,
+    new: `热`,
+    score: 5,
     imgSrc: 'https://img.techrk1688.eu.org/file/9b117bff8ddfebf0886c0.png',
     href: 'https://www.bilibili.com/video/BV1Ce411N7pV/',
   },
@@ -26,6 +28,8 @@ const videosData = [
     tag: `网规`,
     author: `未知`,
     time: `2023-02`,
+    new: `冷`,
+    score: 2.5,
     imgSrc: 'https://img.techrk1688.eu.org/file/fa44e9283405c2a24cb8d.png',
     href: 'https://www.aliyundrive.com/s/Qzma5AmYg6U',
   },
@@ -36,6 +40,8 @@ const videosData = [
     tag: `系架`,
     author: `未知`,
     time: `2023-02`,
+    new: `冷`,
+    score: 2.5,
     imgSrc: 'https://img.techrk1688.eu.org/file/a5f640f6d8f5f508f6529.png',
     href: 'https://www.aliyundrive.com/s/oESNwsmzy68',
   },
@@ -46,6 +52,8 @@ const videosData = [
     tag: `高项`,
     author: `未知`,
     time: `2023-02`,
+    new: `冷`,
+    score: 2.5,
     imgSrc: 'https://img.techrk1688.eu.org/file/3398460f7e183e4459209.png',
     href: 'https://www.aliyundrive.com/s/MaCMVSxzFvS',
   },
@@ -56,6 +64,9 @@ const videosData = [
     tag: `系分`,
     author: `未知`,
     time: `2023-02`,
+
+    new: `冷`,
+    score: 2.5,
     imgSrc: 'https://img.techrk1688.eu.org/file/31eb6faaf35812d30bcc0.png',
     href: 'https://www.aliyundrive.com/s/uY8EcSZxcBf',
   },
@@ -66,6 +77,8 @@ const videosData = [
     tag: `网工`,
     author: `未知`,
     time: `2023-02`,
+    new: `冷`,
+    score: 2.5,
     imgSrc: 'https://img.techrk1688.eu.org/file/aef373fcfbddeb1529cce.png',
     href: 'https://www.aliyundrive.com/s/USw4S2UgDDR',
   },
@@ -76,6 +89,8 @@ const videosData = [
     tag: `中项`,
     author: `未知`,
     time: `2023-02`,
+    new: `冷`,
+    score: 2.5,
     imgSrc: 'https://img.techrk1688.eu.org/file/ecba580f0e69736dcede9.png',
     href: 'https://www.aliyundrive.com/s/aBMyZMeBs8e',
   },
