@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-05-10 15:05:55
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-28 14:22:54
+ * @LastEditTime: 2023-08-28 14:26:40
  * @FilePath: /ruankao-website/app/videos/[id]/page.tsx
  * @Description: https://www.bilibili.com/video/BV1Ce411N7pV/
  *
@@ -97,36 +97,36 @@ export default function Page({ params }) {
                 获取资源
               </Link>
             </div>
-          </div>
 
-          <div className="pt-10 mt-10 border-t border-gray-200 ">
-            <div className="font-medium leading-6 tracking-wider text-left text-gray-500 uppercase text-md">
-              资源描述
-            </div>
-            <div className="mt-4 text-gray-800">
-              <div className="flex justify-between my-3">
-                <div className="w-full font-medium leading-8 text-gray-500 text-md max-w-xxxs">
-                  讲师
-                </div>
-                <div className="leading-8 text-right max-w-xxs">
-                  {video.author}
-                </div>
+            <div className="pt-10 mt-10 border-t border-gray-200 ">
+              <div className="font-medium leading-6 tracking-wider text-left text-gray-500 uppercase text-md">
+                资源描述
               </div>
+              <div className="mt-4 text-gray-800">
+                <div className="flex justify-between my-3">
+                  <div className="w-full font-medium leading-8 text-gray-500 text-md max-w-xxxs">
+                    讲师
+                  </div>
+                  <div className="leading-8 text-right max-w-xxs">
+                    {video.author}
+                  </div>
+                </div>
 
-              <div className="flex justify-between my-3">
-                <div className="w-full font-medium leading-8 text-gray-500 text-md max-w-xxxs">
-                  标签
+                <div className="flex justify-between my-3">
+                  <div className="w-full font-medium leading-8 text-gray-500 text-md max-w-xxxs">
+                    标签
+                  </div>
+                  <div className="leading-8 text-right max-w-xxs">
+                    {video.tag}
+                  </div>
                 </div>
-                <div className="leading-8 text-right max-w-xxs">
-                  {video.tag}
-                </div>
-              </div>
-              <div className="flex justify-between my-3">
-                <div className="w-full font-medium leading-8 text-gray-500 text-md max-w-xxxs">
-                  最后更新时间
-                </div>
-                <div className="leading-8 text-right max-w-xxs">
-                  {video.time}
+                <div className="flex justify-between my-3">
+                  <div className="w-full font-medium leading-8 text-gray-500 text-md max-w-xxxs">
+                    最后更新时间
+                  </div>
+                  <div className="leading-8 text-right max-w-xxs">
+                    {video.time}
+                  </div>
                 </div>
               </div>
             </div>
