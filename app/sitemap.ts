@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-07 16:33:57
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-07-11 14:58:41
+ * @LastEditTime: 2023-08-29 14:01:41
  * @FilePath: /ruankao-website/app/sitemap.ts
  * @Description:
  *
@@ -30,8 +30,17 @@ export default async function sitemap() {
     '/docs/high-level/xtfxs',
     '/docs/high-level/xtjgsjs',
     '/docs/high-level/wlghsjs',
-    '/guides',
     '/videos',
+    '/videos/10086',
+    '/videos/10087',
+    '/videos/10088',
+    '/videos/10089',
+    '/videos/10090',
+    '/videos/10091',
+    '/videos/10092',
+    '/guides',
+    '/guides/Exam-Preparation-Guide',
+    '/guides/english-chinese-glossary-of-network-planning-designer-terms',
     '/guides/about-the-soft-exam-score',
     '/guides/about-treatises',
     '/guides/repeatedly-practicing-copying-highlights',
