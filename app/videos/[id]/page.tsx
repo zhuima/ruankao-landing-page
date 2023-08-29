@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-05-10 15:05:55
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-28 14:59:06
+ * @LastEditTime: 2023-08-29 10:34:56
  * @FilePath: /ruankao-website/app/videos/[id]/page.tsx
  * @Description: https://www.bilibili.com/video/BV1Ce411N7pV/
  *
@@ -12,6 +12,8 @@ import Image from "next/image";
 import Link from "next/link";
 import videosData from "@/config/videos";
 import { DocsPageHeader } from "@/components/page-header";
+import { Metadata } from "next";
+import { absoluteUrl, cn } from "@/lib/utils";
 
 function filterVideos(videos, id) {
   // console.log("full project data", videos);
@@ -23,14 +25,61 @@ function filterVideos(videos, id) {
   }
 }
 
+export async function generateMetadata({ params }): Promise<Metadata> {
+  const { id } = params;
+  const video = await filterVideos(videosData, id);
+  if (!video) {
+    return {};
+  }
+
+  const url = process.env.NEXT_PUBLIC_APP_URL;
+
+  const ogUrl = new URL(`${video.imgSrc}`);
+  ogUrl.searchParams.set("heading", video.title);
+  ogUrl.searchParams.set("type", "Guide");
+  ogUrl.searchParams.set("mode", "dark");
+
+  return {
+    title: `${video.title} | 软考资源 | 软考真题 | 软考知识库 | 软考视频 | 软考通关宝典`,
+    description: `${video.title}、${video.description}`,
+    openGraph: {
+      title: video.title,
+      description: video.description,
+      type: "article",
+      url: `${url}/videos/${video.id}`,
+      images: [
+        {
+          url: ogUrl.toString(),
+          width: 1200,
+          height: 630,
+          alt: video.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: video.title,
+      description: video.description,
+      images: [ogUrl.toString()],
+    },
+  };
+}
+
+export async function generateStaticParams() {
+  return videosData.map((video) => ({
+    id: video.id.toString(),
+  }));
+}
+
 export default function Page({ params }) {
-  const video = filterVideos(videosData, params.id);
+  const { id } = params;
+  const video = filterVideos(videosData, id);
 
   console.log("videoData", video);
   return (
     <div className="flex min-h-screen flex-col">
-      <div className="container py-12">
-        <DocsPageHeader heading="视频详情" text=" " />
+      <div className="container py-8">
+        <DocsPageHeader heading={`${video.title}资源详情`} text=" " />
       </div>
 
       <div className="container">
@@ -150,7 +199,7 @@ export default function Page({ params }) {
               </div>
               <div className="mt-4 text-gray-800">
                 <div className="flex justify-between my-3">
-                  <div className="w-full font-medium leading-8 text-gray-500 text-md max-w-xxxs">
+                  <div className="w-3/5 font-medium leading-8 text-gray-500 text-md max-w-xxxs">
                     讲师
                   </div>
                   <div className="leading-8 text-right max-w-xxs">
@@ -161,7 +210,7 @@ export default function Page({ params }) {
                 </div>
 
                 <div className="flex justify-between my-3">
-                  <div className="w-full font-medium leading-8 text-gray-500 text-md max-w-xxxs">
+                  <div className="w-3/5 font-medium leading-8 text-gray-500 text-md max-w-xxxs">
                     标签
                   </div>
                   <div className="leading-8 text-right max-w-xxs">
@@ -171,7 +220,7 @@ export default function Page({ params }) {
                   </div>
                 </div>
                 <div className="flex justify-between my-3">
-                  <div className="w-full font-medium leading-8 text-gray-500 text-md max-w-xxxs">
+                  <div className="w-3/5 font-medium leading-8 text-gray-500 text-md max-w-xxxs">
                     最后更新时间
                   </div>
                   <div className="leading-8 text-right max-w-xxs">
@@ -193,6 +242,7 @@ export default function Page({ params }) {
             <div className="py-3 prose text-gray-700 break-words xl:pt-6 xl:pb-0 prose-indigo max-w-none">
               <div className="trix-content">
                 <div>{video.description}</div>
+                所有资源收集来源于网络，如有侵权请联系我们删除。
               </div>
             </div>
           </div>
