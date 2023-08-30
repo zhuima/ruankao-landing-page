@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-05-10 15:05:55
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-30 14:57:29
+ * @LastEditTime: 2023-08-30 15:20:28
  * @FilePath: /ruankao-website/app/videos/[id]/page.tsx
  * @Description: https://www.bilibili.com/video/BV1Ce411N7pV/
  *
@@ -248,9 +248,8 @@ export default function Page({ params }) {
                     height="404"
                     // @ts-ignore
                     width="auto"
-                    className="block w-full rounded-t-xl"
-                    unoptimized
                     alt={video.title}
+                    priority={true}
                   />
                 </div>
                 所有资源收集来源于网络，如有侵权请联系我们删除。
