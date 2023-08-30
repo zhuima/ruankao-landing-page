@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-05-10 15:05:55
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-29 10:34:56
+ * @LastEditTime: 2023-08-30 14:57:29
  * @FilePath: /ruankao-website/app/videos/[id]/page.tsx
  * @Description: https://www.bilibili.com/video/BV1Ce411N7pV/
  *
@@ -242,11 +242,12 @@ export default function Page({ params }) {
             <div className="py-3 prose text-gray-700 break-words xl:pt-6 xl:pb-0 prose-indigo max-w-none">
               <div className="trix-content">
                 <div>{video.description}</div>
-                <div className="mt-6 overflow-hidden bg-gray-100 rounded">
+                <div className="mt-6 overflow-hidden rounded">
                   <Image
                     src={video.rimg}
-                    width="640"
-                    height="150"
+                    height="404"
+                    // @ts-ignore
+                    width="auto"
                     className="block w-full rounded-t-xl"
                     unoptimized
                     alt={video.title}
