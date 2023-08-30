@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-28 14:13:59
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-28 14:39:46
+ * @LastEditTime: 2023-08-30 13:53:39
  * @FilePath: /ruankao-website/config/videos.ts
  * @Description: 
  * 
@@ -20,6 +20,7 @@ const videosData = [
     score: 5,
     imgSrc: 'https://img.techrk1688.eu.org/file/3feeab2ea6edb14f65d62.png',
     href: 'https://www.bilibili.com/video/BV1Ce411N7pV/',
+    rimg: 'https://img.techrk1688.eu.org/file/3505765b79d28a24e1b37.png',
   },
     {
     id: 10087,
@@ -32,6 +33,8 @@ const videosData = [
     score: 2.5,
     imgSrc: 'https://img.techrk1688.eu.org/file/fa44e9283405c2a24cb8d.png',
     href: 'https://www.aliyundrive.com/s/Qzma5AmYg6U',
+    rimg: 'https://img.techrk1688.eu.org/file/bbe6e4511ae32393ff45c.png',
+
   },
       {
     id: 10088,
@@ -44,6 +47,7 @@ const videosData = [
     score: 2.5,
     imgSrc: 'https://img.techrk1688.eu.org/file/a5f640f6d8f5f508f6529.png',
     href: 'https://www.aliyundrive.com/s/oESNwsmzy68',
+    rimg: 'https://img.techrk1688.eu.org/file/819b605aed06ee7470d9f.png',
   },
       {
     id: 10089,
@@ -56,6 +60,7 @@ const videosData = [
     score: 2.5,
     imgSrc: 'https://img.techrk1688.eu.org/file/3398460f7e183e4459209.png',
     href: 'https://www.aliyundrive.com/s/MaCMVSxzFvS',
+    rimg: 'https://img.techrk1688.eu.org/file/2633690b805affc927434.png',
   },
   {
     id: 10090,
@@ -64,11 +69,12 @@ const videosData = [
     tag: `系分`,
     author: `未知`,
     time: `2023-02`,
-
     new: `冷`,
     score: 2.5,
     imgSrc: 'https://img.techrk1688.eu.org/file/31eb6faaf35812d30bcc0.png',
     href: 'https://www.aliyundrive.com/s/uY8EcSZxcBf',
+    rimg: 'https://img.techrk1688.eu.org/file/572202c474922b5a9300a.png',
+
   },
     {
     id: 10091,
@@ -81,6 +87,7 @@ const videosData = [
     score: 2.5,
     imgSrc: 'https://img.techrk1688.eu.org/file/aef373fcfbddeb1529cce.png',
     href: 'https://www.aliyundrive.com/s/USw4S2UgDDR',
+    rimg: 'https://img.techrk1688.eu.org/file/9f92ab90540f9ef722b0f.png',
   },
     {
     id: 10092,
@@ -93,6 +100,7 @@ const videosData = [
     score: 2.5,
     imgSrc: 'https://img.techrk1688.eu.org/file/ecba580f0e69736dcede9.png',
     href: 'https://www.aliyundrive.com/s/aBMyZMeBs8e',
+    rimg: 'https://img.techrk1688.eu.org/file/2b1260860fc46613af789.png',
   },
 ]
 

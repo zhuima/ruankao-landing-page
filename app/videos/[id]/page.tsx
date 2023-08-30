@@ -242,6 +242,16 @@ export default function Page({ params }) {
             <div className="py-3 prose text-gray-700 break-words xl:pt-6 xl:pb-0 prose-indigo max-w-none">
               <div className="trix-content">
                 <div>{video.description}</div>
+                <div className="mt-6 overflow-hidden bg-gray-100 rounded">
+                  <Image
+                    src={video.rimg}
+                    width="640"
+                    height="150"
+                    className="block w-full rounded-t-xl"
+                    unoptimized
+                    alt={video.title}
+                  />
+                </div>
                 所有资源收集来源于网络，如有侵权请联系我们删除。
               </div>
             </div>
