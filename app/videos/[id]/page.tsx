@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-05-10 15:05:55
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-30 15:28:36
+ * @LastEditTime: 2023-08-30 15:37:05
  * @FilePath: /ruankao-website/app/videos/[id]/page.tsx
  * @Description: https://www.bilibili.com/video/BV1Ce411N7pV/
  *
@@ -13,9 +13,7 @@ import Link from "next/link";
 import videosData from "@/config/videos";
 import { DocsPageHeader } from "@/components/page-header";
 import { Metadata } from "next";
-import Zoom from "react-medium-image-zoom";
-import "react-medium-image-zoom/dist/styles.css";
-
+import ZoomImage from "@/components/zoomimage";
 function filterVideos(videos, id) {
   // console.log("full project data", videos);
   const video = videos.find((video) => video.id.toString() === id);
@@ -244,16 +242,14 @@ export default function Page({ params }) {
               <div className="trix-content">
                 <div>{video.description}</div>
                 <div className="mt-6 overflow-hidden rounded">
-                  <Zoom>
-                    <Image
-                      src={video.rimg}
-                      height="404"
-                      // @ts-ignore
-                      width="auto"
-                      alt={video.title}
-                      priority={true}
-                    />
-                  </Zoom>
+                  <ZoomImage
+                    src={video.rimg}
+                    height="404"
+                    // @ts-ignore
+                    width="auto"
+                    alt={video.title}
+                    priority={true}
+                  />
                 </div>
                 所有资源收集来源于网络，如有侵权请联系我们删除。
               </div>
