@@ -58,6 +58,13 @@ export async function GET() {
       guid: `https://ruankao.eu.org${doc.slug}`,
       url: `https://ruankao.eu.org${doc.slug}`,
       date: doc.time ? doc.time : new Date(),
+      custom_elements: [
+        {
+          'content:encoded': {
+            _cdata: `${doc.body.code}`,
+          },
+        },
+      ],
     })
   })
 
