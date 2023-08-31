@@ -70,7 +70,7 @@ const Footer = () => {
         </p>
         <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
           <div
-            className="relative  mt-1 ml-2 shadow-md rounded-md opacity-80 hover:opacity-100 transition-opacity"
+            className="relative  mt-1 ml-2 mr-4 rounded-md opacity-80 hover:opacity-100 transition-opacity"
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
           >
