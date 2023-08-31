@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-05-10 15:05:55
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-31 10:41:53
+ * @LastEditTime: 2023-08-31 10:47:11
  * @FilePath: /ruankao-website/app/videos/[id]/page.tsx
  * @Description: https://www.bilibili.com/video/BV1Ce411N7pV/
  *
@@ -11,7 +11,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import DocFooter from "@/components/doc-footer";
-
+import { Callout } from "@/components/callout";
 import videosData from "@/config/videos";
 import { DocsPageHeader } from "@/components/page-header";
 import { Metadata } from "next";
@@ -253,8 +253,12 @@ export default function Page({ params }) {
                     priority={true}
                   />
                 </div>
-                所有资源收集来源于网络，如有侵权请联系我们删除。
+                <Callout type="danger">
+                  所有资源收集来源于网络，如有侵权请联系我们删除。
+                </Callout>
+
                 <DocFooter pageTitle={video.title} />
+                <hr className="my-4" />
               </div>
             </div>
           </div>
