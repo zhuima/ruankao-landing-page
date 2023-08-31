@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-05-10 15:05:55
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-29 10:15:14
+ * @LastEditTime: 2023-08-31 10:29:39
  * @FilePath: /ruankao-website/app/videos/page.tsx
  * @Description:
  *
@@ -15,8 +15,8 @@ import { DocsPageHeader } from "@/components/page-header";
 
 export const metadata = {
   title:
-    "软考通关宝典 | 软考知识库 | 软考教程 | 软考报名 | 软考成绩 | 软考证书",
-  description: "软考免费优秀好评视频。",
+    "软考备考资料 | 软考通关宝典 | 软考知识库 | 软考教程 | 软考报名 | 软考成绩 | 软考证书",
+  description: "网络市面上当前流出的所有软考资源，软考免费优秀好评视频。",
   keywords: ["免费优秀好评视频", "免费软考视频", "软考视频", "软考视频教程"],
 };
 
