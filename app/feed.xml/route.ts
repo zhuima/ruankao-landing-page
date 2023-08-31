@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-11 10:32:26
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-31 17:22:05
+ * @LastEditTime: 2023-08-31 17:46:24
  * @FilePath: /ruankao-website/app/feed.xml/route.ts
  * @Description: 
  * 
@@ -54,7 +54,7 @@ export async function GET() {
 
 
 
-  return new Response(feed.xml(), {
+  return new Response(feed.xml({ indent: true }), {
     headers: {
       'content-type': 'application/xml'
     }
