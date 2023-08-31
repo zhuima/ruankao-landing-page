@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-05-10 15:05:55
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-31 10:29:39
+ * @LastEditTime: 2023-08-31 10:37:34
  * @FilePath: /ruankao-website/app/videos/page.tsx
  * @Description:
  *
@@ -16,15 +16,27 @@ import { DocsPageHeader } from "@/components/page-header";
 export const metadata = {
   title:
     "软考备考资料 | 软考通关宝典 | 软考知识库 | 软考教程 | 软考报名 | 软考成绩 | 软考证书",
-  description: "网络市面上当前流出的所有软考资源，软考免费优秀好评视频。",
-  keywords: ["免费优秀好评视频", "免费软考视频", "软考视频", "软考视频教程"],
+  description:
+    "网络海量计算机软考备考资源，助你一次通关，包含免费优秀视频资源和文档. ",
+  keywords: [
+    "软考备考资料",
+    "软考备考视频",
+    "软考最新视频",
+    "免费优秀好评视频",
+    "免费软考视频",
+    "软考视频",
+    "软考视频教程",
+  ],
 };
 
 export default function Page() {
   return (
     <div className="flex min-h-screen flex-col">
       <div className="container py-12">
-        <DocsPageHeader heading="推荐视频" text="免费优秀视频推荐." />
+        <DocsPageHeader
+          heading="推荐视频"
+          text="网络海量计算机软考备考资源，助你一次通关，包含免费优秀视频资源和文档. "
+        />
       </div>
       <div className="container">
         <section className="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
