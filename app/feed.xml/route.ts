@@ -24,7 +24,7 @@ export async function GET() {
     image_url: 'https://ruankao.eu.org/opengraph-image.png', // 放一个叫 opengraph-image.png 的1200x630尺寸的图片到你的 app 目录下即可
     generator: 'RuanKao', // 想写什么就写什么，也可以不提供
     pubDate: new Date(),
-    copyright: `${new Date().getFullYear()} zhuima`,
+    copyright: `&copy; {new Date().getFullYear().toString()} by zhuima`,
   })
 
   videoData.forEach((video) => {
@@ -58,13 +58,6 @@ export async function GET() {
       guid: `https://ruankao.eu.org${doc.slug}`,
       url: `https://ruankao.eu.org${doc.slug}`,
       date: doc.time ? doc.time : new Date(),
-      custom_elements: [
-        {
-          'content:encoded': {
-            _cdata: `${doc.body.code}`,
-          },
-        },
-      ],
     })
   })
 

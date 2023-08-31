@@ -1,8 +1,9 @@
-"use client";
-import React, { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import wechat from "../assets/wechat.jpg";
+'use client'
+import React, { useState } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import wechat from '../assets/wechat.jpg'
+import { MdRssFeed } from 'react-icons/md'
 
 const Heading = () => {
   return (
@@ -22,19 +23,19 @@ const Heading = () => {
         获取更多资料
       </p>
     </div>
-  );
-};
+  )
+}
 
 const Footer = () => {
-  const [isHovering, setIsHovering] = useState(false);
+  const [isHovering, setIsHovering] = useState(false)
 
   const handleMouseOver = () => {
-    setIsHovering(true);
-  };
+    setIsHovering(true)
+  }
 
   const handleMouseOut = () => {
-    setIsHovering(false);
-  };
+    setIsHovering(false)
+  }
   return (
     <footer className="text-gray-600 body-font">
       <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
@@ -91,6 +92,9 @@ const Footer = () => {
               <path d="M8.008 4.102c-2.852 0 -5.157 1.953 -5.157 4.336 0 1.289 0.664 2.461 1.758 3.243 0.117 0.078 0.195 0.195 0.157 0.391L4.492 13.008c-0.039 0.195 0.117 0.273 0.234 0.234l1.172 -0.664c0.117 -0.078 0.273 -0.117 0.43 -0.078 1.016 0.313 1.875 0.234 1.993 0.234 -0.938 -3.282 2.305 -5.157 4.805 -5 -0.391 -2.032 -2.539 -3.633 -5.118 -3.633M6.288 7.734a0.703 0.703 0 1 1 0 -1.368 0.703 0.703 0 0 1 0 1.368m3.477 0a0.703 0.703 0 1 1 0 -1.368 0.703 0.703 0 0 1 0 1.368" />
             </svg>
             {isHovering && <Heading />}
+            <Link href="/feed.xml" rel="noreferrer" target="_blank">
+              <MdRssFeed color="#ee802f" size="30px" />
+            </Link>
           </div>
           {/* <a className="text-gray-500">
             <svg
@@ -150,7 +154,7 @@ const Footer = () => {
         </span>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
