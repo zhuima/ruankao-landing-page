@@ -25,7 +25,7 @@ const videosData = [
     {
     id: 10087,
     title: '网络规划设计师',
-    description: `网络搜索到的网络规划设计师教程，大家可以参考下`,
+    description: `网络搜索到的网络规划设计师教程`,
     tag: `网规`,
     author: `未知`,
     time: `2023-02`,
@@ -39,7 +39,7 @@ const videosData = [
       {
     id: 10088,
     title: '系统架构师',
-    description: `网络搜索到的系统架构师教程，大家可以参考下`,
+    description: `网络搜索到的系统架构师教程`,
     tag: `系架`,
     author: `未知`,
     time: `2023-02`,
@@ -52,7 +52,7 @@ const videosData = [
       {
     id: 10089,
     title: '信息系统项目管理师',
-    description: `网络搜索到的信息系统项目管理师教程，大家可以参考下`,
+    description: `网络搜索到的信息系统项目管理师教程`,
     tag: `高项`,
     author: `未知`,
     time: `2023-02`,
@@ -65,7 +65,7 @@ const videosData = [
   {
     id: 10090,
     title: '系统分析师',
-    description: `网络搜索到的系统分析师教程，大家可以参考下`,
+    description: `网络搜索到的系统分析师教程`,
     tag: `系分`,
     author: `未知`,
     time: `2023-02`,
@@ -79,7 +79,7 @@ const videosData = [
     {
     id: 10091,
     title: '网络工程师',
-    description: `网络搜索到的网络工程师教程，大家可以参考下`,
+    description: `网络搜索到的网络工程师教程`,
     tag: `网工`,
     author: `未知`,
     time: `2023-02`,
@@ -92,7 +92,7 @@ const videosData = [
     {
     id: 10092,
     title: '系统集成项目管理工程师',
-    description: `网络搜索到的系统集成项目管理工程师教程，大家可以参考下`,
+    description: `网络搜索到的系统集成项目管理工程师教程`,
     tag: `中项`,
     author: `未知`,
     time: `2023-02`,

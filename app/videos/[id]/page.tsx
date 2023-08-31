@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-05-10 15:05:55
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-31 10:47:11
+ * @LastEditTime: 2023-08-31 10:49:49
  * @FilePath: /ruankao-website/app/videos/[id]/page.tsx
  * @Description: https://www.bilibili.com/video/BV1Ce411N7pV/
  *
@@ -135,7 +135,7 @@ export default function Page({ params }) {
             </div>
 
             <p className="mt-6 leading-relaxed text-gray-700 text-17px">
-              {video.description}
+              {video.description} 资源热度: {video.new} 资源评分: {video.score}
             </p>
 
             <div className="grid grid-cols-1 mt-10 gap-x-6 gap-y-4 sm:grid-cols-2">
@@ -242,7 +242,10 @@ export default function Page({ params }) {
             </div>
             <div className="py-3 prose text-gray-700 break-words xl:pt-6 xl:pb-0 prose-indigo max-w-none">
               <div className="trix-content">
-                <div>{video.description}</div>
+                <Callout type="danger">
+                  所有资源收集来源于网络，如有侵权请联系我们删除。
+                </Callout>
+                <div>{video.description}, 资源详情如下图所示: </div>
                 <div className="mt-6 overflow-hidden rounded">
                   <ZoomImage
                     src={video.rimg}
@@ -253,9 +256,6 @@ export default function Page({ params }) {
                     priority={true}
                   />
                 </div>
-                <Callout type="danger">
-                  所有资源收集来源于网络，如有侵权请联系我们删除。
-                </Callout>
 
                 <DocFooter pageTitle={video.title} />
                 <hr className="my-4" />
