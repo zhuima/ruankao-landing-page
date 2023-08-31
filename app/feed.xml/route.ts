@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-11 10:32:26
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-31 17:16:01
+ * @LastEditTime: 2023-08-31 17:22:05
  * @FilePath: /ruankao-website/app/feed.xml/route.ts
  * @Description: 
  * 
@@ -38,7 +38,7 @@ export async function GET() {
     feed.item({
     title: guide.title,
     description: guide.description ? guide.description : `资源介绍文档 | ${guide.title}`,
-    url: `https://ruankao.eu.org/guides/${guide.slug}`,
+    url: `https://ruankao.eu.org${guide.slug}`,
     date: guide.date,
     });
   });
@@ -47,7 +47,7 @@ export async function GET() {
     feed.item({
     title: doc.title,
     description: doc.description ? doc.description : `知识库文档 | ${doc.title}`,
-    url: `https://ruankao.eu.org/docs/${doc.slug}`,
+    url: `https://ruankao.eu.org${doc.slug}`,
     date: doc.time ? doc.time : new Date(),
     });
   });
