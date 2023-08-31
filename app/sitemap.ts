@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-07 16:33:57
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-31 18:03:14
+ * @LastEditTime: 2023-08-31 18:58:52
  * @FilePath: /ruankao-website/app/sitemap.ts
  * @Description:
  *
@@ -16,12 +16,6 @@ import { allDocs } from "contentlayer/generated";
 
 const URL = 'https://ruankao.eu.org'
 
-
-
-
-
-
-  
 export default async function sitemap() {
   const links: string[] = [];
 
@@ -79,6 +73,9 @@ export default async function sitemap() {
   //   '/guides/which-subject-to-take',
   //   '/guides/tools-recommendation',
   // ]
+  ['', '/countdown', '/videos'].map((item) => {links.push(item)})
+
+  links.push()
   const routes = links.map((route) => ({
     url: `${URL}${route}`,
     lastModified: new Date().toISOString().split('T')[0],
