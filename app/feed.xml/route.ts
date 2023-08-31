@@ -2,13 +2,14 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-11 10:32:26
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-31 15:53:32
+ * @LastEditTime: 2023-08-31 15:58:20
  * @FilePath: /ruankao-website/app/feed.xml/route.ts
  * @Description: 
  * 
  * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved. 
  */
 import RSS from 'rss'
+import videoData from "@/config/videos"
 
 export async function GET() {
   const feed = new RSS({
@@ -21,7 +22,17 @@ export async function GET() {
     generator: 'RuanKao', // 想写什么就写什么，也可以不提供
     pubDate: new Date(),
   })
- 
+
+  videoData.forEach((video) => {
+    feed.item({
+    title: video.title,
+    description: video.description,
+    url: `https://ruankao.eu.org/videos/${video.id}`,
+    date: new Date(),
+    });
+  });
+
+
   return new Response(feed.xml(), {
     headers: {
       'content-type': 'application/xml'
