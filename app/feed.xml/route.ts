@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-11 10:32:26
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-31 15:58:20
+ * @LastEditTime: 2023-08-31 17:03:18
  * @FilePath: /ruankao-website/app/feed.xml/route.ts
  * @Description: 
  * 
@@ -18,7 +18,7 @@ export async function GET() {
     site_url: 'https://ruankao.eu.org/', // 你的网站域名
     feed_url: 'https://ruankao.eu.org/feed.xml', // 尽可能用绝对 URL
     language: 'zh-CN', // 网站语言代码
-    image_url: 'https://img.techrk1688.eu.org/opengraph-image.png', // 放一个叫 opengraph-image.png 的1200x630尺寸的图片到你的 app 目录下即可
+    image_url: 'https://ruankao.eu.org/opengraph-image.png', // 放一个叫 opengraph-image.png 的1200x630尺寸的图片到你的 app 目录下即可
     generator: 'RuanKao', // 想写什么就写什么，也可以不提供
     pubDate: new Date(),
   })
