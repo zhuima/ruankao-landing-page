@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-11 10:32:26
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-31 17:03:18
+ * @LastEditTime: 2023-08-31 17:16:01
  * @FilePath: /ruankao-website/app/feed.xml/route.ts
  * @Description: 
  * 
@@ -10,6 +10,8 @@
  */
 import RSS from 'rss'
 import videoData from "@/config/videos"
+import { allGuides } from "contentlayer/generated";
+import { allDocs } from "contentlayer/generated";
 
 export async function GET() {
   const feed = new RSS({
@@ -31,6 +33,25 @@ export async function GET() {
     date: new Date(),
     });
   });
+
+  allGuides.forEach((guide) => {
+    feed.item({
+    title: guide.title,
+    description: guide.description ? guide.description : `资源介绍文档 | ${guide.title}`,
+    url: `https://ruankao.eu.org/guides/${guide.slug}`,
+    date: guide.date,
+    });
+  });
+
+    allDocs.forEach((doc) => {
+    feed.item({
+    title: doc.title,
+    description: doc.description ? doc.description : `知识库文档 | ${doc.title}`,
+    url: `https://ruankao.eu.org/docs/${doc.slug}`,
+    date: doc.time ? doc.time : new Date(),
+    });
+  });
+
 
 
   return new Response(feed.xml(), {

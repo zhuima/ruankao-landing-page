@@ -103,59 +103,58 @@ export const docsConfig: DocsConfig = {
           href: "/docs/mid-level/in-progress",
           disabled: true,
         },
-               {
+        {
           title: "嵌入式设计师",
           href: "/docs/mid-level/in-progress",
           disabled: true,
         },
-               {
+        {
           title: "计算机辅助设计师",
           href: "/docs/mid-level/in-progress",
           disabled: true,
         },
-               {
+        {
           title: "电子商务师",
           href: "/docs/mid-level/in-progress",
           disabled: true,
         },
-               {
+        {
           title: "系统集成项目管理工程师",
           href: "/docs/mid-level/xxxtxmgls",
         },
-               {
+        {
           title: "信息系统监理师",
           href: "/docs/mid-level/in-progress",
           disabled: true,
         },
-               {
+        {
           title: "信息安全工程师",
           href: "/docs/mid-level/in-progress",
           disabled: true,
         },
-               {
+        {
           title: "数据库系统工程师",
           href: "/docs/mid-level/in-progress",
           disabled: true,
         },
-               {
+        {
           title: "信息系统管理工程师",
           href: "/docs/mid-level/in-progress",
           disabled: true,
         },
-                       {
+        {
           title: "计算机硬件工程师",
           href: "/docs/mid-level/in-progress",
           disabled: true,
         },
-                       {
+        {
           title: "信息技术支持工程师",
           href: "/docs/mid-level/in-progress",
           disabled: true,
         },
-   
       ],
     },
-        {
+    {
       title: "软考高级",
       items: [
         {
@@ -165,16 +164,6 @@ export const docsConfig: DocsConfig = {
         {
           title: "信息系统项目管理师",
           href: "/docs/high-level/xxxtxmgls",
-          items: [
-                  {
-          title: "图书推荐",
-          href: "/docs/high-level/documentation/gx/books",
-        },
-                {
-          title: "教程推荐",
-          href: "/docs/high-level/documentation/gx/videos",
-        },
-          ],
         },
         {
           title: "系统分析师",
@@ -194,6 +183,5 @@ export const docsConfig: DocsConfig = {
         },
       ],
     },
-   
   ],
 }
