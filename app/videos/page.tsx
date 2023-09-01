@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-05-10 15:05:55
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-31 10:37:34
+ * @LastEditTime: 2023-09-01 11:05:56
  * @FilePath: /ruankao-website/app/videos/page.tsx
  * @Description:
  *
@@ -45,7 +45,7 @@ export default function Page() {
               key={v.id}
               className="group mx-auto w-full max-w-md transform cursor-pointer rounded-b-xl shadow-xl duration-500 hover:-translate-y-2"
             >
-              <div className="flex flex-col overflow-hidden rounded-lg shadow-lg">
+              <div className="relative h-full w-full flex flex-col overflow-hidden rounded-lg shadow-lg">
                 <div className="relative flex-shrink-0">
                   <Image
                     src={v.imgSrc}
@@ -63,22 +63,15 @@ export default function Page() {
                 <div className="flex flex-col justify-between flex-1">
                   <div className="flex flex-col justify-between flex-1 p-6 bg-white">
                     <div>
-                      <a
-                        href="#"
-                        className="block text-xl font-semibold leading-7 text-gray-900"
-                      >
-                        {v.title}
-                      </a>
+                      {v.title}
                       <p className="mt-3 text-base leading-6 text-gray-500">
                         {v.description}
                       </p>
                     </div>
                     <p className="mt-3 text-sm font-medium leading-5">
-                      <a href="#" className="inline-block">
-                        <span className="inline-flex items-center px-3 py-1 text-xs font-medium leading-tight text-blue-800 bg-blue-100 rounded-full">
-                          #{v.tag}
-                        </span>
-                      </a>
+                      <span className="inline-flex items-center px-3 py-1 text-xs font-medium leading-tight text-blue-800 bg-blue-100 rounded-full">
+                        #{v.tag}
+                      </span>
                     </p>
                   </div>
                   <div className="flex items-center p-6 bg-gray-100 relative">
