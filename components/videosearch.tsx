@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-05-10 15:05:55
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-09-01 14:58:55
+ * @LastEditTime: 2023-09-01 15:04:17
  * @FilePath: /ruankao-website/components/videosearch.tsx
  * @Description:
  *
@@ -68,9 +68,9 @@ export default function VideoSearch() {
           placeholder="Press (CTRL + /) to search... "
         />
       </div>
-      <section className="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-        {filteredVideos.length != 0 ? (
-          filteredVideos.map((v) => (
+      {filteredVideos.length != 0 ? (
+        <section className="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+          {filteredVideos.map((v) => (
             <article
               key={v.id}
               className="group mx-auto w-full max-w-md transform cursor-pointer rounded-b-xl shadow-xl duration-500 hover:-translate-y-2"
@@ -127,13 +127,13 @@ export default function VideoSearch() {
                 </div>
               </div>
             </article>
-          ))
-        ) : (
-          <div className="font-inter text-center font-medium dark:text-gray-400">
-            未匹配到对应信息
-          </div>
-        )}
-      </section>
+          ))}
+        </section>
+      ) : (
+        <div className="font-inter text-center font-medium dark:text-gray-400">
+          未匹配到对应信息
+        </div>
+      )}
     </div>
   );
 }
