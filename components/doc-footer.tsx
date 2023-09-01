@@ -8,6 +8,7 @@
  *
  * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
  */
+"use client";
 import React from "react";
 import DocContactCard from "@/components/contactcard";
 import CopyPageLink from "@/components/copypagelink";
