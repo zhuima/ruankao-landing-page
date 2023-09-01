@@ -2,17 +2,24 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-24 10:34:32
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-09-01 16:04:45
+ * @LastEditTime: 2023-09-01 15:56:50
  * @FilePath: /ruankao-website/components/doc-footer.tsx
  * @Description:
  *
  * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
  */
+"use client";
 import React from "react";
+import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
 import DocContactCard from "@/components/contactcard";
 import CopyPageLink from "@/components/copypagelink";
 import { IoPerson, IoLink } from "react-icons/io5"; //https://react-icons.github.io/react-icons/icons?name=io5
 export default function DocFooter({ pageTitle }) {
+  const copyButtonToast = () => {
+    toast.success(`已复制本文链接到剪贴板 🙌`);
+  };
+
   return (
     <>
       <section className="flex flex-col gap-4 sm:gap-6 p-4 sm:p-6 rounded-lg mt-7 sm:mt-14 bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 transition-colors">
@@ -44,7 +51,7 @@ export default function DocFooter({ pageTitle }) {
           <div className="flex-1 btn-base text-base text-muted-foreground btn-md sm:btn-lg bg-white  border dark:border-black border-neutral-200 dark:hover:border-neutral-800  sm:hover:bg-neutral-200 relative transition-colors">
             <CopyPageLink pageTitle={pageTitle} />
             <div className="flex gap-2 justify-center items-center">
-              <IoLink />
+              <IoLink onClick={() => copyButtonToast()} />
               复制链接
             </div>
           </div>
