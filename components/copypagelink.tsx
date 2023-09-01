@@ -2,13 +2,14 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-24 10:35:44
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-09-01 15:31:45
+ * @LastEditTime: 2023-09-01 15:36:19
  * @FilePath: /ruankao-website/components/copypagelink.tsx
  * @Description:
  *
  * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
  */
 "use client";
+import "react-toastify/dist/ReactToastify.css";
 import { useEffect, useRef } from "react";
 import { toast } from "react-toastify";
 
@@ -26,7 +27,6 @@ export default function CopyPageLink({ pageTitle }) {
       navigator.clipboard.writeText(copyText).then(
         () => {
           toast.success("已复制本文链接到剪贴板 🙌");
-
           console.log("已复制本文链接到剪贴板 🙌");
         },
         (err) => {
