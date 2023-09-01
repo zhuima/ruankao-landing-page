@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-24 10:35:44
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-09-01 10:45:57
+ * @LastEditTime: 2023-09-01 15:25:01
  * @FilePath: /ruankao-website/components/copypagelink.tsx
  * @Description:
  *
@@ -25,7 +25,7 @@ export default function CopyPageLink({ pageTitle }) {
       // 将文本写入剪贴板
       navigator.clipboard.writeText(copyText).then(
         () => {
-          console.error("已复制本文链接到剪贴板 🙌");
+          console.log("已复制本文链接到剪贴板 🙌");
           toast.success("已复制本文链接到剪贴板 🙌");
         },
         (err) => {
