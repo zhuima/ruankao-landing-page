@@ -254,6 +254,7 @@ export default function Page({ params }) {
                     width="auto"
                     alt={video.title}
                     priority={true}
+                    blurDataURL={video.rimg}
                     placeholder="blur"
                   />
                 </div>
