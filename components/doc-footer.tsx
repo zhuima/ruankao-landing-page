@@ -2,23 +2,18 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-24 10:34:32
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-09-01 16:09:52
+ * @LastEditTime: 2023-09-01 16:28:26
  * @FilePath: /ruankao-website/components/doc-footer.tsx
  * @Description:
  *
  * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
  */
-"use client";
 import React from "react";
-import "react-toastify/dist/ReactToastify.css";
-import { toast } from "react-toastify";
+
 import DocContactCard from "@/components/contactcard";
 import CopyPageLink from "@/components/copypagelink";
 import { IoPerson, IoLink } from "react-icons/io5"; //https://react-icons.github.io/react-icons/icons?name=io5
 export default function DocFooter({ pageTitle }) {
-  const copyButtonToast = () => {
-    toast.success(`已复制本文链接到剪贴板 🙌`);
-  };
 
   return (
     <>

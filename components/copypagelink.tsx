@@ -10,7 +10,8 @@
  */
 "use client";
 import { useEffect, useRef } from "react";
-
+import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
 export default function CopyPageLink({ pageTitle }) {
   const copyButton = useRef<HTMLButtonElement>(null);
 
@@ -32,6 +33,10 @@ export default function CopyPageLink({ pageTitle }) {
       );
     });
   }, [pageTitle]);
+
+  const copyButtonToast = () => {
+    toast.success(`已复制本文链接到剪贴板 🙌`);
+  };
 
   // // copy to clipboard functions
   // function copyTextToClipboard(pageTitle: string) {
@@ -60,7 +65,7 @@ export default function CopyPageLink({ pageTitle }) {
       title="复制本页链接"
       ref={copyButton}
       className="w-full h-full absolute bg-transparent inset-0 ring-default"
-      // onClick={() => copyTextToClipboard(pageTitle)}
+      onClick={() => copyButtonToast()}
     ></button>
   );
 }
