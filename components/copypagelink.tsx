@@ -1,5 +1,16 @@
+/*
+ * @Author: zhuima zhuima314@gmail.com
+ * @Date: 2023-07-24 10:35:44
+ * @LastEditors: zhuima zhuima314@gmail.com
+ * @LastEditTime: 2023-09-01 10:11:52
+ * @FilePath: /ruankao-website/components/copypagelink.tsx
+ * @Description:
+ *
+ * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
+ */
 "use client";
 import { useEffect, useRef } from "react";
+import { toast } from "react-toastify";
 
 export default function CopyPageLink({ pageTitle }) {
   const copyButton = useRef<HTMLButtonElement>(null);
@@ -14,10 +25,11 @@ export default function CopyPageLink({ pageTitle }) {
       // 将文本写入剪贴板
       navigator.clipboard.writeText(copyText).then(
         () => {
-          console.log("已复制到剪贴板");
+          toast.success("已复制本文链接到剪贴板 🙌");
         },
         (err) => {
-          console.error("无法复制到剪贴板: ", err);
+          console.error(err);
+          toast.error("无法复制到剪贴板: ", err);
         }
       );
     });
