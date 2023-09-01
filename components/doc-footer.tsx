@@ -49,11 +49,8 @@ export default function DocFooter({ pageTitle }) {
           </div>
           <div className="flex-1 btn-base text-base text-muted-foreground btn-md sm:btn-lg bg-white  border dark:border-black border-neutral-200 dark:hover:border-neutral-800  sm:hover:bg-neutral-200 relative transition-colors">
             <CopyPageLink pageTitle={pageTitle} />
-            <div
-              className="flex gap-2 justify-center items-center"
-              onClick={() => copyButtonToast()}
-            >
-              <IoLink />
+            <div className="flex gap-2 justify-center items-center">
+              <IoLink onClick={() => copyButtonToast()} />
               复制链接
             </div>
           </div>
