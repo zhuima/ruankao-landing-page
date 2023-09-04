@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-06 13:46:06
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-09-01 14:36:24
+ * @LastEditTime: 2023-09-04 11:24:16
  * @FilePath: /ruankao-website/components/guidesearch.tsx
  * @Description:
  *
@@ -42,7 +42,7 @@ export default function GuidesSearch() {
           guide.body.code.toLowerCase().includes(value.trim().toLowerCase())
       )
     );
-  }, 300);
+  }, 800);
 
   /**
    * Handles automatic search functionality when a specific keyboard shortcut is pressed.
