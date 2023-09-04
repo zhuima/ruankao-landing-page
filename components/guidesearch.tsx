@@ -16,6 +16,7 @@ import { compareDesc } from "date-fns";
 import { CgSearch } from "react-icons/cg";
 import { formatDate } from "@/lib/utils";
 import { DocsPageHeader } from "@/components/page-header";
+import { debounce } from "@/lib/functions";
 
 export default function GuidesSearch() {
   const guides = allGuides
@@ -30,7 +31,7 @@ export default function GuidesSearch() {
   /**
    * Handles search functionality with debounce.
    */
-  const handleSearch = (value: string) => {
+  const handleSearch = debounce((value: string) => {
     setFilteredGuides(
       guides.filter(
         (guide) =>
@@ -41,7 +42,7 @@ export default function GuidesSearch() {
           guide.body.code.toLowerCase().includes(value.trim().toLowerCase())
       )
     );
-  };
+  }, 300);
 
   /**
    * Handles automatic search functionality when a specific keyboard shortcut is pressed.
