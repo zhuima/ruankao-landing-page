@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-05-10 15:05:55
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-09-01 15:04:17
+ * @LastEditTime: 2023-09-05 18:46:51
  * @FilePath: /ruankao-website/components/videosearch.tsx
  * @Description:
  *
@@ -16,6 +16,7 @@ import Image from "next/image";
 import Link from "next/link";
 import videosData from "@/config/videos";
 import { DocsPageHeader } from "@/components/page-header";
+import { debounce } from "@/lib/functions";
 
 export default function VideoSearch() {
   const [filteredVideos, setFilteredVideos] = useState([...videosData]);
@@ -24,7 +25,7 @@ export default function VideoSearch() {
   /**
    * Handles search functionality with debounce.
    */
-  const handleSearch = (value: string) => {
+  const handleSearch = debounce((value: string) => {
     setFilteredVideos(
       videosData.filter(
         (video) =>
@@ -36,7 +37,7 @@ export default function VideoSearch() {
           video.tag.toLowerCase().includes(value.trim().toLowerCase())
       )
     );
-  };
+  }, 600);
 
   /**
    * Handles automatic search functionality when a specific keyboard shortcut is pressed.
