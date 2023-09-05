@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-28 14:13:59
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-30 13:53:39
+ * @LastEditTime: 2023-09-05 18:41:49
  * @FilePath: /ruankao-website/config/videos.ts
  * @Description: 
  * 
@@ -100,6 +100,19 @@ const videosData = [
     score: 2.5,
     imgSrc: 'https://img.techrk1688.eu.org/file/ecba580f0e69736dcede9.png',
     href: 'https://www.aliyundrive.com/s/aBMyZMeBs8e',
+    rimg: 'https://img.techrk1688.eu.org/file/2b1260860fc46613af789.png',
+  },
+  {
+    id: 10093,
+    title: '信息安全工程师',
+    description: `信息安全工程师（2022），B站在线观看，良心之作`,
+    tag: `信安`,
+    author: `马军`,
+    time: `2022-06`,
+    new: `热`,
+    score: 4,
+    imgSrc: 'https://img.techrk1688.eu.org/file/9465a970a407df9abac87.png',
+    href: 'https://space.bilibili.com/592685896/channel/collectiondetail?sid=468711',
     rimg: 'https://img.techrk1688.eu.org/file/2b1260860fc46613af789.png',
   },
 ]
