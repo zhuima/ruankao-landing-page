@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-28 14:13:59
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-09-05 18:41:49
+ * @LastEditTime: 2023-09-05 18:44:01
  * @FilePath: /ruankao-website/config/videos.ts
  * @Description: 
  * 
@@ -14,7 +14,7 @@ const videosData = [
     title: '系统规划与管理师',
     description: `最良心的系统规划与管理师教程，完全免费`,
     tag: `系规`,
-    author: `马军`,
+    author: `马英`,
     time: `2023-05`,
     new: `热`,
     score: 5,
@@ -107,7 +107,7 @@ const videosData = [
     title: '信息安全工程师',
     description: `信息安全工程师（2022），B站在线观看，良心之作`,
     tag: `信安`,
-    author: `马军`,
+    author: `马英`,
     time: `2022-06`,
     new: `热`,
     score: 4,
