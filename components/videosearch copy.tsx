@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-05-10 15:05:55
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-09-06 10:43:40
+ * @LastEditTime: 2023-09-05 18:46:51
  * @FilePath: /ruankao-website/components/videosearch.tsx
  * @Description:
  *
@@ -11,19 +11,15 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { CgSearch } from "react-icons/cg";
-import { allVideos } from "contentlayer/generated";
+
 import Image from "next/image";
 import Link from "next/link";
-import { compareDesc } from "date-fns";
+import videosData from "@/config/videos";
 import { DocsPageHeader } from "@/components/page-header";
 import { debounce } from "@/lib/functions";
 
 export default function VideoSearch() {
-  const videos = allVideos.sort((a, b) => {
-    return compareDesc(new Date(a.date), new Date(b.date));
-  });
-
-  const [filteredVideos, setFilteredVideos] = useState([...videos]);
+  const [filteredVideos, setFilteredVideos] = useState([...videosData]);
   const searchRef = useRef<HTMLInputElement>(null!);
 
   /**
@@ -31,16 +27,17 @@ export default function VideoSearch() {
    */
   const handleSearch = debounce((value: string) => {
     setFilteredVideos(
-      videos.filter(
+      videosData.filter(
         (video) =>
           video.title.toLowerCase().includes(value.trim().toLowerCase()) ||
           video.description
             ?.toLowerCase()
             .includes(value.trim().toLowerCase()) ||
-          video.body.code.toLowerCase().includes(value.trim().toLowerCase())
+          video.author.toLowerCase().includes(value.trim().toLowerCase()) ||
+          video.tag.toLowerCase().includes(value.trim().toLowerCase())
       )
     );
-  }, 800);
+  }, 600);
 
   /**
    * Handles automatic search functionality when a specific keyboard shortcut is pressed.
@@ -120,7 +117,7 @@ export default function VideoSearch() {
                       </div>
                     </div>
                     <Link
-                      href={v.slug}
+                      href={`/videos/${v.id}`}
                       className="absolute right-4 mx-auto text-white bg-indigo-500 border-0 py-1 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
                     >
                       <span className="relative text-sm font-semibold text-white dark:text-gray-900 ">
