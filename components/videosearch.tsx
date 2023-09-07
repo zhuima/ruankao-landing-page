@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-05-10 15:05:55
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-09-07 10:58:22
+ * @LastEditTime: 2023-09-07 11:20:18
  * @FilePath: /ruankao-website/components/videosearch.tsx
  * @Description:
  *
@@ -69,7 +69,7 @@ export default function VideoSearch() {
         <input
           ref={searchRef}
           className="mt-10 mb-10 px-12  py-3 w-full  outline-none transition duration-200 bg-transparent font-medium font-inter lg:flex items-center text-sm leading-6 text-slate-400 rounded-md ring-1 ring-slate-900/10 shadow-sm hover:ring-slate-400  dark:highlight-white/5 dark:hover:bg-darkSecondary/90 mx-auto flex relative  group focus:ring-slate-400"
-          type="text"
+          type="search"
           onChange={(e) => handleSearch(e.target.value)}
           placeholder="Press (CTRL + /) to search... "
         />
