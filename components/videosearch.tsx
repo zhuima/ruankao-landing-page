@@ -92,7 +92,7 @@ export default function VideoSearch() {
                     placeholder="blur"
                   />
                   <span className="absolute bottom-0 right-0 inline-flex items-center px-3 py-1 mr-4 -mb-3 text-xs font-medium leading-tight text-gray-800 bg-gray-100 border rounded-full">
-                    1200 reviews
+                    {v.view} reviews
                   </span>
                 </div>
                 <div className="flex flex-col justify-between flex-1">
