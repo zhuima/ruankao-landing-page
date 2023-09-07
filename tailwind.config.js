@@ -1,3 +1,13 @@
+/*
+ * @Author: zhuima zhuima314@gmail.com
+ * @Date: 2023-05-10 15:05:55
+ * @LastEditors: zhuima zhuima314@gmail.com
+ * @LastEditTime: 2023-09-07 16:50:10
+ * @FilePath: /ruankao-website/tailwind.config.js
+ * @Description:
+ *
+ * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
+ */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -68,10 +78,19 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+        marquee: {
+          from: {
+            transform: "translateX(0)",
+          },
+          to: {
+            transform: "translateX(calc(-100% - 2.5rem))",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        marquee: "marquee 50s linear infinite",
       },
     },
   },

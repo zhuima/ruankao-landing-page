@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-05-10 15:05:55
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-07-11 10:36:18
+ * @LastEditTime: 2023-09-07 16:24:48
  * @FilePath: /ruankao-website/next.config.js
  * @Description:
  *
@@ -19,6 +19,7 @@ const nextConfig = {
       "i.ibb.co",
       "img.techrk1688.eu.org",
       "d1w019qw3bn26k.cloudfront.net",
+      "image.techrk1688.eu.org",
     ],
   },
   async rewrites() {
