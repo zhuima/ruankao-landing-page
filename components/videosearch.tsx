@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-05-10 15:05:55
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-09-06 10:43:40
+ * @LastEditTime: 2023-09-07 10:58:22
  * @FilePath: /ruankao-website/components/videosearch.tsx
  * @Description:
  *
@@ -34,10 +34,12 @@ export default function VideoSearch() {
       videos.filter(
         (video) =>
           video.title.toLowerCase().includes(value.trim().toLowerCase()) ||
+          video.author.toLowerCase().includes(value.trim().toLowerCase()) ||
+          video.tag.toLowerCase().includes(value.trim().toLowerCase()) ||
           video.description
             ?.toLowerCase()
             .includes(value.trim().toLowerCase()) ||
-          video.body.code.toLowerCase().includes(value.trim().toLowerCase())
+          video.body.raw.toLowerCase().includes(value.trim().toLowerCase())
       )
     );
   }, 800);
