@@ -92,6 +92,10 @@ export const Video = defineDocumentType(() => ({
       type: "string",
       required: true,
     },
+    view: {
+      type: "number",
+      required: true,
+    },
     time: {
       type: "string",
       required: true,
