@@ -1,11 +1,28 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-
+import { useAos } from "../hooks/useAos";
 const Scrolling = () => {
+  useAos();
   return (
     <section className="text-gray-600 body-font overflow-hidden">
       <div className="container px-5 py-24 mx-auto">
+        <div className="flex flex-col text-center w-full mb-20">
+          <h1
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            className="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900"
+          >
+            资源概览
+          </h1>
+          <p
+            data-aos="fade-down"
+            data-aos-duration="2000"
+            className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500"
+          >
+            网络海量资源，完全免费.
+          </p>
+        </div>
         <div className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
           <div className="pointer-events-none relative flex gap-10 overflow-hidden">
             <div className="flex min-w-full shrink-0 animate-marquee items-center justify-around gap-10">
