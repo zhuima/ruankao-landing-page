@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-06 13:46:06
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-09-04 11:24:16
+ * @LastEditTime: 2023-09-07 11:04:07
  * @FilePath: /ruankao-website/components/guidesearch.tsx
  * @Description:
  *
@@ -39,7 +39,7 @@ export default function GuidesSearch() {
           guide.description
             ?.toLowerCase()
             .includes(value.trim().toLowerCase()) ||
-          guide.body.code.toLowerCase().includes(value.trim().toLowerCase())
+          guide.body.raw.toLowerCase().includes(value.trim().toLowerCase())
       )
     );
   }, 800);
