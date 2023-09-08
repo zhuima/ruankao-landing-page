@@ -23,9 +23,9 @@ const Scrolling = () => {
             网络海量资源，完全免费.
           </p>
         </div>
-        <div className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
-          <div className="pointer-events-none relative flex gap-10 overflow-hidden">
-            <div className="flex min-w-full shrink-0 animate-marquee items-center justify-around gap-10">
+        <div className="relative flex flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
+          <div className="pointer-events-none relative flex flex-nowrap gap-10 overflow-hidden">
+            <div className="flex flex-wrap min-w-full shrink-0 animate-marquee items-center justify-around gap-10">
               <Image
                 className="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
                 src="https://img.techrk1688.eu.org/file/19d147f36f366c0ad9641.png"
@@ -64,7 +64,7 @@ const Scrolling = () => {
             </div>
             <div
               aria-hidden="true"
-              className="flex min-w-full shrink-0 animate-marquee items-center justify-around gap-10"
+              className="flex flex-wrap min-w-full shrink-0 animate-marquee items-center justify-around gap-10"
             >
               <Image
                 className="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
@@ -104,8 +104,8 @@ const Scrolling = () => {
             </div>
           </div>
 
-          <div className="pointer-events-none relative mt-10 flex gap-10 overflow-hidden">
-            <div className="flex min-w-full shrink-0 animate-marquee items-center justify-around gap-10 [animation-direction:reverse]">
+          <div className="pointer-events-none relative mt-10 flex flex-nowrap gap-10 overflow-hidden">
+            <div className="flex flex-wrap min-w-full shrink-0 animate-marquee items-center justify-around gap-10 [animation-direction:reverse]">
               <Image
                 className="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
                 src="https://img.techrk1688.eu.org/file/aef373fcfbddeb1529cce.png"
@@ -144,7 +144,7 @@ const Scrolling = () => {
             </div>
             <div
               aria-hidden="true"
-              className="flex min-w-full shrink-0 animate-marquee items-center justify-around gap-10 [animation-direction:reverse]"
+              className="flex flex-wrap min-w-full shrink-0 animate-marquee items-center justify-around gap-10 [animation-direction:reverse]"
             >
               <Image
                 className="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"

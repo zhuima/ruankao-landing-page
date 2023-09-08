@@ -24,7 +24,7 @@ const Content = () => {
             学艺须刻苦, 三日不练手生. 勤学方可成，勿使两日空.
           </p>
         </div>
-        <div className=" xl:px-0">
+        <div className="xl:px-0">
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 pb-6 gap-8 ">
             <div
               data-aos="fade-up"
