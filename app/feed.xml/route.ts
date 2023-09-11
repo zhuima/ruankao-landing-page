@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-11 10:32:26
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-31 17:46:24
+ * @LastEditTime: 2023-09-11 17:00:44
  * @FilePath: /ruankao-website/app/feed.xml/route.ts
  * @Description:
  *
@@ -12,6 +12,8 @@ import RSS from 'rss'
 import videoData from '@/config/videos'
 import { allGuides } from 'contentlayer/generated'
 import { allDocs } from 'contentlayer/generated'
+import { allVideos } from 'contentlayer/generated'
+
 
 export async function GET() {
   const feed = new RSS({
@@ -27,12 +29,14 @@ export async function GET() {
     copyright: `&copy; {new Date().getFullYear().toString()} by zhuima`,
   })
 
-  videoData.forEach((video) => {
+  allVideos.forEach((video) => {
     feed.item({
       title: video.title,
-      description: video.description,
-      guid: `https://ruankao.eu.org/videos/${video.id}`,
-      url: `https://ruankao.eu.org/videos/${video.id}`,
+      description: video.description
+        ? video.description
+        : `视频教程资源介绍文档 | ${video.title}`,
+      guid: `https://ruankao.eu.org/videos/${video.slug}`,
+      url: `https://ruankao.eu.org/videos/${video.slug}`,
       date: new Date(),
     })
   })

@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-07 16:33:57
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-08-31 18:58:52
+ * @LastEditTime: 2023-09-11 17:00:12
  * @FilePath: /ruankao-website/app/sitemap.ts
  * @Description:
  *
@@ -13,15 +13,17 @@
 import videoData from "@/config/videos"
 import { allGuides } from "contentlayer/generated";
 import { allDocs } from "contentlayer/generated";
+import { allVideos } from 'contentlayer/generated'
+
 
 const URL = 'https://ruankao.eu.org'
 
 export default async function sitemap() {
   const links: string[] = [];
 
-  videoData.forEach((video) => {
+  allVideos.forEach((video) => {
     links.push(
-      `/videos/${video.id}`
+      `/videos/${video.slug}`
     );
   });
 
