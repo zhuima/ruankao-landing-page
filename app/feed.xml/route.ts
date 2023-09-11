@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-11 10:32:26
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-09-11 17:00:44
+ * @LastEditTime: 2023-09-11 17:04:27
  * @FilePath: /ruankao-website/app/feed.xml/route.ts
  * @Description:
  *
@@ -35,8 +35,8 @@ export async function GET() {
       description: video.description
         ? video.description
         : `视频教程资源介绍文档 | ${video.title}`,
-      guid: `https://ruankao.eu.org/videos/${video.slug}`,
-      url: `https://ruankao.eu.org/videos/${video.slug}`,
+      guid: `https://ruankao.eu.org${video.slug}`,
+      url: `https://ruankao.eu.org${video.slug}`,
       date: new Date(),
     })
   })

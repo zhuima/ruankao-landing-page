@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-07 16:33:57
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-09-11 17:00:12
+ * @LastEditTime: 2023-09-11 17:04:40
  * @FilePath: /ruankao-website/app/sitemap.ts
  * @Description:
  *
@@ -23,7 +23,7 @@ export default async function sitemap() {
 
   allVideos.forEach((video) => {
     links.push(
-      `/videos/${video.slug}`
+      `${video.slug}`
     );
   });
 
