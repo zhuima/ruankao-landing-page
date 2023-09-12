@@ -9,7 +9,6 @@
  * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
  */
 import RSS from 'rss'
-import videoData from '@/config/videos'
 import { allGuides } from 'contentlayer/generated'
 import { allDocs } from 'contentlayer/generated'
 import { allVideos } from 'contentlayer/generated'

@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-07 16:33:57
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-09-11 17:04:40
+ * @LastEditTime: 2023-09-12 10:36:00
  * @FilePath: /ruankao-website/app/sitemap.ts
  * @Description:
  *
@@ -10,7 +10,6 @@
  */
 // app/sitemap.js
 // https://claritydev.net/blog/nextjs-dynamic-sitemap-pages-app-directory
-import videoData from "@/config/videos"
 import { allGuides } from "contentlayer/generated";
 import { allDocs } from "contentlayer/generated";
 import { allVideos } from 'contentlayer/generated'
