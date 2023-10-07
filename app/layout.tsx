@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-06 15:11:36
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-10-07 10:15:33
+ * @LastEditTime: 2023-10-07 10:20:08
  * @FilePath: /ruankao-website/app/layout.tsx
  * @Description:
  *
@@ -50,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <body className={inter.className}>
-        {/* <StickyBanner /> */}
+        <StickyBanner />
         <NextTopLoader />
         <Header />
         {children}
