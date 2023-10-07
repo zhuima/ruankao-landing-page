@@ -1,3 +1,13 @@
+/*
+ * @Author: zhuima zhuima314@gmail.com
+ * @Date: 2023-09-06 14:03:11
+ * @LastEditors: zhuima zhuima314@gmail.com
+ * @LastEditTime: 2023-10-07 10:16:15
+ * @FilePath: /ruankao-website/components/stickybanner.tsx
+ * @Description:
+ *
+ * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
+ */
 "use client";
 import { useState } from "react";
 import { XMarkIcon } from "@heroicons/react/24/solid";
@@ -56,16 +66,16 @@ const StickyBanner = () => {
               >
                 <circle cx={1} cy={1} r={1} />
               </svg>
-              软考报名活动已经启动.
+              软考报名活动已经结束. 距离开考不足一个月时间，大家加油呀！
             </p>
 
-            <Link
+            {/* <Link
               className="flex-none rounded-full bg-gray-900 py-1 px-3.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
               href="https://bm.ruankao.org.cn/sign/welcome"
               target="_blank"
             >
               立即报名 <span aria-hidden="true">&rarr;</span>
-            </Link>
+            </Link> */}
           </div>
           <div className="flex flex-1 justify-end">
             <button
