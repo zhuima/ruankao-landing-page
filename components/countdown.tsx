@@ -1,3 +1,13 @@
+/*
+ * @Author: zhuima zhuima314@gmail.com
+ * @Date: 2023-06-09 10:20:34
+ * @LastEditors: zhuima zhuima314@gmail.com
+ * @LastEditTime: 2023-11-07 17:25:00
+ * @FilePath: /ruankao-website/components/countdown.tsx
+ * @Description:
+ *
+ * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
+ */
 "use client";
 import { useEffect, useState } from "react";
 import { Counter } from "./counter";
@@ -12,7 +22,7 @@ const CountDown = () => {
   // const timeToDays = 80 * 60 * 60 * 24 * 1000;
   // let countDownDate = new Date().getTime() + timeToDays;
 
-  let countDownDate = new Date("2023/11/04").getTime();
+  let countDownDate = new Date("2024/05/27").getTime();
 
   useEffect(() => {
     let updateTime = setInterval(() => {
