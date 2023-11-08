@@ -4,6 +4,7 @@ import * as React from "react";
 import Image from "next/image";
 import { Chrono } from "react-chrono";
 import { useMDXComponent } from "next-contentlayer/hooks";
+import Microlink from "@microlink/react";
 
 import { cn } from "../lib/utils";
 import { Callout } from "./callout";
@@ -168,6 +169,7 @@ const components = {
     />
   ),
   Image: ZoomImage,
+  Microlink,
   Callout,
   Chrono,
   Card: MdxCard,
