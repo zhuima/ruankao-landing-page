@@ -168,7 +168,6 @@ const components = {
     />
   ),
   Image: ZoomImage,
-  Microlink,
   Callout,
   Chrono,
   Card: MdxCard,
