@@ -40,6 +40,12 @@ export const metadata = {
       "application/rss+xml": [{ url: "feed.xml", title: "RSS 订阅" }],
     },
   },
+  openGraph: {
+    title: "软考通关宝典",
+    description:
+      "软考通关宝典提供掘金高效率工具计划、倒计时页面、信息系统项目管理师、系统集成项目管理工程师、系统规划与管理师、网络工程师、信息安全工程师等考试的在线培训、考试资讯、免费知识库等考试服务，是一个拥有独立创新的专业学习网站。",
+    images: '/ruankao-website.png',
+  },
 };
 
 export default function RootLayout({
