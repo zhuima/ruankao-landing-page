@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Feedback = () => {
   return (
-    <div className="fixed right-5 top-1/2 z-50 rounded-full bg-opacity-80 px-2 py-5 text-xs shadow-2xl sm:text-sm">
+    <div className="fixed right-5 top-1/2 z-10 backdrop-blur-lg backdrop-filter rounded-full bg-opacity-80 px-2 py-5 text-xs shadow-2xl sm:text-sm">
       <div
         id="fix-action-wechat"
         className="group relative mb-4 flex flex-col items-center"
