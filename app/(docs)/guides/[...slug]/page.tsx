@@ -82,6 +82,10 @@ export async function generateStaticParams(): Promise<
 }
 
 export default async function GuidePage({ params }: GuidePageProps) {
+  const repo = process.env.COMMENTS_REPO;
+  const repoId = process.env.COMMENTS_REPO_ID;
+  const category = process.env.COMMENTS_CATEGORY;
+  const categoryId = process.env.COMMENTS_CATEGORY_ID;
   const guide = await getGuideFromParams(params);
 
   if (!guide) {
@@ -106,7 +110,12 @@ export default async function GuidePage({ params }: GuidePageProps) {
           </Link>
         </div>
         <DocFooter pageTitle={guide.title} />
-        <Comments />
+        <Comments
+          repo={repo}
+          repoId={repoId}
+          category={category}
+          categoryId={categoryId}
+        />
       </div>
 
       <div className="hidden text-sm lg:block">
