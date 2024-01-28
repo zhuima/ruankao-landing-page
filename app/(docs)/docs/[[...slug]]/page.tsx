@@ -80,6 +80,11 @@ export async function generateStaticParams(): Promise<
   }));
 }
 
+const repo = process.env.COMMENTS_REPO;
+const repoId = process.env.COMMENTS_REPO_ID;
+const category = process.env.COMMENTS_CATEGORY;
+const categoryId = process.env.COMMENTS_CATEGORY_ID;
+
 export default async function DocPage({ params }: DocPageProps) {
   const doc = await getDocFromParams(params);
 
@@ -101,7 +106,13 @@ export default async function DocPage({ params }: DocPageProps) {
         <hr className="my-4 md:my-6" />
         <DocFooter pageTitle={doc.title} />
         <DocsPager doc={doc} />
-        <Comments />
+        {/* <Comments /> */}
+        <Comments
+          repo={repo}
+          repoId={repoId}
+          category={category}
+          categoryId={categoryId}
+        />
       </div>
       <div className="hidden text-sm xl:block">
         <div className="sticky top-16 -mt-10 max-h-[calc(var(--vh)-4rem)] overflow-y-auto pt-10">
