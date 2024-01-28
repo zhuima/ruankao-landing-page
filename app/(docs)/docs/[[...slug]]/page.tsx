@@ -80,12 +80,12 @@ export async function generateStaticParams(): Promise<
   }));
 }
 
-const repo = process.env.COMMENTS_REPO;
-const repoId = process.env.COMMENTS_REPO_ID;
-const category = process.env.COMMENTS_CATEGORY;
-const categoryId = process.env.COMMENTS_CATEGORY_ID;
-
 export default async function DocPage({ params }: DocPageProps) {
+  const repo = process.env.COMMENTS_REPO;
+  const repoId = process.env.COMMENTS_REPO_ID;
+  const category = process.env.COMMENTS_CATEGORY;
+  const categoryId = process.env.COMMENTS_CATEGORY_ID;
+
   const doc = await getDocFromParams(params);
 
   if (!doc) {

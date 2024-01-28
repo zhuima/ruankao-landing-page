@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-05-10 15:05:55
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2024-01-28 17:56:59
+ * @LastEditTime: 2024-01-28 18:23:56
  * @FilePath: /ruankao-website/next.config.js
  * @Description:
  *
@@ -12,12 +12,6 @@
 const { withContentlayer } = require("next-contentlayer");
 
 const nextConfig = {
-  env: {
-    COMMENTS_REPO: "zhuima/ruankao-landing-page",
-    COMMENTS_REPO_ID: "R_kgDOJr6dXA",
-    COMMENTS_CATEGORY: "Show and tell",
-    COMMENT_CATEGORY_ID: "DIC_kwDOJr6dXM4Ccvy1",
-  },
   images: {
     domains: [
       "tailus.io",

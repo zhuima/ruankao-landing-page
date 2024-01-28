@@ -39,7 +39,6 @@
 
 // export default Comments;
 
-
 "use client";
 
 import Giscus from "@giscus/react";
@@ -63,4 +62,3 @@ const Comments = ({ repo, repoId, category, categoryId }) => {
 };
 
 export default Comments;
-
