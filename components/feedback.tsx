@@ -5,13 +5,13 @@ import Link from "next/link";
 
 const Feedback = () => {
   return (
-    <div class="fixed bottom-4 right-4 flex flex-col items-end">
+    <div className="fixed bottom-4 right-4 flex flex-col items-end">
       {/* <!-- 包含三个按钮的框 --> */}
-      <div class="relative  inline-flex animate-pulse flex-col items-center space-y-4">
+      <div className="relative  inline-flex animate-pulse flex-col items-center space-y-4">
         {/* <!-- 第一个按钮是一个链接，样式为 feedback --> */}
         <Link
           href="https://tally.so/r/woGNdx"
-          class="flex items-center rounded-full bg-blue-500 px-3 py-3 font-bold text-white shadow-md hover:bg-blue-600"
+          className="flex items-center rounded-full bg-blue-500 px-3 py-3 font-bold text-white shadow-md hover:bg-blue-600"
         >
           {/* <!-- 使用 Freepik 的 Feedback SVG 图标 --> */}
           <svg
@@ -20,7 +20,7 @@ const Feedback = () => {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="h-6 w-6 text-white"
+            className="h-6 w-6 text-white"
           >
             <path
               stroke-linecap="round"
@@ -36,10 +36,10 @@ const Feedback = () => {
         </Link>
 
         {/* <!-- 包含第二个按钮和弹出框的容器 --> */}
-        <div class="group relative inline-flex items-center">
+        <div className="group relative inline-flex items-center">
           {/* <!-- 第二个按钮，鼠标滑过显示二维码，样式改成联系我们 -->
       <!-- 第二个按钮，鼠标滑过显示二维码，样式改成联系我们 --> */}
-          <button class="flex items-center rounded-full bg-blue-500 px-3 py-3 shadow-md group-hover:bg-blue-600">
+          <button className="flex items-center rounded-full bg-blue-500 px-3 py-3 shadow-md group-hover:bg-blue-600">
             {/* <!-- 使用微信（WeChat）的 SVG 图标 --> */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ const Feedback = () => {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="h-6 w-6 text-white"
+              className="h-6 w-6 text-white"
             >
               <path
                 stroke-linecap="round"
@@ -58,7 +58,7 @@ const Feedback = () => {
           </button>
 
           {/* <!-- 弹出框，初始状态隐藏，鼠标滑过第二个按钮时显示在左侧 --> */}
-          <div class="absolute right-20 hidden rounded-md bg-white p-2 shadow-md group-hover:block">
+          <div className="absolute right-20 hidden rounded-md bg-white p-2 shadow-md group-hover:block">
             {/* <!-- 这里放置二维码图片或其他内容 --> */}
             <Image
               src={wechat}
