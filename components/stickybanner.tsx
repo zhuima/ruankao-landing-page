@@ -58,7 +58,7 @@ const StickyBanner = () => {
           </svg>
           <div className="flex flex-wrap items-center gap-y-2 gap-x-4">
             <p className="text-sm leading-6 text-gray-900">
-              <strong className="font-semibold">2023年度下半年</strong>
+              <strong className="font-semibold">2024年度上半年</strong>
               <svg
                 viewBox="0 0 2 2"
                 className="mx-2 inline h-0.5 w-0.5 fill-current"
@@ -66,7 +66,7 @@ const StickyBanner = () => {
               >
                 <circle cx={1} cy={1} r={1} />
               </svg>
-              机考尘埃落定，大家休息休息，放松下紧绷的弦，整装待发，重新上路吧！
+              让我们扬帆起航，一战上岸！
             </p>
 
             {/* <Link
