@@ -25,7 +25,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="bg-white relative pt-20 pb-20 lg:pt-40 dark:bg-gray-900 overflow-hidden">
+    <div className="bg-white relative pt-20 pb-20 lg:pt-40 dark:bg-gray-900 overflow-x-hidden">
       <div className="relative xl:container m-auto px-6 md:px-12 lg:px-6">
         <h1 className="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-blue-900 text-4xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl dark:text-white">
           专业人士带你 <br className="block" />
