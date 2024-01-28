@@ -75,7 +75,7 @@ const Feedback = () => {
         </svg>
         <Link
           href="https://tally.so/r/woGNdx"
-          className="flex items-center rounded-full px-3 py-3 font-bold text-white shadow-md hover:bg-blue-600"
+          className="flex items-center px-3 py-3 font-bold text-gray-700  hover:bg-blue-400"
           target="_blank"
         >
           <div style={{ marginTop: "1px" }}>在线反馈</div>
