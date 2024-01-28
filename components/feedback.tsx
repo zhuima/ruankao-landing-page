@@ -33,7 +33,7 @@ const Feedback = () => {
           ></path>
         </svg>
         <div style={{ marginTop: "1px" }}>添加微信</div>
-        <div className="absolute w-[480px] -bottom-12 right-20 hidden rounded-md bg-white p-4 text-center text-gray-700 shadow-md group-hover:block">
+        <div className="absolute w-[240px] -bottom-12 right-20 hidden rounded-md bg-white p-4 text-center text-gray-700 shadow-md group-hover:block">
           <div className="text-base group-hover:block">微信咨询</div>
           <div>现在咨询，领取免费体验名额</div>
 
