@@ -6,7 +6,7 @@ import Image from "next/image";
 const Content = () => {
   useAos();
   return (
-    <section className="md:mt-80 text-gray-600 body-font">
+    <section className="md:mt-40 text-gray-600 body-font">
       <div className="container px-5 lg:py-24 mx-auto">
         <div className="flex flex-wrap w-full mb-5 flex-col items-center text-center">
           <h1
