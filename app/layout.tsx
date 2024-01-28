@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-06 15:11:36
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-10-07 10:20:08
+ * @LastEditTime: 2024-01-28 17:24:25
  * @FilePath: /ruankao-website/app/layout.tsx
  * @Description:
  *
@@ -11,6 +11,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
+import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
@@ -56,6 +57,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-CN">
+      {/* Clarity Script */}
+      <Script strategy="lazyOnload" id="clarity-script">
+        {`
+ (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ksu044b2eg");
+        `}
+      </Script>
       <body className={inter.className}>
         <StickyBanner />
         <NextTopLoader />
