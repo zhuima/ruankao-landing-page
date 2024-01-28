@@ -32,10 +32,11 @@ const Feedback = () => {
             p-id="2761"
           ></path>
         </svg>
-        <div>添加微信</div>
-        <div className="absolute -bottom-12 right-20 hidden rounded-md bg-white p-4 text-center text-gray-700 shadow-md group-hover:block">
+        <div style={{ marginTop: "1px" }}>添加微信</div>
+        <div className="absolute w-[180px] -bottom-12 right-20 hidden rounded-md bg-white p-4 text-center text-gray-700 shadow-md group-hover:block">
           <div className="text-base group-hover:block">微信咨询</div>
           <div>现在咨询，领取免费体验名额</div>
+
           <Image
             src={wechat}
             alt="二维码"
@@ -60,19 +61,25 @@ const Feedback = () => {
             x="0px"
             y="0px"
             viewBox="0 0 512 512"
+            style={
+              { enableBackground: "new 0 0 512 512" } as React.CSSProperties
+            }
+            xmlSpace="preserve"
           >
             <path
+              style={{ fill: "#1B4145" }}
               d="M337.455,133.897C433.857,133.897,512,195.96,512,272.518c0,54.665-39.846,101.933-97.729,124.502
 	c-4.038,26.225,3.938,53.969,23.951,74.174c-38.413,0-70.869-25.645-81.546-60.893c-6.313,0.549-12.724,0.84-19.221,0.84
 	c-96.396,0-174.545-62.064-174.545-138.622C162.909,195.96,241.06,133.897,337.455,133.897z"
             />
             <path
+              style={{ fill: "#FFD24D" }}
               d="M174.545,40.806C78.143,40.806,0,102.87,0,179.427c0,54.665,39.846,101.933,97.729,124.502
 	c4.038,26.225-3.938,53.969-23.951,74.174c38.413,0,70.869-25.645,81.546-60.893c6.313,0.549,12.724,0.84,19.221,0.84
 	c96.396,0,174.545-62.064,174.545-138.622C349.091,102.87,270.94,40.806,174.545,40.806z"
             />
           </svg>
-          <div>在线反馈</div>
+          <div style={{ marginTop: "1px" }}>在线反馈</div>
         </Link>
       </div>
     </div>
