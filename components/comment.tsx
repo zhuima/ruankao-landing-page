@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-28 11:55:54
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2024-01-28 17:55:57
+ * @LastEditTime: 2024-01-28 19:15:35
  * @FilePath: /ruankao-website/components/comment.tsx
  * @Description: https://devpress.csdn.net/opensource/62fb5c2bc6770329307ffc2c.html
  *
@@ -50,7 +50,7 @@ const Comments = ({ repo, repoId, category, categoryId }) => {
       repoId={repoId}
       category={category}
       categoryId={categoryId}
-      mapping="pathname"
+      mapping="title"
       reactionsEnabled="1"
       emitMetadata="0"
       inputPosition="top"
