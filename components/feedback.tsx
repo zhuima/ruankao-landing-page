@@ -33,7 +33,7 @@ const Feedback = () => {
           ></path>
         </svg>
         <div style={{ marginTop: "1px" }}>添加微信</div>
-        <div className="absolute w-[240px] -bottom-12 right-20 hidden rounded-md bg-white p-4 text-center text-gray-700 shadow-md group-hover:block">
+        <div className="absolute w-[240px] -bottom-12 right-20 hidden rounded-md bg-white p-4 text-center text-gray-700 shadow-md  group-hover:block">
           <div className="text-base group-hover:block">微信咨询</div>
           <div>现在咨询，领取免费体验名额</div>
 
@@ -43,7 +43,7 @@ const Feedback = () => {
             width={480}
             height={480}
             priority={true}
-            className="my-3 h-40 w-40 max-w-40 group-hover:block"
+            className="mx-auto my-3 h-40 w-40 group-hover:block"
           />
           <div>手机扫码加我微信</div>
         </div>
@@ -75,7 +75,7 @@ const Feedback = () => {
         </svg>
         <Link
           href="https://tally.so/r/woGNdx"
-          className="flex items-center px-3 py-3 font-bold text-gray-700  hover:bg-blue-400"
+          className="flex items-center px-3 py-3 font-bold text-gray-700"
           target="_blank"
         >
           <div style={{ marginTop: "1px" }}>在线反馈</div>
