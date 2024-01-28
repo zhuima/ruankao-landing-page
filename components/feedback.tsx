@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Feedback = () => {
   return (
-    <div className="fixed bottom-4 right-4 flex flex-col items-end">
+    <div className="fixed bottom-40 right-4 flex flex-col items-end">
       {/* <!-- 包含三个按钮的框 --> */}
       <div className="relative  inline-flex animate-pulse flex-col items-center space-y-4">
         {/* <!-- 第一个按钮是一个链接，样式为 feedback --> */}
