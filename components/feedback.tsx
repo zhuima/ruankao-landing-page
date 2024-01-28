@@ -58,7 +58,7 @@ const Feedback = () => {
           </button>
 
           {/* <!-- 弹出框，初始状态隐藏，鼠标滑过第二个按钮时显示在左侧 --> */}
-          <div className="absolute right-20 w-[480px] hidden rounded-md bg-white p-2 shadow-md group-hover:block">
+          <div className="absolute right-20 w-[180px] hidden rounded-md bg-white p-2 shadow-md group-hover:block">
             {/* <!-- 这里放置二维码图片或其他内容 --> */}
             <Image
               src={wechat}
