@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-09-06 14:03:11
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-10-07 10:16:15
+ * @LastEditTime: 2024-01-28 20:29:43
  * @FilePath: /ruankao-website/components/stickybanner.tsx
  * @Description:
  *
@@ -23,7 +23,7 @@ const StickyBanner = () => {
   return (
     <>
       {isOpen && (
-        <div className="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 py-2.5 px-6 sm:px-3.5 sm:before:flex-1">
+        <div className="relative isolate flex flex-col items-center gap-x-6 overflow-hidden bg-gray-50 py-2.5 px-6 sm:px-3.5 sm:before:flex-1">
           <svg
             viewBox="0 0 577 310"
             aria-hidden="true"
