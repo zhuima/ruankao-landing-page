@@ -106,7 +106,6 @@ export default async function DocPage({ params }: DocPageProps) {
         <hr className="my-4 md:my-6" />
         <DocFooter pageTitle={doc.title} />
         <DocsPager doc={doc} />
-        {/* <Comments /> */}
         <Comments
           repo={repo}
           repoId={repoId}
