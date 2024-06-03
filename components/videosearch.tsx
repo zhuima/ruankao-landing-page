@@ -18,7 +18,7 @@ import { compareDesc } from "date-fns";
 import { DocsPageHeader } from "@/components/page-header";
 import { debounce } from "@/lib/functions";
 
-export default function VideoSearch() {xz
+export default function VideoSearch() {
   const videos = allVideos.sort((a, b) => {
     return compareDesc(new Date(a.date), new Date(b.date));
   });
