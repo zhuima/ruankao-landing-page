@@ -105,7 +105,7 @@ export default function MobileMenu() {
                 aria-label="xiaobaot.best"
               >
                 <span className="relative inline-block">
-                  <span className="w-6 h-6 text-gray-700 fill-current">
+                  <span className="w-6 h-6 fill-current">
                     小报童专栏甄选
                   </span>
                   <span className="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">
