@@ -58,7 +58,7 @@ const StickyBanner = () => {
           </svg>
           <div className="flex flex-wrap items-center gap-y-2 gap-x-4">
             <p className="text-sm leading-6 text-gray-900">
-              <strong className="font-semibold">2024年度上半年</strong>
+              <strong className="font-semibold">2024年度下半年</strong>
               <svg
                 viewBox="0 0 2 2"
                 className="mx-2 inline h-0.5 w-0.5 fill-current"

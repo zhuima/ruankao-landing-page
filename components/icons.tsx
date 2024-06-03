@@ -1,3 +1,13 @@
+/*
+ * @Author: zhuima zhuima314@gmail.com
+ * @Date: 2023-07-06 14:12:38
+ * @LastEditors: zhuima zhuima314@gmail.com
+ * @LastEditTime: 2024-03-08 11:54:17
+ * @FilePath: /ruankao-website/components/icons.tsx
+ * @Description: 
+ * 
+ * Copyright (c) 2024 by ${git_name_email}, All Rights Reserved. 
+ */
 import {
   AlertTriangle,
   ArrowRight,

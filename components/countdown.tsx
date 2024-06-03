@@ -22,7 +22,7 @@ const CountDown = () => {
   // const timeToDays = 80 * 60 * 60 * 24 * 1000;
   // let countDownDate = new Date().getTime() + timeToDays;
 
-  let countDownDate = new Date("2024/05/27").getTime();
+  let countDownDate = new Date("2024/11/09").getTime();
 
   useEffect(() => {
     let updateTime = setInterval(() => {

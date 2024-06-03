@@ -57,6 +57,23 @@ const Header = () => {
             <div className="lg:pr-4">
               <ul className="space-y-6 tracking-wide font-medium  lg:text-sm lg:flex lg:space-y-0 [&:not(:hover)>li]:opacity-100 [&>li]:transition-opacity">
                 <li className="[&:not(:hover)]:opacity-50 block md:px-4 ">
+                <Link
+                href="https://xiaobaot.best"
+                target="_blank"
+                className="hover:text-[#2752f4]"
+                aria-label="xiaobaot.best"
+              >
+                <span className="relative inline-block">
+                  <span className="w-6 h-6 text-gray-700 fill-current">
+                    小报童专栏甄选
+                  </span>
+                  <span className="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">
+                    推荐
+                  </span>
+                </span>
+              </Link>
+                </li>
+                <li className="[&:not(:hover)]:opacity-50 block md:px-4 ">
                   <Link href="/countdown">软考倒计时</Link>
                 </li>
                 <li className="[&:not(:hover)]:opacity-50  block md:px-4 ">

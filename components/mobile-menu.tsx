@@ -96,6 +96,25 @@ export default function MobileMenu() {
         }
       >
         <ul className="bg-gray-800 px-4 py-2">
+
+          <li>
+            <Link
+                href="https://xiaobaot.best"
+                target="_blank"
+                className="hover:text-[#2752f4]"
+                aria-label="xiaobaot.best"
+              >
+                <span className="relative inline-block">
+                  <span className="w-6 h-6 text-gray-700 fill-current">
+                    小报童专栏甄选
+                  </span>
+                  <span className="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">
+                    推荐
+                  </span>
+                </span>
+              </Link>
+          </li>
+
           <li>
             <Link
               href="/countdown"
