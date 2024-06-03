@@ -101,7 +101,7 @@ export default function MobileMenu() {
             <Link
                 href="https://xiaobaot.best"
                 target="_blank"
-                className="hover:text-[#2752f4]"
+                className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-indigo-600 hover:bg-indig    o-700 transition duration-150 ease-in-out"
                 aria-label="xiaobaot.best"
               >
                 <span className="relative inline-block">
