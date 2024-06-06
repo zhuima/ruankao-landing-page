@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-07-06 15:11:36
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2024-01-28 17:24:25
+ * @LastEditTime: 2024-06-06 08:45:32
  * @FilePath: /ruankao-website/app/layout.tsx
  * @Description:
  *
@@ -57,16 +57,33 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-CN">
-      {/* Clarity Script */}
-      <Script strategy="lazyOnload" id="clarity-script">
-        {`
- (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "ksu044b2eg");
-        `}
-      </Script>
+      <head>
+        <Script
+          id="schema-organization"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org/",
+              "@type": "WebSite",
+              name: "软考通关宝典",
+              url: "https://ruankao.eu.org/",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: "https://ruankao.eu.org/?query={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
+        <Script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6679652085033280`}
+          strategy="lazyOnload"
+          crossOrigin="anonymous"
+        ></Script>
+      </head>
+
       <body className={inter.className}>
         <StickyBanner />
         <NextTopLoader />
@@ -77,6 +94,16 @@ export default function RootLayout({
         <Footer />
         <ScrollToTop />
       </body>
+      {/* Clarity Script */}
+      <Script strategy="lazyOnload" id="clarity-script">
+        {`
+ (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ksu044b2eg");
+        `}
+      </Script>
     </html>
   );
 }
