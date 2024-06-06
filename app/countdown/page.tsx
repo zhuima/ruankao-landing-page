@@ -2,7 +2,7 @@
  * @Author: zhuima zhuima314@gmail.com
  * @Date: 2023-06-09 10:11:31
  * @LastEditors: zhuima zhuima314@gmail.com
- * @LastEditTime: 2023-07-24 11:31:30
+ * @LastEditTime: 2024-06-06 08:54:27
  * @FilePath: /ruankao-website/app/countdown/page.tsx
  * @Description:
  *
@@ -18,6 +18,9 @@ export async function generateMetadata(): Promise<Metadata> {
       "软考倒计时工具 | 软考倒计时 | 软考通关必备工具 | 软考工具 | 软考知识库 | 软考通关宝典",
     description:
       "软考时间，2024年下半年软考，软考倒计时工具，软考倒计时，软考通关必备工具，软考工具，软考知识库，软考通关宝典",
+    alternates: {
+      canonical: "https://ruankao.eu.org/countdown",
+    },
   };
 }
 
